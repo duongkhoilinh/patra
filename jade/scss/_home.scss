@@ -10,7 +10,7 @@
         color: #ffffff;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 50px 145px 95px 42px;
-        width: 530px;
+        width: 520px;
         &:after {
           position: absolute;
           content: "";
@@ -37,8 +37,13 @@
       }
     }
     .bx-pager {
-      top: 77%;
-      left: 16.5%;
+      top: 75%;
+      right: 27.7%;
+      text-align: right;
+      .bx-pager-item {
+        text-align: center;
+        margin-right: 16px;
+      }
     }
   }
   .services {
