@@ -1,0 +1,173 @@
+.home-page {
+  .slider {
+    li {
+      position: relative;
+      .title {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 50px 145px 95px 42px;
+        width: 530px;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 0px;
+          border-top: 147px solid transparent;
+          border-bottom: 147px solid transparent;
+          border-right: 56px solid rgba(0, 0, 0, 0.6);
+          left: -56px;
+          top: 0px;
+        }
+        h3 {
+          font-family: $proxima_nova_extrabold;
+          font-size: 25px;
+          text-transform: uppercase;
+          line-height: 33px;
+          letter-spacing: 2px;
+        }
+        span {
+          display: block;
+          font-family: $roboto_condensed_regular;
+          line-height: 25.5px;
+          font-size: 16px;
+        }
+      }
+    }
+    .bx-pager {
+      top: 77%;
+      left: 16.5%;
+    }
+  }
+  .services {
+    margin-top: 77px;
+    .services-list {
+      margin-top: 62px;
+      li {
+        background-color: $blue;
+        display: inline-block;
+        width: 18%;
+        margin-right: 20px;
+        vertical-align: top;
+        h4.sub-title {
+          text-align: center;
+          text-transform: uppercase;
+          font-family: $roboto_condensed_bold;
+          padding: 20px 14px 14px 14px;
+          height: 68px;
+        }
+        a {
+          padding: 55px 0 40px 0;
+          text-align: center;
+          background-color: $black;
+          position: relative;
+          display: block;
+          &:after {
+            position: absolute;
+            content: "";
+            width: 0px;
+            border-right: 87px solid transparent;
+            border-left: 88px solid transparent;
+            border-top: 20px solid #1ca5d7;
+            left: 0;
+            top: 0;
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            width: 0px;
+            border-right: 11px solid transparent;
+            border-left: 11px solid transparent;
+            border-bottom: 11px solid #1ca5d7;
+            left: 42%;
+            bottom: 0;
+          }
+        }
+        .name-list {
+          padding: 70px 24px;
+          li {
+            display: block;
+            width: 100%;
+            font-family: $proxima_nova_light;
+            span {
+              display: inline-block;
+              width: 78%;
+              line-height: 30px;
+            }
+            .dot {
+              display: inline-block;
+              font-size: 40px;
+              line-height: 0;
+              width: 10px;
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .why-choose {
+    background-color: $blue;
+    margin-top: 336px;
+    position: relative;
+    .background {
+      position: absolute;
+      top: -280px;
+      left: 0;
+      width: 100%;
+      height: 280px;
+    }
+    h1.title {
+      margin: 40px 0  62px 0;
+      padding: 0 250px;
+    }
+    ul {
+      li {
+        border: 1px solid #bae4f3;
+        padding: 40px 56px;
+        margin-right: 5%;
+        width: 30%;
+        &:last-child {
+          margin-right: 0;
+        }
+        h3.sub-title {
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          font-family: $roboto_condensed_bold;
+        }
+        span {
+          font-size: 20px;
+          text-align: justify;
+          line-height: 25px;
+        }
+      }
+    }
+    a.read-more {
+      text-align: center;
+      background: $black;
+      width: 216px;
+      margin: 70px auto;
+      text-transform: uppercase;
+      padding: 18px 0px;
+      letter-spacing: -1px;
+      border-bottom: 1px solid #ababab;
+      position: relative;
+      font-size: 20px;
+      display: block;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        border-right: 108px solid transparent;
+        border-left: 108px solid transparent;
+        border-bottom: 12px solid $black;
+        left: 0;
+        top: -12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.page {
+  .header {
+    background-color: $white;
+    color: $black;
+    .logo {
+      background-color: $blue;
+      padding: 20px 14px 14px 14px;
+      width: 188px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        border-right: 95px solid transparent;
+        border-left: 95px solid transparent;
+        border-top: 12px solid $blue;
+        left: 0;
+        bottom: -12px;
+        z-index: 9;
+      }
+    }
+    .navbar {
+      display: inline-block;
+      width: 70%;
+      vertical-align: middle;
+      margin-top: 2px;
+      .info {
+        font-family: $roboto_condensed_light;
+        font-size: 15px;
+        span {
+          padding: 0 34px;
+        }
+      }
+      .menu {
+        margin-top: 15px;
+        font-family: $proxima_nova_extrabold;
+        font-size: 17px;
+        text-transform: uppercase;
+        li {
+          display: inline-block;
+          padding: 0 40px;
+        }
+      }
+    }
+    .enquire {
+      color: $blue;
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      margin-top: 5px;
+      span {
+        display: block;
+        text-transform: uppercase;
+        font-family: $proxima_nova_extrabold;
+      }
+    }
+  }
+  h1.title {
+    text-transform: uppercase;
+    font-family: $proxima_nova_extrabold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #6B6868;
+  }
+}
