@@ -1,9 +1,27 @@
+.slicknav_menu {
+  display: none;
+}
+
+.slicknav_nav{
+  margin-top: 15px;
+  font-family: $proxima_nova_extrabold;
+  font-size: 17px;
+  text-transform: uppercase;
+  li {
+    padding: 0 38px;
+    background-color: #232426;
+  }
+}
+
 .page {
+  #header-mobile {
+    display: none;
+  }
   .header {
     background-color: $white;
     color: $black;
     .logo {
-      background-color: $blue;
+      background-image: url("img/bg-blue.png");
       padding: 20px 14px 14px 14px;
       width: 188px;
       display: inline-block;
@@ -21,6 +39,16 @@
         z-index: 9;
       }
     }
+    .menu {
+      margin-top: 15px;
+      font-family: $proxima_nova_extrabold;
+      font-size: 17px;
+      text-transform: uppercase;
+      li {
+        display: inline-block;
+        padding: 0 38px;
+      }
+    }
     .navbar {
       display: inline-block;
       width: 70%;
@@ -30,17 +58,7 @@
         font-family: $roboto_condensed_light;
         font-size: 15px;
         span {
-          padding: 0 32px;
-        }
-      }
-      .menu {
-        margin-top: 15px;
-        font-family: $proxima_nova_extrabold;
-        font-size: 17px;
-        text-transform: uppercase;
-        li {
-          display: inline-block;
-          padding: 0 38px;
+          padding: 0 31px;
         }
       }
     }
@@ -82,6 +100,11 @@
           right: 0;
           top:0;
         }
+        &:nth-child(2) {
+          span:last-child {
+            margin-left: 6px;
+          }
+        }
       }
     }
   }
@@ -90,5 +113,6 @@
     font-family: $proxima_nova_extrabold;
     text-align: center;
     letter-spacing: 1px;
+    text-shadow: 1px 0 4px rgba(0,0,0,0.4);
   }
 }
