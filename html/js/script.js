@@ -22,7 +22,5 @@ $(document).ready(function () {
       $(".contact-mobile .phone-mobile").show();
       $(".contact-mobile ul").hide();
     }
-
-
   })
 });
