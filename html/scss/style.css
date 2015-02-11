@@ -639,63 +639,66 @@ select {
     .page .header .menu li {
       display: inline-block;
       padding: 0 38px; }
-  /* line 52, ../../jade/scss/_layout.scss */
+      /* line 50, ../../jade/scss/_layout.scss */
+      .page .header .menu li a:hover {
+        color: #1ca5d7; }
+  /* line 55, ../../jade/scss/_layout.scss */
   .page .header .navbar {
     display: inline-block;
     width: 70%;
     vertical-align: middle;
     margin-top: 2px; }
-    /* line 57, ../../jade/scss/_layout.scss */
+    /* line 60, ../../jade/scss/_layout.scss */
     .page .header .navbar .info {
       font-family: "roboto_condensed_light";
       font-size: 15px; }
-      /* line 60, ../../jade/scss/_layout.scss */
+      /* line 63, ../../jade/scss/_layout.scss */
       .page .header .navbar .info span {
         padding: 0 31px; }
-  /* line 65, ../../jade/scss/_layout.scss */
+  /* line 68, ../../jade/scss/_layout.scss */
   .page .header .enquire {
     color: #1ca5d7;
     vertical-align: top;
     display: inline-block;
     text-align: center;
     margin-top: 5px; }
-    /* line 71, ../../jade/scss/_layout.scss */
+    /* line 74, ../../jade/scss/_layout.scss */
     .page .header .enquire span {
       display: block;
       text-transform: uppercase;
       font-family: "proxima_nova_extrabold"; }
-/* line 78, ../../jade/scss/_layout.scss */
+/* line 81, ../../jade/scss/_layout.scss */
 .page .footer {
   background-color: black; }
-  /* line 80, ../../jade/scss/_layout.scss */
+  /* line 83, ../../jade/scss/_layout.scss */
   .page .footer i {
     background-color: #ffffff;
     vertical-align: middle;
     margin-right: 40px; }
-  /* line 85, ../../jade/scss/_layout.scss */
+  /* line 88, ../../jade/scss/_layout.scss */
   .page .footer ul {
     position: relative;
     font-family: "roboto_condensed_bold";
     font-size: 16.26px; }
-    /* line 89, ../../jade/scss/_layout.scss */
+    /* line 92, ../../jade/scss/_layout.scss */
     .page .footer ul li {
       text-align: center;
       padding: 24px 0 36px 0;
       vertical-align: top; }
-      /* line 93, ../../jade/scss/_layout.scss */
+      /* line 96, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(1) {
         position: absolute;
         left: 0;
         top: -9px; }
-      /* line 98, ../../jade/scss/_layout.scss */
+      /* line 101, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(3) {
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 104, ../../jade/scss/_layout.scss */
+      /* line 107, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(2) span:last-child {
         margin-left: 6px; }
-/* line 111, ../../jade/scss/_layout.scss */
+/* line 114, ../../jade/scss/_layout.scss */
 .page h1.title {
   text-transform: uppercase;
   font-family: "proxima_nova_extrabold";
