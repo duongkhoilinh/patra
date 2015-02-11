@@ -30,7 +30,7 @@
         font-family: $roboto_condensed_light;
         font-size: 15px;
         span {
-          padding: 0 34px;
+          padding: 0 32px;
         }
       }
       .menu {
@@ -40,7 +40,7 @@
         text-transform: uppercase;
         li {
           display: inline-block;
-          padding: 0 40px;
+          padding: 0 38px;
         }
       }
     }
@@ -57,11 +57,38 @@
       }
     }
   }
+  .footer {
+    background-color: black;
+    i {
+      background-color: $white;
+      vertical-align: middle;
+      margin-right: 40px;
+    }
+    ul {
+      position: relative;
+      font-family: $roboto_condensed_bold;
+      font-size: 16.26px;
+      li {
+        text-align: center;
+        padding: 24px 0 36px 0;
+        vertical-align: top;
+        &:nth-child(1) {
+          position: absolute;
+          left: 0;
+          top:-9px;
+        }
+        &:nth-child(3) {
+          position: absolute;
+          right: 0;
+          top:0;
+        }
+      }
+    }
+  }
   h1.title {
     text-transform: uppercase;
     font-family: $proxima_nova_extrabold;
     text-align: center;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 1px #6B6868;
   }
 }
