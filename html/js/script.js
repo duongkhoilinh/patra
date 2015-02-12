@@ -15,7 +15,7 @@ $(document).ready(function () {
       $(".contact-mobile ul").show();
     }
     else {
-      $(".logo").css({"top":"-51px"});
+      $(".logo").css({"top":"-54px"});
       $(".slicknav_menu").css({"background-color":"#ffffff"});
       $(".slicknav_btn").css({"background-color":"#ffffff"});
       $(".slicknav_icon-bar").css({"background-color":"#000000"});

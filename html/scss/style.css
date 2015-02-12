@@ -266,7 +266,6 @@ select {
 /* line 57, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(img/bx_loader.gif) center center no-repeat #fff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -293,7 +292,7 @@ select {
 
 /* line 86, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #fff;
+  background: #1ca5d7;
   text-indent: -9999px;
   display: block;
   width: 10px;
@@ -307,18 +306,16 @@ select {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #1ca5d7; }
+  background: #ffffff; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url(img/controls.png) no-repeat 0 -32px; }
+  left: 10px; }
 
 /* line 111, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url(img/controls.png) no-repeat -43px -32px; }
+  right: 10px; }
 
 /* line 116, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-prev:hover {
@@ -355,7 +352,6 @@ select {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url(img/controls.png) -86px -11px no-repeat;
   margin: 0 3px; }
 
 /* line 155, ../../jade/scss/_bxslider.scss */
@@ -370,7 +366,6 @@ select {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url(img/controls.png) -86px -44px no-repeat;
   margin: 0 3px; }
 
 /* line 170, ../../jade/scss/_bxslider.scss */
@@ -604,13 +599,20 @@ select {
     background-color: #232426; }
 
 /* line 17, ../../jade/scss/_layout.scss */
+.page .bx-wrapper .bx-pager.bx-default-pager a {
+  width: 16px;
+  height: 16px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
+/* line 24, ../../jade/scss/_layout.scss */
 .page #header-mobile {
   display: none; }
-/* line 20, ../../jade/scss/_layout.scss */
+/* line 27, ../../jade/scss/_layout.scss */
 .page .header {
   background-color: #ffffff;
   color: #171a1c; }
-  /* line 23, ../../jade/scss/_layout.scss */
+  /* line 30, ../../jade/scss/_layout.scss */
   .page .header .logo {
     background-image: url("img/bg-blue.png");
     padding: 20px 14px 14px 14px;
@@ -618,7 +620,7 @@ select {
     display: inline-block;
     vertical-align: middle;
     position: relative; }
-    /* line 30, ../../jade/scss/_layout.scss */
+    /* line 37, ../../jade/scss/_layout.scss */
     .page .header .logo .logo-traingle {
       position: absolute;
       background-image: url("../images/traingle.png");
@@ -629,76 +631,125 @@ select {
       z-index: 9;
       background-size: 100%;
       left: 0; }
-  /* line 42, ../../jade/scss/_layout.scss */
+  /* line 49, ../../jade/scss/_layout.scss */
   .page .header .menu {
     margin-top: 15px;
     font-family: "proxima_nova_extrabold";
     font-size: 17px;
-    text-transform: uppercase; }
-    /* line 47, ../../jade/scss/_layout.scss */
+    text-transform: uppercase;
+    margin-bottom: -2px; }
+    /* line 55, ../../jade/scss/_layout.scss */
     .page .header .menu li {
       display: inline-block;
-      padding: 0 38px; }
-      /* line 50, ../../jade/scss/_layout.scss */
+      padding: 0 38px 20px 38px;
+      position: relative;
+      cursor: pointer; }
+      /* line 60, ../../jade/scss/_layout.scss */
       .page .header .menu li a:hover {
         color: #1ca5d7; }
-  /* line 55, ../../jade/scss/_layout.scss */
+    /* line 64, ../../jade/scss/_layout.scss */
+    .page .header .menu .sub-menu {
+      display: none;
+      position: absolute;
+      width: 234px;
+      font-family: "roboto_condensed_regular";
+      font-size: 15.24px;
+      z-index: 1000;
+      left: -46px;
+      top: 37px;
+      background: #1ca5d7;
+      color: #ffffff;
+      text-align: center; }
+      /* line 76, ../../jade/scss/_layout.scss */
+      .page .header .menu .sub-menu li {
+        padding: 18px 0;
+        display: block; }
+        /* line 79, ../../jade/scss/_layout.scss */
+        .page .header .menu .sub-menu li:hover {
+          background: #ffffff;
+          -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
+          -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
+          box-shadow: inset 0px 1px 3px 0px dimgray; }
+        /* line 85, ../../jade/scss/_layout.scss */
+        .page .header .menu .sub-menu li:hover a {
+          color: #171a1c; }
+        /* line 88, ../../jade/scss/_layout.scss */
+        .page .header .menu .sub-menu li:nth-child(1) {
+          padding-top: 34px; }
+    /* line 93, ../../jade/scss/_layout.scss */
+    .page .header .menu .service-hover:hover .sub-menu {
+      display: block;
+      visibility: visible;
+      opacity: 1; }
+  /* line 99, ../../jade/scss/_layout.scss */
   .page .header .navbar {
     display: inline-block;
     width: 70%;
     vertical-align: middle;
-    margin-top: 2px; }
-    /* line 60, ../../jade/scss/_layout.scss */
+    padding-top: 16px;
+    margin: 0; }
+    /* line 105, ../../jade/scss/_layout.scss */
     .page .header .navbar .info {
       font-family: "roboto_condensed_light";
       font-size: 15px; }
-      /* line 63, ../../jade/scss/_layout.scss */
+      /* line 108, ../../jade/scss/_layout.scss */
       .page .header .navbar .info span {
         padding: 0 31px; }
-  /* line 68, ../../jade/scss/_layout.scss */
+  /* line 113, ../../jade/scss/_layout.scss */
   .page .header .enquire {
+    display: inline-block;
     color: #1ca5d7;
     vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    margin-top: 5px; }
-    /* line 74, ../../jade/scss/_layout.scss */
-    .page .header .enquire span {
-      display: block;
-      text-transform: uppercase;
-      font-family: "proxima_nova_extrabold"; }
-/* line 81, ../../jade/scss/_layout.scss */
+    text-align: center; }
+    /* line 118, ../../jade/scss/_layout.scss */
+    .page .header .enquire .btn-enquire {
+      cursor: pointer;
+      margin-top: 11px; }
+      /* line 121, ../../jade/scss/_layout.scss */
+      .page .header .enquire .btn-enquire span {
+        display: block;
+        text-transform: uppercase;
+        font-family: "proxima_nova_extrabold"; }
+    /* line 127, ../../jade/scss/_layout.scss */
+    .page .header .enquire .box-enquire {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background-image: url("img/bg-gray.png"); }
+/* line 137, ../../jade/scss/_layout.scss */
 .page .footer {
   background-color: black; }
-  /* line 83, ../../jade/scss/_layout.scss */
+  /* line 139, ../../jade/scss/_layout.scss */
   .page .footer i {
     background-color: #ffffff;
     vertical-align: middle;
     margin-right: 40px; }
-  /* line 88, ../../jade/scss/_layout.scss */
+  /* line 144, ../../jade/scss/_layout.scss */
   .page .footer ul {
     position: relative;
     font-family: "roboto_condensed_bold";
     font-size: 16.26px; }
-    /* line 92, ../../jade/scss/_layout.scss */
+    /* line 148, ../../jade/scss/_layout.scss */
     .page .footer ul li {
       text-align: center;
       padding: 24px 0 36px 0;
       vertical-align: top; }
-      /* line 96, ../../jade/scss/_layout.scss */
+      /* line 152, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(1) {
         position: absolute;
         left: 0;
         top: -9px; }
-      /* line 101, ../../jade/scss/_layout.scss */
+      /* line 157, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(3) {
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 107, ../../jade/scss/_layout.scss */
+      /* line 163, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(2) span:last-child {
         margin-left: 6px; }
-/* line 114, ../../jade/scss/_layout.scss */
+/* line 170, ../../jade/scss/_layout.scss */
 .page h1.title {
   text-transform: uppercase;
   font-family: "proxima_nova_extrabold";
@@ -755,7 +806,7 @@ select {
   /* line 46, ../../jade/scss/_home.scss */
   .home-page .slider .bx-pager {
     top: 75%;
-    right: 27.7%;
+    right: 25.7%;
     text-align: right; }
     /* line 50, ../../jade/scss/_home.scss */
     .home-page .slider .bx-pager .bx-pager-item {
@@ -799,7 +850,7 @@ select {
             background-size: 100%;
             left: 0; }
         /* line 91, ../../jade/scss/_home.scss */
-        .home-page .services .services-list li a {
+        .home-page .services .services-list li p {
           padding: 55px 0 40px 0;
           text-align: center;
           background-color: #171a1c;
@@ -1038,161 +1089,166 @@ select {
       .slicknav_menu .slicknav_btn .slicknav_icon-bar {
         background-color: #171a1c;
         width: 26px;
-        height: 3px;
-        margin-bottom: 6px; }
-    /* line 34, ../../jade/scss/_responsive.scss */
+        height: 4px;
+        margin-bottom: 6px;
+        border-radius: 0px; }
+    /* line 35, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_nav li {
       padding: 15px 0px;
       background: #232426;
       border-bottom: 2px solid #191a1b; }
-      /* line 38, ../../jade/scss/_responsive.scss */
+      /* line 39, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav li:last-child {
         padding: 5px 0; }
-        /* line 40, ../../jade/scss/_responsive.scss */
+        /* line 41, ../../jade/scss/_responsive.scss */
         .slicknav_menu .slicknav_nav li:last-child i {
           vertical-align: middle;
           margin: 0 8px 0 -5px; }
-      /* line 45, ../../jade/scss/_responsive.scss */
+      /* line 46, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav li.slicknav_parent {
         padding-bottom: 0; }
-        /* line 47, ../../jade/scss/_responsive.scss */
+        /* line 48, ../../jade/scss/_responsive.scss */
         .slicknav_menu .slicknav_nav li.slicknav_parent ul {
           margin: 0; }
-          /* line 49, ../../jade/scss/_responsive.scss */
+          /* line 50, ../../jade/scss/_responsive.scss */
           .slicknav_menu .slicknav_nav li.slicknav_parent ul li {
             background: #191a1b;
             border-bottom: 1px solid #141515; }
-            /* line 52, ../../jade/scss/_responsive.scss */
+            /* line 53, ../../jade/scss/_responsive.scss */
             .slicknav_menu .slicknav_nav li.slicknav_parent ul li a {
               padding: 0 0 0 50px;
               font-family: "proxima_nova_light"; }
-            /* line 56, ../../jade/scss/_responsive.scss */
+            /* line 57, ../../jade/scss/_responsive.scss */
             .slicknav_menu .slicknav_nav li.slicknav_parent ul li:last-child {
               padding: 15px 0;
               border-bottom: none; }
-        /* line 62, ../../jade/scss/_responsive.scss */
+        /* line 63, ../../jade/scss/_responsive.scss */
         .slicknav_menu .slicknav_nav li.slicknav_parent .slicknav_item {
           padding-bottom: 18px; }
-          /* line 64, ../../jade/scss/_responsive.scss */
+          /* line 65, ../../jade/scss/_responsive.scss */
           .slicknav_menu .slicknav_nav li.slicknav_parent .slicknav_item a {
             padding: 0; }
-    /* line 70, ../../jade/scss/_responsive.scss */
+    /* line 71, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_nav a {
       padding: 5px 25px;
       margin: 0;
       font-size: 15.33px;
       letter-spacing: 1px; }
-      /* line 75, ../../jade/scss/_responsive.scss */
+      /* line 76, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
         color: #ffffff; }
-      /* line 79, ../../jade/scss/_responsive.scss */
+      /* line 80, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
 
-  /* line 85, ../../jade/scss/_responsive.scss */
+  /* line 86, ../../jade/scss/_responsive.scss */
   .container {
     width: 100%; }
 
-  /* line 88, ../../jade/scss/_responsive.scss */
+  /* line 89, ../../jade/scss/_responsive.scss */
   #header {
     display: none; }
 
-  /* line 92, ../../jade/scss/_responsive.scss */
+  /* line 93, ../../jade/scss/_responsive.scss */
   .page #header-mobile {
     display: block; }
-    /* line 94, ../../jade/scss/_responsive.scss */
+    /* line 95, ../../jade/scss/_responsive.scss */
     .page #header-mobile .menu {
       display: none; }
-    /* line 97, ../../jade/scss/_responsive.scss */
+    /* line 98, ../../jade/scss/_responsive.scss */
     .page #header-mobile #main-menu {
       height: 54px; }
-      /* line 99, ../../jade/scss/_responsive.scss */
+      /* line 100, ../../jade/scss/_responsive.scss */
       .page #header-mobile #main-menu .logo {
         width: 111px;
         float: none;
         padding: 11px 8px;
         left: 35%;
-        top: -51px;
+        top: -54px;
         z-index: 1; }
-        /* line 106, ../../jade/scss/_responsive.scss */
+        /* line 107, ../../jade/scss/_responsive.scss */
         .page #header-mobile #main-menu .logo:after {
           border-right: 55px solid transparent;
           border-left: 55px solid transparent; }
-      /* line 111, ../../jade/scss/_responsive.scss */
+      /* line 112, ../../jade/scss/_responsive.scss */
       .page #header-mobile #main-menu .contact-mobile {
         position: absolute;
         top: 5px;
         right: 17px;
         z-index: 1; }
-        /* line 116, ../../jade/scss/_responsive.scss */
+        /* line 117, ../../jade/scss/_responsive.scss */
         .page #header-mobile #main-menu .contact-mobile ul {
           display: none; }
-          /* line 118, ../../jade/scss/_responsive.scss */
+          /* line 119, ../../jade/scss/_responsive.scss */
           .page #header-mobile #main-menu .contact-mobile ul li {
-            display: inline-block; }
-  /* line 125, ../../jade/scss/_responsive.scss */
+            display: inline-block;
+            padding: 0 5px; }
+        /* line 124, ../../jade/scss/_responsive.scss */
+        .page #header-mobile #main-menu .contact-mobile .phone-mobile {
+          padding-right: 5px; }
+  /* line 130, ../../jade/scss/_responsive.scss */
   .page h1.title {
     font-size: 35.5px;
     line-height: 46px;
     word-spacing: -1px;
     letter-spacing: 0px; }
-  /* line 131, ../../jade/scss/_responsive.scss */
+  /* line 136, ../../jade/scss/_responsive.scss */
   .page .footer {
     padding: 60px 0; }
-    /* line 133, ../../jade/scss/_responsive.scss */
+    /* line 138, ../../jade/scss/_responsive.scss */
     .page .footer ul {
       font-size: 14.06px; }
-      /* line 135, ../../jade/scss/_responsive.scss */
+      /* line 140, ../../jade/scss/_responsive.scss */
       .page .footer ul li {
         position: static !important;
         width: 100%;
         margin: 0 auto;
         padding: 0; }
-        /* line 141, ../../jade/scss/_responsive.scss */
+        /* line 146, ../../jade/scss/_responsive.scss */
         .page .footer ul li:nth-child(1) i {
           display: block;
           margin: 0 auto; }
-        /* line 145, ../../jade/scss/_responsive.scss */
+        /* line 150, ../../jade/scss/_responsive.scss */
         .page .footer ul li:nth-child(1) a {
           display: block;
           margin: 38px 0; }
-        /* line 150, ../../jade/scss/_responsive.scss */
+        /* line 155, ../../jade/scss/_responsive.scss */
         .page .footer ul li:nth-child(2) {
           margin-bottom: 38px; }
-          /* line 152, ../../jade/scss/_responsive.scss */
+          /* line 157, ../../jade/scss/_responsive.scss */
           .page .footer ul li:nth-child(2) span {
             display: block;
             line-height: 22.37px; }
 
-  /* line 163, ../../jade/scss/_responsive.scss */
+  /* line 168, ../../jade/scss/_responsive.scss */
   .home-page .slider .bx-pager {
     top: 85%;
     right: 0;
     text-align: center; }
-  /* line 168, ../../jade/scss/_responsive.scss */
+  /* line 173, ../../jade/scss/_responsive.scss */
   .home-page .slider .bx-wrapper {
     height: 500px; }
-    /* line 170, ../../jade/scss/_responsive.scss */
+    /* line 175, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .bx-pager.bx-default-pager a {
       width: 15px;
       height: 15px;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
       border-radius: 10px; }
-    /* line 177, ../../jade/scss/_responsive.scss */
+    /* line 182, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .bx-viewport {
       height: 500px !important; }
-    /* line 181, ../../jade/scss/_responsive.scss */
+    /* line 186, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .main-bxslider li {
       background-repeat: no-repeat;
       height: 500px;
       background-size: 800px;
       background-position-x: 65%; }
-      /* line 186, ../../jade/scss/_responsive.scss */
+      /* line 191, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li img {
         display: none; }
-      /* line 189, ../../jade/scss/_responsive.scss */
+      /* line 194, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li .title {
         bottom: 0;
         top: 334px;
@@ -1200,48 +1256,48 @@ select {
         width: 100%;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.8); }
-        /* line 196, ../../jade/scss/_responsive.scss */
+        /* line 201, ../../jade/scss/_responsive.scss */
         .home-page .slider .bx-wrapper .main-bxslider li .title h3 {
           font-size: 17.89px;
           line-height: 23px;
           letter-spacing: 0px; }
-        /* line 201, ../../jade/scss/_responsive.scss */
+        /* line 206, ../../jade/scss/_responsive.scss */
         .home-page .slider .bx-wrapper .main-bxslider li .title span {
           display: none; }
-        /* line 204, ../../jade/scss/_responsive.scss */
+        /* line 209, ../../jade/scss/_responsive.scss */
         .home-page .slider .bx-wrapper .main-bxslider li .title:after {
           display: none; }
-      /* line 208, ../../jade/scss/_responsive.scss */
+      /* line 213, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:first-child {
         background-image: url("../images/slide-4.jpg"); }
-      /* line 211, ../../jade/scss/_responsive.scss */
+      /* line 216, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:nth-child(2) {
         background-image: url("../images/slide-1.jpg"); }
-      /* line 214, ../../jade/scss/_responsive.scss */
+      /* line 219, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:nth-child(3) {
         background-image: url("../images/slide-2.jpg"); }
-      /* line 217, ../../jade/scss/_responsive.scss */
+      /* line 222, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:nth-child(4) {
         background-image: url("../images/slide-3.jpg"); }
-      /* line 220, ../../jade/scss/_responsive.scss */
+      /* line 225, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:nth-child(5) {
         background-image: url("../images/slide-4.jpg"); }
-      /* line 223, ../../jade/scss/_responsive.scss */
+      /* line 228, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li:nth-child(6) {
         background-image: url("../images/slide-1.jpg"); }
-  /* line 230, ../../jade/scss/_responsive.scss */
+  /* line 235, ../../jade/scss/_responsive.scss */
   .home-page .services {
     padding: 0 26px; }
-    /* line 232, ../../jade/scss/_responsive.scss */
+    /* line 237, ../../jade/scss/_responsive.scss */
     .home-page .services .services-list {
       margin-top: 30px; }
-      /* line 234, ../../jade/scss/_responsive.scss */
+      /* line 239, ../../jade/scss/_responsive.scss */
       .home-page .services .services-list li {
         background-color: #171a1c;
         width: 100%;
         margin-bottom: 27px;
         background-image: none; }
-        /* line 239, ../../jade/scss/_responsive.scss */
+        /* line 244, ../../jade/scss/_responsive.scss */
         .home-page .services .services-list li h4.sub-title {
           width: 175px;
           background-image: url("img/bg-blue.png");
@@ -1249,12 +1305,12 @@ select {
           font-size: 15.78px;
           height: 50px;
           vertical-align: middle; }
-          /* line 246, ../../jade/scss/_responsive.scss */
+          /* line 251, ../../jade/scss/_responsive.scss */
           .home-page .services .services-list li h4.sub-title .traingle {
             height: 15px;
             bottom: -15px; }
-        /* line 251, ../../jade/scss/_responsive.scss */
-        .home-page .services .services-list li a {
+        /* line 256, ../../jade/scss/_responsive.scss */
+        .home-page .services .services-list li p {
           display: inline-block;
           float: right;
           width: 31%;
@@ -1262,71 +1318,71 @@ select {
           vertical-align: middle;
           margin-top: -64px;
           text-align: right; }
-          /* line 259, ../../jade/scss/_responsive.scss */
-          .home-page .services .services-list li a i {
+          /* line 264, ../../jade/scss/_responsive.scss */
+          .home-page .services .services-list li p i {
             -moz-transform: scale(0.75);
             transform: scale(0.75); }
-        /* line 264, ../../jade/scss/_responsive.scss */
+        /* line 269, ../../jade/scss/_responsive.scss */
         .home-page .services .services-list li ul {
           display: none; }
-  /* line 270, ../../jade/scss/_responsive.scss */
+  /* line 275, ../../jade/scss/_responsive.scss */
   .home-page .why-choose {
     margin-top: 100px;
     padding: 0 20px; }
-    /* line 273, ../../jade/scss/_responsive.scss */
+    /* line 278, ../../jade/scss/_responsive.scss */
     .home-page .why-choose .background-before {
       top: -76px;
       height: 76px; }
-    /* line 277, ../../jade/scss/_responsive.scss */
+    /* line 282, ../../jade/scss/_responsive.scss */
     .home-page .why-choose .background-after {
       bottom: -45px;
       height: 45px; }
-    /* line 281, ../../jade/scss/_responsive.scss */
+    /* line 286, ../../jade/scss/_responsive.scss */
     .home-page .why-choose h1.title {
       padding: 0;
       margin: 58px 0 58px 0; }
-    /* line 286, ../../jade/scss/_responsive.scss */
+    /* line 291, ../../jade/scss/_responsive.scss */
     .home-page .why-choose ul li {
       padding: 40px 38px;
       width: 100%;
       margin: 30px 0 0 0; }
-      /* line 290, ../../jade/scss/_responsive.scss */
+      /* line 295, ../../jade/scss/_responsive.scss */
       .home-page .why-choose ul li span {
         line-height: 30.67px; }
-      /* line 293, ../../jade/scss/_responsive.scss */
+      /* line 298, ../../jade/scss/_responsive.scss */
       .home-page .why-choose ul li:first-child {
         margin: 0; }
-    /* line 298, ../../jade/scss/_responsive.scss */
+    /* line 303, ../../jade/scss/_responsive.scss */
     .home-page .why-choose a.read-more {
       margin: 52px auto;
       padding: 14px 0px 22px 0;
       border-bottom: none; }
-  /* line 304, ../../jade/scss/_responsive.scss */
+  /* line 309, ../../jade/scss/_responsive.scss */
   .home-page .testimonials {
     margin-bottom: 70px; }
-    /* line 306, ../../jade/scss/_responsive.scss */
+    /* line 311, ../../jade/scss/_responsive.scss */
     .home-page .testimonials h1.title {
       margin: 120px 0 58px 0; }
-    /* line 311, ../../jade/scss/_responsive.scss */
+    /* line 316, ../../jade/scss/_responsive.scss */
     .home-page .testimonials ul li .logo-image {
       display: none; }
-    /* line 314, ../../jade/scss/_responsive.scss */
+    /* line 319, ../../jade/scss/_responsive.scss */
     .home-page .testimonials ul li .content {
       width: 100%;
       padding: 0px 26px 36px 26px; }
-      /* line 317, ../../jade/scss/_responsive.scss */
+      /* line 322, ../../jade/scss/_responsive.scss */
       .home-page .testimonials ul li .content p {
         padding: 0;
         line-height: 25.59px;
         letter-spacing: -0.5px;
         font-size: 17.89px; }
-        /* line 322, ../../jade/scss/_responsive.scss */
+        /* line 327, ../../jade/scss/_responsive.scss */
         .home-page .testimonials ul li .content p:before {
           top: -5px; }
-        /* line 325, ../../jade/scss/_responsive.scss */
+        /* line 330, ../../jade/scss/_responsive.scss */
         .home-page .testimonials ul li .content p:after {
           bottom: 0px; }
-    /* line 332, ../../jade/scss/_responsive.scss */
+    /* line 337, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-wrapper .bx-pager.bx-default-pager a {
       width: 16px;
       height: 16px;
@@ -1334,7 +1390,7 @@ select {
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
       border-radius: 8px; }
-    /* line 340, ../../jade/scss/_responsive.scss */
+    /* line 345, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
       bottom: -20px; } }
 

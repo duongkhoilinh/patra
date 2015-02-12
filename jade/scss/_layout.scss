@@ -14,6 +14,13 @@
 }
 
 .page {
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 16px;
+    height: 16px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
   #header-mobile {
     display: none;
   }
@@ -44,19 +51,57 @@
       font-family: $proxima_nova_extrabold;
       font-size: 17px;
       text-transform: uppercase;
+      margin-bottom: -2px;
       li {
         display: inline-block;
-        padding: 0 38px;
+        padding: 0 38px 20px 38px;
+        position: relative;
+        cursor: pointer;
         a:hover {
           color: #1ca5d7;
         }
+      }
+      .sub-menu {
+        display: none;
+        position: absolute;
+        width: 234px;
+        font-family: $roboto_condensed_regular;
+        font-size: 15.24px;
+        z-index: 1000;
+        left: -46px;
+        top: 37px;
+        background: $blue;
+        color: $white;
+        text-align: center;
+        li {
+          padding: 18px 0;
+          display: block;
+          &:hover {
+            background: $white;
+            -webkit-box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
+            -moz-box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
+            box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
+          }
+          &:hover a {
+            color: $black;
+          }
+          &:nth-child(1) {
+            padding-top: 34px;
+          }
+        }
+      }
+      .service-hover:hover   .sub-menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
       }
     }
     .navbar {
       display: inline-block;
       width: 70%;
       vertical-align: middle;
-      margin-top: 2px;
+      padding-top: 16px;
+      margin: 0;
       .info {
         font-family: $roboto_condensed_light;
         font-size: 15px;
@@ -66,15 +111,26 @@
       }
     }
     .enquire {
+      display: inline-block;
       color: $blue;
       vertical-align: top;
-      display: inline-block;
       text-align: center;
-      margin-top: 5px;
-      span {
-        display: block;
-        text-transform: uppercase;
-        font-family: $proxima_nova_extrabold;
+      .btn-enquire {
+        cursor: pointer;
+        margin-top: 11px;
+        span {
+          display: block;
+          text-transform: uppercase;
+          font-family: $proxima_nova_extrabold;
+        }
+      }
+      .box-enquire {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-image: url("img/bg-gray.png");
       }
     }
   }

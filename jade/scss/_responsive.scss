@@ -26,8 +26,9 @@
       .slicknav_icon-bar {
         background-color: $black;
         width: 26px;
-        height: 3px;
+        height: 4px;
         margin-bottom: 6px;
+        border-radius: 0px;
       }
     }
     .slicknav_nav {
@@ -101,7 +102,7 @@
           float: none;
           padding: 11px 8px;
           left: 35%;
-          top: -51px;
+          top: -54px;
           z-index: 1;
           &:after {
             border-right: 55px solid transparent;
@@ -117,7 +118,11 @@
             display: none;
             li {
               display: inline-block;
+              padding: 0 5px;
             }
+          }
+          .phone-mobile {
+            padding-right: 5px;
           }
         }
       }
@@ -248,7 +253,7 @@
               bottom: -15px;
             }
           }
-          a {
+          p {
             display: inline-block;
             float: right;
             width: 31%;
