@@ -9,7 +9,7 @@
       position: relative;
       .title {
         position: absolute;
-        top: 50%;
+        bottom: 7.5%;
         right: 0;
         color: #ffffff;
         background-color: rgba(0, 0, 0, 0.6);
@@ -44,7 +44,7 @@
       top: -70px;
     }
     .bx-pager {
-      top: 75%;
+      bottom: 15%;
       right: 25.7%;
       text-align: right;
       .bx-pager-item {
@@ -63,6 +63,7 @@
         width: 18%;
         margin-right: 20px;
         vertical-align: top;
+        border: 0;
         h4.sub-title {
           text-align: center;
           text-transform: uppercase;
@@ -125,7 +126,7 @@
             border-right: 11px solid transparent;
             border-left: 11px solid transparent;
             border-bottom: 11px solid #1ca5d7;
-            left: 42%;
+            left: 44%;
             top: -11px;
           }
         }
@@ -283,7 +284,7 @@
               content: url("img/quoteclose.png");
               position: absolute;
               width: 0px;
-              right: 24px;
+              right: 40px;
               bottom: -4px;
             }
           }
@@ -305,4 +306,8 @@
       margin: 0 10px;
     }
   }
+}
+.wrapper-main-bxslider{
+  width: 1218px;
+  margin: 0 auto;
 }

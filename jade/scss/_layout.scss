@@ -106,8 +106,17 @@
         font-family: $roboto_condensed_light;
         font-size: 15px;
         span {
-          padding: 0 31px;
+          &:first-child{
+            padding-left:38px ;
+          }
+          &:nth-child(2){
+            padding-left:58px ;
+          }
+          &:last-child{
+            padding-left:22px ;
+          }
         }
+
       }
     }
     .enquire {
