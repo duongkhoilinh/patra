@@ -1,13 +1,13 @@
-@media only screen and (max-width: 1217px){
+@media only screen and (max-width: 1217px) {
   body {
     width: 100%;
   }
-  .wrapper-main-bxslider{
+  .wrapper-main-bxslider {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 0px){
+@media only screen and (max-width: 1199px) and (min-width: 0px) {
   ul.services-list {
     width: 300px;
     margin: 0 auto;
@@ -25,7 +25,7 @@
     .slicknav_btn {
       background-color: $white;
       float: left;
-      margin:0;
+      margin: 0;
       padding-left: 25px;
       .slicknav_menutxt {
         display: none;
@@ -179,7 +179,7 @@
         text-align: center;
       }
       .bx-wrapper {
-        height: 500px; 
+        height: 500px;
         .bx-pager.bx-default-pager a {
           width: 15px;
           height: 15px;
@@ -192,10 +192,11 @@
         }
         .main-bxslider {
           li {
-              background-repeat: no-repeat;
-              height: 500px;
-              background-size: 800px;
-              background-position-x: 65%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+//            background-size: 800px;
+            background-position-x: 65%;
             img {
               display: none;
             }

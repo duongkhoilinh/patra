@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var count = 0;
-  $('.main-bxslider').bxSlider();
+//  $('.main-bxslider').bxSlider();
   $('.testimonials-bxSlider').bxSlider();
   $('#menu').slicknav({prependTo: '#main-menu'});
   $(window).resize(function () {
