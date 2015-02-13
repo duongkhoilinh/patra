@@ -31,25 +31,37 @@ block main
             .btn-enquire
               i.iconsp-35-enquire
               span enquire
-            .box-enquire.row
+            form.box-enquire.row
               .box-left.col-md-3
                 .title get in touch
                 p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              .box-center.col-md-6
-                  .form-group.row
-                    .col-md-6
-                      input.form-control(type="text" id="usr")
-                    .col-md-6
-                      input.form-control(type="text" id="usr")
-                  .form-group.row
-                    .col-md-3
-                      input.form-control(type="text" id="usr")
-                    .col-md-3
-                      input.form-control(type="text" id="usr")
-                  .form-group
-                      input.form-control(type="text" id="usr")
-
+              .box-center.col-md-5
+                .form-group.row
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Name")
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Phone")
+                .form-group.row
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Email")
+                  .col-md-6
+                    .select-style
+                      select.size
+                        option Enquire Type
+                        option General Enquiry
+                        option Quote
+                        option Carrers
+                        option Other
+                .form-group
+                    input.form-control(type="text" id="usr" placeholder="Site Address")
+                .form-group
+                    input.form-control(type="text" id="usr" placeholder="Company Name")
+                .form-group
+                  textarea.form-control(type="text" id="usr" placeholder="Enquiry")
               .box-right.col-md-3
+                button.btn.btn-cancel(type="button") cancel
+                button.btn.btn-upload(type="button") upload files
+                button.btn.btn-submit(type="button") submit
       #header-mobile.header
         ul#menu.menu
           li
