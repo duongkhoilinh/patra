@@ -2,7 +2,8 @@
   padding-bottom: 1px;
   .header {
     z-index: 1;
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
   .slider {
     li {
