@@ -1,0 +1,251 @@
+extends layout
+block main
+    .services-page.page
+        .slider
+            #header.header
+                .container
+                    a(href="index.html").logo
+                        img(src="images/logo.png")
+                        .logo-traingle
+                    .navbar
+                        .info
+                            span (02)9597 6788
+                            span info@patragroup.con.au
+                            span 4/450 West Botany Street, Rockdale NSW, 2216
+                        ul.menu
+                            li
+                                a(href="") about
+                            li.service-hover
+                                a(href="") services
+                                ul.sub-menu
+                                    li: a.scroll(href="stainless-steel-fabrication.html") stainless steel fabrication
+                                    li: a.scroll(href="refrigeration.html") refrigeration
+                                    li: a.scroll(href="shopfitting.html") shopfitting
+                                    li: a.scroll(href="catering-equipment.html") catering equipment
+                                    li: a.scroll(href="design-consilation.html") design & consilation
+                            li
+                                a(href="portfolio.html") portfolio
+                            li
+                                a(href="contact.html") contact
+                    .enquire
+                        .btn-enquire
+                            i.iconsp-35-enquire
+                            span enquire
+                        form.box-enquire.row
+                            .box-left.col-md-3
+                                .title get in touch
+                                p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            .box-center.col-md-5
+                                .form-group.row
+                                    .col-md-6
+                                        input.form-control(type="text" id="usr" placeholder="Name")
+                                    .col-md-6
+                                        input.form-control(type="text" id="usr" placeholder="Phone")
+                                .form-group.row
+                                    .col-md-6
+                                        input.form-control(type="text" id="usr" placeholder="Email")
+                                    .col-md-6
+                                        .select-style
+                                            select.size
+                                                option Enquire Type
+                                                option General Enquiry
+                                                option Quote
+                                                option Carrers
+                                                option Other
+                                .form-group
+                                    input.form-control(type="text" id="usr" placeholder="Site Address")
+                                .form-group
+                                    input.form-control(type="text" id="usr" placeholder="Company Name")
+                                .form-group
+                                    textarea.form-control(type="text" id="usr" placeholder="Enquiry")
+                            .box-right.col-md-3
+                                button.btn.btn-cancel(type="button") cancel
+                                button.btn.btn-upload(type="button") upload files
+                                button.btn.btn-submit(type="button") submit
+            #header-mobile.header
+                ul#menu.menu
+                    li
+                        a.scroll(href="about.html") about
+                    li
+                        a.scroll(href="") services
+                        ul
+                            li: a.scroll(href="") stainless steel fabrication
+                            li: a.scroll(href="") refrigeration
+                            li: a.scroll(href="") shopfitting
+                            li: a.scroll(href="") catering equipment
+                            li: a.scroll(href="") design & consilation
+                    li
+                        a.scroll(href="portfolio.html") portfolio
+                    li
+                        a.scroll(href="contact.html") contact
+                    li
+                        a.scroll(href="")
+                            i.iconsp-35-enquire-mobile
+                            span enquire
+                #main-menu
+                    a(href="index.html").logo
+                        img(src="images/logo.png")
+                        .logo-traingle
+                    .contact-mobile
+                        ul
+                            li: a(href="https://login.live.com/" target="_blank")
+                                i.iconsp-35-email
+                            li: a(href="https://www.google.com.au/maps/place/450-464+W+Botany+St,+Rockdale+NSW+2216/@-33.960414,151.145595,17z/data=!3m1!4b1!4m2!3m1!1s0x6b12b756afab412b:0x7be2c525df1e34c" target="_blank")
+                                i.iconsp-35-location
+                            li: a(href="tel:0295976788")
+                                i.iconsp-35-phone-white
+                        a.phone-mobile(href="tel:0295976788"): i.iconsp-35-phone-black
+        .services
+            .container
+                h1.title services
+                ul.nav.nav-pills.nav-justified.services-list
+                    li.active
+                        a(href='#stainless-steel-fabrication', data-toggle='pill')
+                            h4.sub-title
+                                span stainless steel fabrication
+                        .traingle
+                    li
+                        a(href='#refrigeration', data-toggle='pill')
+                            h4.sub-title
+                                span refrigeration
+                        .traingle
+                    li
+                        a(href='#shopfitting', data-toggle='pill')
+                            h4.sub-title
+                                span shopfitting
+                        .traingle
+                    li
+                        a(href='#catering-equipment', data-toggle='pill')
+                            h4.sub-title
+                                span catering equipment
+                        .traingle
+                    li
+                        a(href='#design-consilation', data-toggle='pill')
+                            h4.sub-title
+                                span design & consilation
+                        .traingle
+                .tab-content.services-list-content
+                    .tab-pane.active#stainless-steel-fabrication
+                        ul.nav.nav-pills.nav-stacked.col-md-3
+                            li
+                                a(href='#service-one', data-toggle='pill') service one
+                            li
+                                a(href='#service-two', data-toggle='pill') service one
+                            li
+                                a(href='#service-three', data-toggle='pill') service one
+                            li
+                                a(href='#service-four', data-toggle='pill') service one
+                            li
+                                a(href='#service-five', data-toggle='pill') service one
+                            li
+                                a(href='#service-six', data-toggle='pill') service one
+                            li
+                                a(href='#service-seven', data-toggle='pill') service one
+                        .tab-content.col-md-9
+                            .tab-pane.active.tab-landing
+                                .text-content.col-md-5
+                                    p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                .image-content.col-md-7
+                                    img(src="images/stainless-steel-fabrication-landing.jpg")
+                            .tab-pane#service-one
+                                ul.text-content.col-md-5
+                                    li
+                                        span.dot .
+                                        p Sed ut perspiciatis unde omnis iste natus error sit
+                                    li
+                                        span.dot .
+                                        p voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    li
+                                        span.dot .
+                                        p psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                ul.image-content.col-md-7
+                                    #service-one-slider.carousel.slide(data-ride='carousel')
+                                        ol.carousel-indicators
+                                            li.active(data-target='#service-one-slider', data-slide-to='0')
+                                            li(data-target='#service-one-slider', data-slide-to='1')
+                                            li(data-target='#service-one-slider', data-slide-to='2')
+                                        .carousel-inner
+                                            .item.active
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                            .tab-pane#service-two
+                                ul.text-content.col-md-5
+                                    li
+                                        span.dot .
+                                        p Sed ut perspiciatis unde omnis iste natus error sit
+                                    li
+                                        span.dot .
+                                        p voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    li
+                                        span.dot .
+                                        p psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                ul.image-content.col-md-7
+                                    #service-two-slider.carousel.slide(data-ride='carousel')
+                                        ol.carousel-indicators
+                                            li.active(data-target='#service-two-slider', data-slide-to='0')
+                                            li(data-target='#service-two-slider', data-slide-to='1')
+                                            li(data-target='#service-two-slider', data-slide-to='2')
+                                        .carousel-inner
+                                            .item.active
+                                                img(src='images/stainless-steel-subservice2.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                                            .item
+                                                img(src='images/stainless-steel-subservice2.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                                            .item
+                                                img(src='images/stainless-steel-subservice2.png', alt='...')
+                                                .carousel-caption
+                                                    label Client Name
+                                                    span 2014
+                    .tab-pane#catering-equipment
+                        ul.nav.nav-pills.nav-stacked.col-md-3
+                            li
+                                a(href='#catering-one', data-toggle='pill') deep fryers
+                            li
+                                a(href='#catering-two', data-toggle='pill') fridges
+                            li
+                                a(href='#catering-three', data-toggle='pill') cool rooms
+                            li
+                                a(href='#catering-four', data-toggle='pill') bain maries
+                            li
+                                a(href='#catering-five', data-toggle='pill') char grills
+                            li
+                                a(href='#catering-six', data-toggle='pill') chest freezerss
+                            li
+                                a(href='#catering-seven', data-toggle='pill') cake displays
+                        .tab-content.col-md-9
+                            .tab-pane.active.tab-landing
+                                .text-content.col-md-5
+                                    p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                .image-content.col-md-7
+                                    img(src="images/catering-landing.jpg")
+                            .tab-pane#catering-one
+                                ul.text-content.col-md-5
+                                    li
+                                        h2.title waldorf gas single pan deep fryer
+                                    li
+                                        span.dot .
+                                        p Sed ut perspiciatis unde omnis iste natus error sit
+                                    li
+                                        span.dot .
+                                        p voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    li
+                                        span.dot .
+                                        p psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                ul.image-content.col-md-7
