@@ -1,304 +1,177 @@
 extends layout
 block main
-  .home-page.page
-    .slider
-      #header.header
-        .container
-          a(href="index.html").logo
-            img(src="images/logo.png")
-            .logo-traingle
-          .navbar
-            .info
-              span (02)9597 6788
-              span info@patragroup.con.au
-              span 4/450 West Botany Street, Rockdale NSW, 2216
-            ul.menu
+  .services
+    .container
+      h1.title services
+      ul.services-list
+        li
+          a(href="")
+            h4.sub-title
+              span stainless steel fabrication
+              .traingle
+            p
+              i.iconsp-steel
+            ul.name-list
               li
-                a(href="about.html") about
-              li.service-hover
-                a(href="services.html") services
-                ul.sub-menu
-                  li: a.scroll(href="stainless-steel-fabrication.html") stainless steel fabrication
-                  li: a.scroll(href="refrigeration.html") refrigeration
-                  li: a.scroll(href="shopfitting.html") shopfitting
-                  li: a.scroll(href="catering-equipment.html") catering equipment
-                  li: a.scroll(href="design-consilation.html") design & consilation
+                span.dot .
+                span Service Name
               li
-                a(href="portfolio.html") portfolio
+                span.dot .
+                span Service Name
               li
-                a(href="contact.html") contact
-          .enquire
-            .btn-enquire
-              i.iconsp-35-enquire
-              span enquire
-            form.box-enquire.row
-              .box-left.col-md-3
-                .title get in touch
-                p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              .box-center.col-md-5
-                .form-group.row
-                  .col-md-6
-                    input.form-control(type="text" id="usr" placeholder="Name")
-                  .col-md-6
-                    input.form-control(type="text" id="usr" placeholder="Phone")
-                .form-group.row
-                  .col-md-6
-                    input.form-control(type="text" id="usr" placeholder="Email")
-                  .col-md-6
-                    .select-style
-                      select.size
-                        option Enquire Type
-                        option General Enquiry
-                        option Quote
-                        option Carrers
-                        option Other
-                .form-group
-                    input.form-control(type="text" id="usr" placeholder="Site Address")
-                .form-group
-                    input.form-control(type="text" id="usr" placeholder="Company Name")
-                .form-group
-                  textarea.form-control(type="text" id="usr" placeholder="Enquiry")
-              .box-right.col-md-3
-                button.btn.btn-cancel(type="button") cancel
-                button.btn.btn-upload(type="button") upload files
-                button.btn.btn-submit(type="button") submit
-      #header-mobile.header
-        ul#menu.menu
-          li
-            a.scroll(href="about.html") about
-          li
-            a.scroll(href="services.html") services
-            ul
-              li: a.scroll(href="") stainless steel fabrication
-              li: a.scroll(href="") refrigeration
-              li: a.scroll(href="") shopfitting
-              li: a.scroll(href="") catering equipment
-              li: a.scroll(href="") design & consilation
-          li
-            a.scroll(href="portfolio.html") portfolio
-          li
-            a.scroll(href="contact.html") contact
-          li
-            a.scroll(href="")
-              i.iconsp-35-enquire-mobile
-              span enquire
-        #main-menu
-          a(href="index.html").logo
-            img(src="images/logo.png")
-            .logo-traingle
-          .contact-mobile
-            ul
-              li: a(href="https://login.live.com/" target="_blank")
-                i.iconsp-35-email
-              li: a(href="https://www.google.com.au/maps/place/450-464+W+Botany+St,+Rockdale+NSW+2216/@-33.960414,151.145595,17z/data=!3m1!4b1!4m2!3m1!1s0x6b12b756afab412b:0x7be2c525df1e34c" target="_blank")
-                i.iconsp-35-location
-              li: a(href="tel:0295976788")
-                i.iconsp-35-phone-white
-            a.phone-mobile(href="tel:0295976788"): i.iconsp-35-phone-black
-      .wrapper-main-bxslider
-        ul.main-bxslider
-          li
-            img(src="images/slide-1.jpg" height="730")
-            .title
-              h3 able to evolve with new design concepts and modern trends.
-              span Giving the client the opportunity to capture customers with ease.
-          li
-            img(src="images/slide-2.jpg" height="730")
-            .title
-              h3 able to evolve with new design concepts and modern trends.
-              span Giving the client the opportunity to capture customers with ease.
-          li
-            img(src="images/slide-3.jpg" height="730")
-            .title
-              h3 able to evolve with new design concepts and modern trends.
-              span Giving the client the opportunity to capture customers with ease.
-          li
-            img(src="images/slide-4.jpg" height="730")
-            .title
-              h3 able to evolve with new design concepts and modern trends.
-              span Giving the client the opportunity to capture customers with ease.
-    .services
-      .container
-        h1.title services
-        ul.services-list
-          li
-            a(href="")
-              h4.sub-title
-                span stainless steel fabrication
-                .traingle
-              p
-                i.iconsp-steel
-              ul.name-list
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-          li
-            a(href="")
-              h4.sub-title
-                span refrigeration
-                .traingle
-              p
-                i.iconsp-fridge
-              ul.name-list
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-          li
-            a(href="")
-              h4.sub-title
-                span shopfitting
-                .traingle
-              p
-                i.iconsp-shopfitting
-              ul.name-list
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-          li
-            a(href="")
-              h4.sub-title
-                span catering equipment
-                .traingle
-              p
-                i.iconsp-catering
-              ul.name-list
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-          li
-            a(href="")
-              h4.sub-title
-                span design & consilation
-                .traingle
-              p
-                i.iconsp-design
-              ul.name-list
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-                li
-                  span.dot .
-                  span Service Name
-    .why-choose
-      .background-before
-        img(src="images/before-why-choose.png" height="280")
-      .container
-        h1.title why choose patra group
-        ul.row
-          li.col-md-4
-            h3.sub-title experience
-            p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-          li.col-md-4
-            h3.sub-title quality
-            p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-          li.col-md-4
-            h3.sub-title modern
-            p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-        a(href="").read-more read more about us
-      .background-after
-        img(src="images/after-why-choose.png" height="143")
-    .testimonials
-      .container
-        h1.title testimonials
-        ul.testimonials-bxSlider
-          li
-            div
-              a(href="").logo-image
-                img(src="images/testimonials-logo-1.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company pasiri's
-                span Eastwood
-            div
-              a(href="").logo-image
-                img(src="images/testimonials-logo-1.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company pasiri's
-                span Eastwood
-          li
-            div
-              a(href="").logo-image(style="padding-top: 24px;")
-                img(src="images/testimonials-logo-2.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company subway
-                span Marrickville
-            div
-              a(href="").logo-image
-                img(src="images/testimonials-logo-3.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company garlos pies
-                span Eastwood
-          li
-            div
-              a(href="").logo-image
-                img(src="images/testimonials-logo-1.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company pasiri's
-                span Eastwood
-            div
-              a(href="").logo-image
-                img(src="images/testimonials-logo-3.jpg")
-              .content
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                h4.company garlos pies
-                span Eastwood
-    .footer
-      .container
-        ul
-          li
-            i.iconsp-35-facebook
-            a(href="") Privacy Policy
-          li
-            span Copyright © 2014 Patra Group Pty Ltd.
-            span All rights reserved.
-          li
-            span Designed by Openseed
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+        li
+          a(href="")
+            h4.sub-title
+              span refrigeration
+              .traingle
+            p
+              i.iconsp-fridge
+            ul.name-list
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+        li
+          a(href="")
+            h4.sub-title
+              span shopfitting
+              .traingle
+            p
+              i.iconsp-shopfitting
+            ul.name-list
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+        li
+          a(href="")
+            h4.sub-title
+              span catering equipment
+              .traingle
+            p
+              i.iconsp-catering
+            ul.name-list
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+        li
+          a(href="")
+            h4.sub-title
+              span design & consilation
+              .traingle
+            p
+              i.iconsp-design
+            ul.name-list
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+              li
+                span.dot .
+                span Service Name
+  .why-choose
+    .background-before
+      img(src="images/before-why-choose.png" height="280")
+    .container
+      h1.title why choose patra group
+      ul.row
+        li.col-md-4
+          h3.sub-title experience
+          p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+        li.col-md-4
+          h3.sub-title quality
+          p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+        li.col-md-4
+          h3.sub-title modern
+          p Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+      a(href="").read-more read more about us
+    .background-after
+      img(src="images/after-why-choose.png" height="143")
+  .testimonials
+    .container
+      h1.title testimonials
+      ul.testimonials-bxSlider
+        li
+          div
+            a(href="").logo-image
+              img(src="images/testimonials-logo-1.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company pasiri's
+              span Eastwood
+          div
+            a(href="").logo-image
+              img(src="images/testimonials-logo-1.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company pasiri's
+              span Eastwood
+        li
+          div
+            a(href="").logo-image(style="padding-top: 24px;")
+              img(src="images/testimonials-logo-2.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company subway
+              span Marrickville
+          div
+            a(href="").logo-image
+              img(src="images/testimonials-logo-3.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company garlos pies
+              span Eastwood
+        li
+          div
+            a(href="").logo-image
+              img(src="images/testimonials-logo-1.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company pasiri's
+              span Eastwood
+          div
+            a(href="").logo-image
+              img(src="images/testimonials-logo-3.jpg")
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer-citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              h4.company garlos pies
+              span Eastwood
+
 
 
 

@@ -12,7 +12,114 @@ html(lang='en')
     link(href='scss/bootstrap.min.css', type='text/css', rel='stylesheet')
     link(href='scss/style.css', type='text/css', rel='stylesheet')
   body
-    block main
+    .home-page.page
+      .slider
+        #header.header
+          .container
+            a(href="index.html").logo
+              img(src="images/logo.png")
+              .logo-traingle
+            .navbar
+              .info
+                span (02)9597 6788
+                span info@patragroup.con.au
+                span 4/450 West Botany Street, Rockdale NSW, 2216
+              ul.menu
+                li
+                  a(href="") about
+                li.service-hover
+                  a(href="") services
+                  ul.sub-menu
+                    li: a.scroll(href="stainless-steel-fabrication.html") stainless steel fabrication
+                    li: a.scroll(href="refrigeration.html") refrigeration
+                    li: a.scroll(href="shopfitting.html") shopfitting
+                    li: a.scroll(href="catering-equipment.html") catering equipment
+                    li: a.scroll(href="design-consilation.html") design & consilation
+                li
+                  a(href="portfolio.html") portfolio
+                li
+                  a(href="contact.html") contact
+            .enquire
+              .btn-enquire
+                i.iconsp-35-enquire
+                span enquire
+              form.box-enquire.row
+                .box-left.col-md-3
+                  .title get in touch
+                  p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                .box-center.col-md-5
+                  .form-group.row
+                    .col-md-6
+                      input.form-control(type="text" id="usr" placeholder="Name")
+                    .col-md-6
+                      input.form-control(type="text" id="usr" placeholder="Phone")
+                  .form-group.row
+                    .col-md-6
+                      input.form-control(type="text" id="usr" placeholder="Email")
+                    .col-md-6
+                      .select-style
+                        select.size
+                          option Enquire Type
+                          option General Enquiry
+                          option Quote
+                          option Carrers
+                          option Other
+                  .form-group
+                    input.form-control(type="text" id="usr" placeholder="Site Address")
+                  .form-group
+                    input.form-control(type="text" id="usr" placeholder="Company Name")
+                  .form-group
+                    textarea.form-control(type="text" id="usr" placeholder="Enquiry")
+                .box-right.col-md-3
+                  button.btn.btn-cancel(type="button") cancel
+                  button.btn.btn-upload(type="button") upload files
+                  button.btn.btn-submit(type="button") submit
+        #header-mobile.header
+          ul#menu.menu
+            li
+              a.scroll(href="about.html") about
+            li
+              a.scroll(href="") services
+              ul
+                li: a.scroll(href="") stainless steel fabrication
+                li: a.scroll(href="") refrigeration
+                li: a.scroll(href="") shopfitting
+                li: a.scroll(href="") catering equipment
+                li: a.scroll(href="") design & consilation
+            li
+              a.scroll(href="portfolio.html") portfolio
+            li
+              a.scroll(href="contact.html") contact
+            li
+              a.scroll(href="")
+                i.iconsp-35-enquire-mobile
+                span enquire
+          #main-menu
+            a(href="index.html").logo
+              img(src="images/logo.png")
+              .logo-traingle
+            .contact-mobile
+              ul
+                li: a(href="https://login.live.com/" target="_blank")
+                  i.iconsp-35-email
+                li: a(href="https://www.google.com.au/maps/place/450-464+W+Botany+St,+Rockdale+NSW+2216/@-33.960414,151.145595,17z/data=!3m1!4b1!4m2!3m1!1s0x6b12b756afab412b:0x7be2c525df1e34c" target="_blank")
+                  i.iconsp-35-location
+                li: a(href="tel:0295976788")
+                  i.iconsp-35-phone-white
+              a.phone-mobile(href="tel:0295976788"): i.iconsp-35-phone-black
+      block main
+
+      .footer
+        .container
+          ul
+            li
+              i.iconsp-35-facebook
+              a(href="") Privacy Policy
+            li
+              span Copyright © 2014 Patra Group Pty Ltd.
+              span All rights reserved.
+            li
+              span Designed by Openseed
 
 
 

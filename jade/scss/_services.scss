@@ -1,150 +1,149 @@
+
 .services-page {
-  .services {
-    h1.title {
-      margin: 55px 0 57px 0;
+  h1.title {
+    margin: 55px 0 57px 0;
+  }
+  .services-list {
+    margin-bottom: 60px;
+    li {
+      background: $blue;
+      display: inline-block;
+      width: 18%;
+      margin-right: 20px;
+      vertical-align: top;
+      border: 0;
+      margin-left: 0;
+      position: relative;
+      &.active {
+        .traingle {
+          position: absolute;
+          background-image: url("../images/traingle-gray.png");
+          background-repeat: no-repeat;
+          height: 20px;
+          width: 100%;
+          bottom: -20px;
+          z-index: 9;
+          background-size: 100%;
+          left: 0;
+        }
+        a {
+          background-image: url(img/bg-gray.png);
+          color: $blue;
+        }
+      }
+      a {
+        padding: 0;
+        border-radius: 0;
+        &:hover {
+          background-image: url(img/bg-gray.png);
+          color: $blue;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    .services-list {
-      margin-bottom: 60px;
+    h4.sub-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "roboto_condensed_bold";
+      height: 64px;
+      display: table;
+      width: 100%;
+      position: relative;
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+  .services-list-content > .tab-pane.active {
+    display: inline-block;
+    color: $black;
+    background: $white;
+    padding: 40px 24px;
+    ul {
       li {
-        background: $blue;
-        display: inline-block;
-        width: 18%;
-        margin-right: 20px;
-        vertical-align: top;
-        border: 0;
-        margin-left: 0;
-        position: relative;
         &.active {
-          .traingle {
-            position: absolute;
-            background-image: url("../images/traingle-gray.png");
-            background-repeat: no-repeat;
-            height: 20px;
-            width: 100%;
-            bottom: -20px;
-            z-index: 9;
-            background-size: 100%;
-            left: 0;
-          }
           a {
-            background-image: url(img/bg-gray.png);
+            background-image: url("img/bg-gray.png");
             color: $blue;
           }
         }
         a {
-          padding: 0;
+          padding: 15px 0px;
+          display: inline-block;
+          color: $white;
+          background: $blue;
+          text-transform: uppercase;
+          font-size: 17.89px;
+          font-family: "roboto_condensed_bold";
+          letter-spacing: 0.5px;
           border-radius: 0;
-          &:hover {
-            background-image: url(img/bg-gray.png);
-            color: $blue;
-          }
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-      h4.sub-title {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: "roboto_condensed_bold";
-        height: 64px;
-        display: table;
-        width: 100%;
-        position: relative;
-        span {
-          display: table-cell;
-          vertical-align: middle;
+          box-shadow: 1px 2px 1px #ccc;
+          margin-bottom: 10px;
+          width: 172px;
+          text-align: center;
         }
       }
     }
-    .services-list-content > .tab-pane.active{
-      display: inline-block;
-      color: $black;
-      background: $white;
-      padding: 40px 24px;
-      ul {
-        li {
-          &.active {
-            a {
-              background-image: url("img/bg-gray.png");
-              color: $blue;
-            }
-          }
-          a {
-            padding: 15px 0px;
-            display: inline-block;
-            color: $white;
-            background: $blue;
-            text-transform: uppercase;
-            font-size: 17.89px;
-            font-family: "roboto_condensed_bold";
-            letter-spacing: 0.5px;
-            border-radius: 0;
-            box-shadow: 1px 2px 1px #ccc;
-            margin-bottom: 10px;
-            width: 172px;
-            text-align: center;
+    .tab-content {
+      .dot {
+        display: inline-block;
+        font-size: 80px;
+        line-height: 0;
+        width: 10px;
+        height: 24px;
+        margin-top: -12px;
+        margin-right: 10px;
+        vertical-align: top;
+      }
+      p {
+        display: inline-block;
+        width: 85%;
+        font-size: 17.89px;
+        font-family: $proxima_nova_light;
+        line-height: 25.56px;
+        letter-spacing: 0;
+        color: black;
+      }
+      .tab-pane.active {
+        ul {
+          li {
+            margin-bottom: 25px;
           }
         }
       }
-      .tab-content {
-        .dot {
-          display: inline-block;
-          font-size: 80px;
-          line-height: 0;
-          width: 10px;
-          height: 24px;
-          margin-top: -12px;
-          margin-right: 10px;
-          vertical-align: top;
-        }
-        p {
-          display: inline-block;
-          width: 85%;
-          font-size: 17.89px;
-          font-family: $proxima_nova_light;
-          line-height: 25.56px;
-          letter-spacing: 0;
-          color: black;
-        }
-        .tab-pane.active {
-          ul {
-            li {
-              margin-bottom: 25px;
+      .image-content {
+        .carousel-indicators {
+          bottom: 2px !important;
+          left: 77%;
+          li {
+            height: 16px;
+            width: 16px;
+            border-radius: 10px;
+            background: $blue;
+            border: none;
+            margin: 16px;
+            &.active {
+              background: $white;
             }
           }
         }
-        .image-content {
-          .carousel-indicators {
-            bottom: 2px !important;
-            left: 77%;
-            li {
-              height: 16px;
-              width: 16px;
-              border-radius: 10px;
-              background: $blue;
-              border: none;
-              margin: 16px;
-              &.active {
-                background: $white;
-              }
-            }
-          }
-          .carousel-caption {
-            left: 0;
-            width: 100%;
-            bottom: 0;
-            padding: 14px 0 24px 22px;
-            text-align: left;
-            font-size: 15.33px;
-            color: $white;
-            font-family: $roboto_condensed_bold;
-            background-color: rgba(0, 0, 0, 0.6);
-            span {
-              display: block;
-              font-family: $roboto_condensed_light;
-              margin-top: 2px;
-            }
+        .carousel-caption {
+          left: 0;
+          width: 100%;
+          bottom: 0;
+          padding: 14px 0 24px 22px;
+          text-align: left;
+          font-size: 15.33px;
+          color: $white;
+          font-family: $roboto_condensed_bold;
+          background-color: rgba(0, 0, 0, 0.6);
+          span {
+            display: block;
+            font-family: $roboto_condensed_light;
+            margin-top: 2px;
           }
         }
       }
