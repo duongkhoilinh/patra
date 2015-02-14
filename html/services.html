@@ -10,6 +10,7 @@
     script(src='js/respond.min.js')
     -->
     <!-- stylesheet-->
+    <link href="scss/flexslider.css" type="text/css" rel="stylesheet">
     <link href="scss/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="scss/style.css" type="text/css" rel="stylesheet">
   </head>
@@ -171,7 +172,7 @@
                     </li>
                   </ul>
                   <ul class="image-content col-md-7">
-                    <div id="service-one-slider" data-ride="carousel" class="carousel slide">
+                    <div id="service-one-slider" data-ride="carousel" data-interval="false" class="carousel slide">
                       <ol class="carousel-indicators">
                         <li data-target="#service-one-slider" data-slide-to="0" class="active"></li>
                         <li data-target="#service-one-slider" data-slide-to="1"></li>
@@ -256,21 +257,42 @@
                   <div class="image-content col-md-7"><img src="images/catering-landing.jpg"></div>
                 </div>
                 <div id="catering-one" class="tab-pane">
-                  <ul class="text-content col-md-5">
-                    <li>
+                  <ul class="text-content col-md-6">
+                    <li><span class="dot">.</span>
                       <h2 class="title">waldorf gas single pan deep fryer</h2>
                     </li>
                     <li><span class="dot">.</span>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+                      <p>600mm single pan gas fryer 31L oil capacity</p>
                     </li>
                     <li><span class="dot">.</span>
-                      <p>voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+                      <p>31kg/hr production rate 90MJ multi−jet target burner</p>
                     </li>
                     <li><span class="dot">.</span>
-                      <p>psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                      <p>Easy clean stainless steel open pan Available in Natural Gas & LPG</p>
+                    </li>
+                    <li><span class="dot">.</span>
+                      <p>Units supplied complete with gas type conversion kits</p>
+                    </li>
+                    <li><span class="dot">.</span>
+                      <p>Twin pan fryer flexibility Full single pan performance</p>
+                    </li>
+                    <li><span class="dot">.</span>
+                      <p>Patented infra−red burner sys</p>
+                    </li>
+                    <li><span class="dot">.</span>
+                      <p>Browse other brands for this product:</p>
                     </li>
                   </ul>
-                  <ul class="image-content col-md-7"></ul>
+                  <ul class="image-content col-md-6"><img src="images/catering-fryer.png"></ul>
+                  <div style="display: none" class="logo-slider col-md-12">
+                    <ul class="slides">
+                      <li><img src="images/slide-1.jpg"></li>
+                      <li><img src="images/slide-1.jpg"></li>
+                      <li><img src="images/slide-1.jpg"></li>
+                      <li><img src="images/slide-1.jpg"></li>
+                      <li><img src="images/slide-1.jpg"></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -288,8 +310,9 @@
       </div>
     </div>
     <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
     <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
   </body>
