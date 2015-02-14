@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: #ffffff; }
+  background-color: white; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: #ffffff;
+  color: white;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -310,7 +310,7 @@ select {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #ffffff; }
+  background: white; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -394,7 +394,7 @@ select {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666 \9;
+  background: #666666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -614,7 +614,7 @@ select {
   display: none; }
 /* line 27, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: #ffffff;
+  background-color: white;
   color: #171a1c; }
   /* line 30, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -662,7 +662,7 @@ select {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: #ffffff;
+      color: white;
       text-align: center; }
       /* line 76, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -670,7 +670,7 @@ select {
         display: block; }
         /* line 79, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: #ffffff;
+          background: white;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -752,7 +752,7 @@ select {
         color: #343434; }
       /* line 165, ../../jade/scss/_layout.scss */
       .page .header .enquire .box-enquire .select-style {
-        background: url(img/btn-dropdown.png) no-repeat 94% #fff;
+        background: url(img/btn-dropdown.png) no-repeat 94% white;
         display: inline-block;
         overflow: hidden;
         vertical-align: middle;
@@ -817,7 +817,7 @@ select {
     /* line 233, ../../jade/scss/_layout.scss */
     .page .header .enquire .btn {
       border-radius: 0;
-      background: #ffffff;
+      background: white;
       width: 150px;
       display: block;
       margin-bottom: 18px;
@@ -836,7 +836,7 @@ select {
       /* line 251, ../../jade/scss/_layout.scss */
       .page .header .enquire .btn.btn-submit {
         background: #1ca5d7;
-        color: #ffffff;
+        color: white;
         font-family: "roboto_condensed_bold";
         font-size: 18px;
         letter-spacing: 1px;
@@ -856,7 +856,7 @@ select {
   background-color: black; }
   /* line 274, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: #ffffff;
+    background-color: white;
     vertical-align: middle;
     margin-right: 40px; }
   /* line 279, ../../jade/scss/_layout.scss */
@@ -994,20 +994,31 @@ select {
         /* line 100, ../../jade/scss/_home.scss */
         .home-page .services .services-list li .name-list {
           padding: 70px 23px;
-          position: relative; }
-          /* line 103, ../../jade/scss/_home.scss */
+          position: relative;
+          min-height: 260px; }
+          /* line 104, ../../jade/scss/_home.scss */
           .home-page .services .services-list li .name-list li {
             display: block;
             width: 100%;
             font-family: "proxima_nova_light"; }
-            /* line 107, ../../jade/scss/_home.scss */
-            .home-page .services .services-list li .name-list li span {
+            /* line 109, ../../jade/scss/_home.scss */
+            .home-page .services .services-list li .name-list li:before {
+              content: '';
+              /* font-size: 20px; */
               display: inline-block;
-              width: 86%;
+              height: 5px;
+              width: 5px;
+              background: #fff;
+              border-radius: 50%;
+              margin-right: 4px;
+              position: relative;
+              top: -1px; }
+            /* line 121, ../../jade/scss/_home.scss */
+            .home-page .services .services-list li .name-list li span {
               line-height: 30px;
               vertical-align: middle;
               letter-spacing: 1px; }
-            /* line 114, ../../jade/scss/_home.scss */
+            /* line 126, ../../jade/scss/_home.scss */
             .home-page .services .services-list li .name-list li .dot {
               display: inline-block;
               font-size: 45px;
@@ -1016,7 +1027,7 @@ select {
               height: 24px;
               margin-top: -5px;
               margin-right: 4px; }
-          /* line 124, ../../jade/scss/_home.scss */
+          /* line 136, ../../jade/scss/_home.scss */
           .home-page .services .services-list li .name-list:before {
             position: absolute;
             content: "";
@@ -1026,54 +1037,54 @@ select {
             border-bottom: 11px solid #1ca5d7;
             left: 44%;
             top: -11px; }
-        /* line 135, ../../jade/scss/_home.scss */
+        /* line 147, ../../jade/scss/_home.scss */
         .home-page .services .services-list li:last-child {
           margin-right: 0; }
-  /* line 141, ../../jade/scss/_home.scss */
+  /* line 153, ../../jade/scss/_home.scss */
   .home-page .why-choose {
     background-image: url("img/bg-blue.png");
     margin-top: 336px;
     position: relative; }
-    /* line 145, ../../jade/scss/_home.scss */
+    /* line 157, ../../jade/scss/_home.scss */
     .home-page .why-choose .background-before {
       position: absolute;
       top: -280px;
       left: 0;
       width: 100%;
       height: 280px; }
-    /* line 152, ../../jade/scss/_home.scss */
+    /* line 164, ../../jade/scss/_home.scss */
     .home-page .why-choose .background-after {
       position: absolute;
       bottom: -143px;
       left: 0;
       width: 100%;
       height: 143px; }
-    /* line 159, ../../jade/scss/_home.scss */
+    /* line 171, ../../jade/scss/_home.scss */
     .home-page .why-choose h1.title {
       margin: 40px 0  62px 0;
       padding: 0 250px; }
-    /* line 164, ../../jade/scss/_home.scss */
+    /* line 176, ../../jade/scss/_home.scss */
     .home-page .why-choose ul li {
       border: 1px solid #bae4f3;
       padding: 40px 56px;
       margin-right: 5%;
       width: 30%; }
-      /* line 169, ../../jade/scss/_home.scss */
+      /* line 181, ../../jade/scss/_home.scss */
       .home-page .why-choose ul li:last-child {
         margin-right: 0; }
-      /* line 172, ../../jade/scss/_home.scss */
+      /* line 184, ../../jade/scss/_home.scss */
       .home-page .why-choose ul li h3.sub-title {
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 20px;
         font-family: "roboto_condensed_bold";
         text-shadow: 1px 0 4px rgba(0, 0, 0, 0.4); }
-      /* line 179, ../../jade/scss/_home.scss */
+      /* line 191, ../../jade/scss/_home.scss */
       .home-page .why-choose ul li p {
         font-size: 20px;
         text-align: justify;
         line-height: 25px; }
-    /* line 186, ../../jade/scss/_home.scss */
+    /* line 198, ../../jade/scss/_home.scss */
     .home-page .why-choose a.read-more {
       text-align: center;
       background: #171a1c;
@@ -1088,7 +1099,7 @@ select {
       font-family: "roboto_condensed_regular";
       word-spacing: 2px;
       letter-spacing: 0px; }
-      /* line 200, ../../jade/scss/_home.scss */
+      /* line 212, ../../jade/scss/_home.scss */
       .home-page .why-choose a.read-more:after {
         position: absolute;
         content: "";
@@ -1098,28 +1109,28 @@ select {
         border-bottom: 12px solid #171a1c;
         left: 0;
         top: -12px; }
-  /* line 212, ../../jade/scss/_home.scss */
+  /* line 224, ../../jade/scss/_home.scss */
   .home-page .testimonials {
     margin-bottom: 180px; }
-    /* line 214, ../../jade/scss/_home.scss */
+    /* line 226, ../../jade/scss/_home.scss */
     .home-page .testimonials h1.title {
       margin: 210px 0 58px 0; }
-    /* line 217, ../../jade/scss/_home.scss */
+    /* line 229, ../../jade/scss/_home.scss */
     .home-page .testimonials .bx-wrapper .bx-pager.bx-default-pager a {
       width: 16px;
       height: 16px;
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
       border-radius: 8px; }
-    /* line 224, ../../jade/scss/_home.scss */
+    /* line 236, ../../jade/scss/_home.scss */
     .home-page .testimonials ul {
       font-size: 16.26px;
       color: black; }
-      /* line 228, ../../jade/scss/_home.scss */
+      /* line 240, ../../jade/scss/_home.scss */
       .home-page .testimonials ul li > div {
         margin-bottom: 30px;
         display: table; }
-      /* line 232, ../../jade/scss/_home.scss */
+      /* line 244, ../../jade/scss/_home.scss */
       .home-page .testimonials ul li .logo-image {
         width: 220px;
         height: 220px;
@@ -1128,23 +1139,23 @@ select {
         vertical-align: middle;
         background-color: #fff;
         position: relative; }
-        /* line 240, ../../jade/scss/_home.scss */
+        /* line 252, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .logo-image img {
           width: auto;
           height: auto;
           margin: 0 auto; }
-        /* line 245, ../../jade/scss/_home.scss */
+        /* line 257, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .logo-image:after {
           position: absolute;
           content: "";
           width: 0px;
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
-          border-left: 10px solid #ffffff;
+          border-left: 10px solid white;
           right: -10px;
           top: 45%;
           z-index: 1; }
-      /* line 257, ../../jade/scss/_home.scss */
+      /* line 269, ../../jade/scss/_home.scss */
       .home-page .testimonials ul li .content {
         display: table-cell;
         width: 77%;
@@ -1152,51 +1163,51 @@ select {
         position: relative;
         vertical-align: top;
         padding: 0 70px; }
-        /* line 264, ../../jade/scss/_home.scss */
+        /* line 276, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .content i {
           zoom: 1.1;
           position: absolute;
           bottom: 84px;
           right: 78px; }
-          /* line 269, ../../jade/scss/_home.scss */
+          /* line 281, ../../jade/scss/_home.scss */
           .home-page .testimonials ul li .content i:first-child {
             top: 37px;
             left: 54px; }
-        /* line 274, ../../jade/scss/_home.scss */
+        /* line 286, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .content p {
           line-height: 24.39px;
           margin: 48px 0px 20px 0px;
           position: relative; }
-          /* line 278, ../../jade/scss/_home.scss */
+          /* line 290, ../../jade/scss/_home.scss */
           .home-page .testimonials ul li .content p:before {
             content: url("img/quoteopen.png");
             position: absolute;
             width: 0px;
             left: -10px;
             top: 0; }
-          /* line 285, ../../jade/scss/_home.scss */
+          /* line 297, ../../jade/scss/_home.scss */
           .home-page .testimonials ul li .content p:after {
             content: url("img/quoteclose.png");
             position: absolute;
             width: 0px;
             right: 40px;
             bottom: -4px; }
-        /* line 293, ../../jade/scss/_home.scss */
+        /* line 305, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .content h4.company {
           text-transform: uppercase;
           font-family: "proxima_nova_bold";
           margin-bottom: 4px; }
-        /* line 298, ../../jade/scss/_home.scss */
+        /* line 310, ../../jade/scss/_home.scss */
         .home-page .testimonials ul li .content span {
           font-family: "roboto_condensed_light"; }
-    /* line 304, ../../jade/scss/_home.scss */
+    /* line 316, ../../jade/scss/_home.scss */
     .home-page .testimonials .bx-pager {
       bottom: -40px; }
-    /* line 307, ../../jade/scss/_home.scss */
+    /* line 319, ../../jade/scss/_home.scss */
     .home-page .testimonials .bx-pager-item {
       margin: 0 10px; }
 
-/* line 312, ../../jade/scss/_home.scss */
+/* line 324, ../../jade/scss/_home.scss */
 .wrapper-main-bxslider {
   width: 1218px;
   margin: 0 auto; }
@@ -1260,7 +1271,7 @@ select {
 .services-page .services .services-list-content > .tab-pane.active {
   display: inline-block;
   color: #171a1c;
-  background: #ffffff;
+  background: white;
   padding: 40px 24px; }
   /* line 68, ../../jade/scss/_services.scss */
   .services-page .services .services-list-content > .tab-pane.active ul li.active a {
@@ -1270,7 +1281,7 @@ select {
   .services-page .services .services-list-content > .tab-pane.active ul li a {
     padding: 15px 0px;
     display: inline-block;
-    color: #ffffff;
+    color: white;
     background: #1ca5d7;
     text-transform: uppercase;
     font-size: 17.89px;
@@ -1317,7 +1328,7 @@ select {
       margin: 16px; }
       /* line 128, ../../jade/scss/_services.scss */
       .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
-        background: #ffffff; }
+        background: white; }
   /* line 133, ../../jade/scss/_services.scss */
   .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
     left: 0;
@@ -1326,7 +1337,7 @@ select {
     padding: 14px 0 24px 22px;
     text-align: left;
     font-size: 15.33px;
-    color: #ffffff;
+    color: white;
     font-family: "roboto_condensed_bold";
     background-color: rgba(0, 0, 0, 0.6); }
     /* line 143, ../../jade/scss/_services.scss */
@@ -1355,14 +1366,14 @@ select {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: #ffffff;
+    background-color: white;
     padding: 5px 0; }
     /* line 22, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 25, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: #ffffff;
+      background-color: white;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -1421,7 +1432,7 @@ select {
       /* line 83, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: #ffffff; }
+        color: white; }
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -1678,5 +1689,3 @@ select {
     /* line 354, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
       bottom: -20px; } }
-
-/*# sourceMappingURL=style.css.map */
