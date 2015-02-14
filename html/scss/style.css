@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: white; }
+  background-color: #ffffff; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: white;
+  color: #ffffff;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -209,6 +209,12 @@ select {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: "proxima_nova_regular";
+  src: url("fonts//ProximaNova-Regular.eot");
+  src: url("fonts//ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("fonts//ProximaNova-Regular.woff") format("woff"), url("fonts//ProximaNova-Regular.ttf") format("truetype"), url("fonts//ProximaNova-Regular.svg#proxima_nova_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: "roboto_condensed_regular";
   src: url("fonts//RobotoCondensed-Regular.eot");
   src: url("fonts//RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("fonts//RobotoCondensed-Regular.woff") format("woff"), url("fonts//RobotoCondensed-Regular.ttf") format("truetype"), url("fonts//RobotoCondensed-Regular.svg#roboto_condensed_regular") format("svg");
@@ -304,7 +310,7 @@ select {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: white; }
+  background: #ffffff; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -388,7 +394,7 @@ select {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666666 \9;
+  background: #666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -608,7 +614,7 @@ select {
   display: none; }
 /* line 27, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: white;
+  background-color: #ffffff;
   color: #171a1c; }
   /* line 30, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -623,9 +629,9 @@ select {
       position: absolute;
       background-image: url("../images/traingle.png");
       background-repeat: no-repeat;
-      height: 12px;
+      height: 14px;
       width: 100%;
-      bottom: -12px;
+      bottom: -14px;
       z-index: 9;
       background-size: 100%;
       left: 0; }
@@ -656,7 +662,7 @@ select {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: white;
+      color: #ffffff;
       text-align: center; }
       /* line 76, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -664,7 +670,7 @@ select {
         display: block; }
         /* line 79, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: white;
+          background: #ffffff;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -720,40 +726,163 @@ select {
       position: absolute;
       width: 100%;
       top: 100%;
-      left: 0;
-      background-image: url("img/bg-gray.png"); }
-/* line 146, ../../jade/scss/_layout.scss */
+      left: 7px;
+      background-image: url("img/bg-gray.png");
+      padding: 54px 118px; }
+      /* line 144, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire .title {
+        font-size: 32.52px;
+        font-family: "proxima_nova_extrabold";
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 1px; }
+      /* line 151, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire .box-left {
+        width: 26%; }
+      /* line 154, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire .box-center {
+        margin: 0 2%;
+        width: 44%; }
+      /* line 158, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire .form-control {
+        border-radius: 0;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-family: "proxima_nova_regular";
+        color: #343434; }
+      /* line 165, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire .select-style {
+        background: url(img/btn-dropdown.png) no-repeat 94% #fff;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        height: 30px;
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: 0; }
+        /* line 174, ../../jade/scss/_layout.scss */
+        .page .header .enquire .box-enquire .select-style:focus {
+          border-color: #66afe9;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+        /* line 180, ../../jade/scss/_layout.scss */
+        .page .header .enquire .box-enquire .select-style select {
+          height: 100%;
+          width: 100%;
+          background: transparent;
+          border-radius: 0;
+          background: transparent;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          padding: 5px 14px;
+          font-size: 16px;
+          font-family: "proxima_nova_regular";
+          color: #343434;
+          -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+          -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+          box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+      /* line 197, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire input {
+        height: 30px;
+        -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+        -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+        box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+      /* line 203, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire textarea {
+        height: 108px;
+        -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+        -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+        box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+      /* line 209, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire ::-webkit-input-placeholder {
+        font-size: 16px;
+        font-family: "proxima_nova_regular";
+        color: #343434; }
+      /* line 215, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire :-moz-placeholder {
+        font-size: 16px;
+        font-family: "proxima_nova_regular";
+        color: #343434; }
+      /* line 221, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire ::-moz-placeholder {
+        font-size: 16px;
+        font-family: "proxima_nova_regular";
+        color: #343434; }
+      /* line 227, ../../jade/scss/_layout.scss */
+      .page .header .enquire .box-enquire :-ms-input-placeholder {
+        font-size: 16px;
+        font-family: "proxima_nova_regular";
+        color: #343434; }
+    /* line 233, ../../jade/scss/_layout.scss */
+    .page .header .enquire .btn {
+      border-radius: 0;
+      background: #ffffff;
+      width: 150px;
+      display: block;
+      margin-bottom: 18px;
+      height: 40px;
+      -webkit-box-shadow: 0px 1px 4px 0px #8f8d8f;
+      -moz-box-shadow: 0px 1px 4px 0px #8f8d8f;
+      box-shadow: 0px 1px 4px 0px #8f8d8f;
+      border: 0.5px solid #dcdcdc;
+      text-transform: uppercase;
+      color: #343434;
+      font-family: "roboto_condensed_regular";
+      font-size: 16px; }
+      /* line 248, ../../jade/scss/_layout.scss */
+      .page .header .enquire .btn:focus {
+        outline: none; }
+      /* line 251, ../../jade/scss/_layout.scss */
+      .page .header .enquire .btn.btn-submit {
+        background: #1ca5d7;
+        color: #ffffff;
+        font-family: "roboto_condensed_bold";
+        font-size: 18px;
+        letter-spacing: 1px;
+        position: relative; }
+        /* line 258, ../../jade/scss/_layout.scss */
+        .page .header .enquire .btn.btn-submit:after {
+          position: absolute;
+          content: "";
+          width: 0px;
+          border-right: 75px solid transparent;
+          border-left: 75px solid transparent;
+          border-top: 12px solid #1ca5d7;
+          left: 0;
+          bottom: -12px; }
+/* line 272, ../../jade/scss/_layout.scss */
 .page .footer {
   background-color: black; }
-  /* line 148, ../../jade/scss/_layout.scss */
+  /* line 274, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: white;
+    background-color: #ffffff;
     vertical-align: middle;
     margin-right: 40px; }
-  /* line 153, ../../jade/scss/_layout.scss */
+  /* line 279, ../../jade/scss/_layout.scss */
   .page .footer ul {
     position: relative;
     font-family: "roboto_condensed_bold";
     font-size: 16.26px; }
-    /* line 157, ../../jade/scss/_layout.scss */
+    /* line 283, ../../jade/scss/_layout.scss */
     .page .footer ul li {
       text-align: center;
       padding: 24px 0 36px 0;
       vertical-align: top; }
-      /* line 161, ../../jade/scss/_layout.scss */
+      /* line 287, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(1) {
         position: absolute;
         left: 0;
         top: -9px; }
-      /* line 166, ../../jade/scss/_layout.scss */
+      /* line 292, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(3) {
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 172, ../../jade/scss/_layout.scss */
+      /* line 298, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(2) span:last-child {
         margin-left: 6px; }
-/* line 179, ../../jade/scss/_layout.scss */
+/* line 305, ../../jade/scss/_layout.scss */
 .page h1.title {
   text-transform: uppercase;
   font-family: "proxima_nova_extrabold";
@@ -1011,7 +1140,7 @@ select {
           width: 0px;
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
-          border-left: 10px solid white;
+          border-left: 10px solid #ffffff;
           right: -10px;
           top: 45%;
           z-index: 1; }
@@ -1072,6 +1201,140 @@ select {
   width: 1218px;
   margin: 0 auto; }
 
+/* line 3, ../../jade/scss/_services.scss */
+.services-page .services h1.title {
+  margin: 55px 0 57px 0; }
+/* line 6, ../../jade/scss/_services.scss */
+.services-page .services .services-list {
+  margin-bottom: 60px; }
+  /* line 8, ../../jade/scss/_services.scss */
+  .services-page .services .services-list li {
+    background: #1ca5d7;
+    display: inline-block;
+    width: 18%;
+    margin-right: 20px;
+    vertical-align: top;
+    border: 0;
+    margin-left: 0;
+    position: relative; }
+    /* line 18, ../../jade/scss/_services.scss */
+    .services-page .services .services-list li.active .traingle {
+      position: absolute;
+      background-image: url("../images/traingle-gray.png");
+      background-repeat: no-repeat;
+      height: 20px;
+      width: 100%;
+      bottom: -20px;
+      z-index: 9;
+      background-size: 100%;
+      left: 0; }
+    /* line 29, ../../jade/scss/_services.scss */
+    .services-page .services .services-list li.active a {
+      background-image: url(img/bg-gray.png);
+      color: #1ca5d7; }
+    /* line 34, ../../jade/scss/_services.scss */
+    .services-page .services .services-list li a {
+      padding: 0;
+      border-radius: 0; }
+      /* line 37, ../../jade/scss/_services.scss */
+      .services-page .services .services-list li a:hover {
+        background-image: url(img/bg-gray.png);
+        color: #1ca5d7; }
+    /* line 42, ../../jade/scss/_services.scss */
+    .services-page .services .services-list li:last-child {
+      margin-right: 0; }
+  /* line 46, ../../jade/scss/_services.scss */
+  .services-page .services .services-list h4.sub-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "roboto_condensed_bold";
+    height: 64px;
+    display: table;
+    width: 100%;
+    position: relative; }
+    /* line 54, ../../jade/scss/_services.scss */
+    .services-page .services .services-list h4.sub-title span {
+      display: table-cell;
+      vertical-align: middle; }
+/* line 60, ../../jade/scss/_services.scss */
+.services-page .services .services-list-content > .tab-pane.active {
+  display: inline-block;
+  color: #171a1c;
+  background: #ffffff;
+  padding: 40px 24px; }
+  /* line 68, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active ul li.active a {
+    background-image: url("img/bg-gray.png");
+    color: #1ca5d7; }
+  /* line 73, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active ul li a {
+    padding: 15px 0px;
+    display: inline-block;
+    color: #ffffff;
+    background: #1ca5d7;
+    text-transform: uppercase;
+    font-size: 17.89px;
+    font-family: "roboto_condensed_bold";
+    letter-spacing: 0.5px;
+    border-radius: 0;
+    box-shadow: 1px 2px 1px #ccc;
+    margin-bottom: 10px;
+    width: 172px;
+    text-align: center; }
+  /* line 91, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active .tab-content .dot {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 0;
+    width: 10px;
+    height: 24px;
+    margin-top: -12px;
+    margin-right: 10px;
+    vertical-align: top; }
+  /* line 101, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active .tab-content p {
+    display: inline-block;
+    width: 85%;
+    font-size: 17.89px;
+    font-family: "proxima_nova_light";
+    line-height: 25.56px;
+    letter-spacing: 0;
+    color: black; }
+  /* line 112, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active .tab-content .tab-pane.active ul li {
+    margin-bottom: 25px; }
+  /* line 118, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators {
+    bottom: 2px !important;
+    left: 77%; }
+    /* line 121, ../../jade/scss/_services.scss */
+    .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li {
+      height: 16px;
+      width: 16px;
+      border-radius: 10px;
+      background: #1ca5d7;
+      border: none;
+      margin: 16px; }
+      /* line 128, ../../jade/scss/_services.scss */
+      .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
+        background: #ffffff; }
+  /* line 133, ../../jade/scss/_services.scss */
+  .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 14px 0 24px 22px;
+    text-align: left;
+    font-size: 15.33px;
+    color: #ffffff;
+    font-family: "roboto_condensed_bold";
+    background-color: rgba(0, 0, 0, 0.6); }
+    /* line 143, ../../jade/scss/_services.scss */
+    .services-page .services .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption span {
+      display: block;
+      font-family: "roboto_condensed_light";
+      margin-top: 2px; }
+
 @media only screen and (max-width: 1217px) {
   /* line 2, ../../jade/scss/_responsive.scss */
   body {
@@ -1092,14 +1355,14 @@ select {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: white;
+    background-color: #ffffff;
     padding: 5px 0; }
     /* line 22, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 25, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: white;
+      background-color: #ffffff;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -1158,7 +1421,7 @@ select {
       /* line 83, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: white; }
+        color: #ffffff; }
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -1415,3 +1678,5 @@ select {
     /* line 354, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
       bottom: -20px; } }
+
+/*# sourceMappingURL=style.css.map */

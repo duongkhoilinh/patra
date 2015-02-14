@@ -1,8 +1,12 @@
 $(document).ready(function () {
   var count = 0;
   $('.main-bxslider').bxSlider();
+
   $('.testimonials-bxSlider').bxSlider();
+
+
   $('#menu').slicknav({prependTo: '#main-menu'});
+
   $(window).resize(function () {
     if ($(this).width() > 1199) {
       $(".logo").css({"top": "0"});
@@ -14,8 +18,8 @@ $(document).ready(function () {
         $(".logo").css({"top": "-54px"});
       }
     }
-
   });
+
   $(".slicknav_btn").click(function () {
     count++;
     if (count % 2 != 0) {

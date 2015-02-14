@@ -22,6 +22,10 @@
 }
 
 @font-face {
+  @include fontFace($proxima_nova_regular, 'ProximaNova-Regular');
+}
+
+@font-face {
   @include fontFace($roboto_condensed_regular, 'RobotoCondensed-Regular');
 }
 

@@ -14,9 +14,9 @@ block main
               span 4/450 West Botany Street, Rockdale NSW, 2216
             ul.menu
               li
-                a(href="") about
+                a(href="about.html") about
               li.service-hover
-                a(href="") services
+                a(href="services.html") services
                 ul.sub-menu
                   li: a.scroll(href="stainless-steel-fabrication.html") stainless steel fabrication
                   li: a.scroll(href="refrigeration.html") refrigeration
@@ -31,31 +31,43 @@ block main
             .btn-enquire
               i.iconsp-35-enquire
               span enquire
-            .box-enquire.row
+            form.box-enquire.row
               .box-left.col-md-3
                 .title get in touch
                 p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              .box-center.col-md-6
-                  .form-group.row
-                    .col-md-6
-                      input.form-control(type="text" id="usr")
-                    .col-md-6
-                      input.form-control(type="text" id="usr")
-                  .form-group.row
-                    .col-md-3
-                      input.form-control(type="text" id="usr")
-                    .col-md-3
-                      input.form-control(type="text" id="usr")
-                  .form-group
-                      input.form-control(type="text" id="usr")
-
+              .box-center.col-md-5
+                .form-group.row
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Name")
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Phone")
+                .form-group.row
+                  .col-md-6
+                    input.form-control(type="text" id="usr" placeholder="Email")
+                  .col-md-6
+                    .select-style
+                      select.size
+                        option Enquire Type
+                        option General Enquiry
+                        option Quote
+                        option Carrers
+                        option Other
+                .form-group
+                    input.form-control(type="text" id="usr" placeholder="Site Address")
+                .form-group
+                    input.form-control(type="text" id="usr" placeholder="Company Name")
+                .form-group
+                  textarea.form-control(type="text" id="usr" placeholder="Enquiry")
               .box-right.col-md-3
+                button.btn.btn-cancel(type="button") cancel
+                button.btn.btn-upload(type="button") upload files
+                button.btn.btn-submit(type="button") submit
       #header-mobile.header
         ul#menu.menu
           li
             a.scroll(href="about.html") about
           li
-            a.scroll(href="") services
+            a.scroll(href="services.html") services
             ul
               li: a.scroll(href="") stainless steel fabrication
               li: a.scroll(href="") refrigeration
@@ -287,18 +299,6 @@ block main
             span All rights reserved.
           li
             span Designed by Openseed
-    //button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
-    //#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-    //  .modal-dialog
-    //    .modal-content
-    //      .modal-header
-    //        button.close(type='button', data-dismiss='modal', aria-label='Close')
-    //          span(aria-hidden='true') &times;
-    //        h4#myModalLabel.modal-title Modal title
-    //      .modal-body
-    //      .modal-footer
-    //        button.btn.btn-default(type='button', data-dismiss='modal') Close
-    //        button.btn.btn-primary(type='button') Save changes
 
 
 
