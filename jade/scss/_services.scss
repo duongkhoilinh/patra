@@ -3,6 +3,72 @@
   h1.title {
     margin: 55px 0 57px 0;
   }
+  .content-pane {
+    font-size: 17.89px;
+    line-height: 25.26px;
+    h1 {
+      font-size: 25.26px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-family: "roboto_condensed_bold";
+      line-height: 30px;
+    }
+    .slide-logo {
+      .slick-slide {
+        width: 130px !important;
+      }
+      img {
+        width: auto;
+        height: 40px;
+        margin: 0 auto;
+      }
+      button {
+        position: absolute;
+        top: 5px;
+        border: none;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background: url('img/icon-sprite.png') no-repeat;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+      .slick-prev {
+        background-position: 0 -115px;
+        left: -15px;
+      }
+      .slick-next {
+        background-position: -20px -115px;
+        right: -15px;
+      }
+    }
+    .img_thumnail
+     {
+      width: 370px;
+      float: right;
+      margin-left: 35px;
+    }
+    ul {
+      list-style: inherit;
+      li {
+        margin-bottom: 25px;
+      }
+    }
+    .image-content {
+      list-style: none;
+      float: right;
+      width: 371px;
+      margin-left: 35px;
+    }
+    .title-brand-product {
+      font-size: 14.06px;
+      color: #9c9c9c;
+      margin: 44px 0 21px 0;
+      font-style: italic;
+    }
+  }
   .services-list {
     margin-bottom: 60px;
     li {
@@ -61,7 +127,7 @@
     display: inline-block;
     color: $black;
     background: $white;
-    padding: 40px 24px;
+    padding: 40px 40px 40px 24px;
     width: 100%;
     ul {
       li {
@@ -108,13 +174,7 @@
         letter-spacing: 0;
         color: black;
       }
-      .tab-pane.active {
-        ul {
-          li {
-            margin-bottom: 25px;
-          }
-        }
-      }
+
       .image-content {
         text-align: center;
         .carousel-indicators {
@@ -153,40 +213,6 @@
   }
   .services-list-content #catering-equipment {
     .tab-pane.active {
-      .text-content {
-        li {
-          margin-bottom: 0;
-          &:first-child {
-            margin-bottom: 22px;
-            .dot {
-              opacity: 0;
-            }
-          }
-          &:last-child {
-            margin-top: 32px;
-            margin-bottom: 6px;
-            .dot {
-              opacity: 0;
-            }
-            p {
-              font-family: $proxima_nova_light;
-              font-size: 14.06px;
-              color: #9c9c9c;
-              font-style: italic;
-            }
-          }
-        }
-        h2.title {
-          font-family: $roboto_condensed_bold;
-          font-size: 25.56px;
-          color: black;
-          text-transform: uppercase;
-          display: inline-block;
-          width: 90%;
-          letter-spacing: 0.5px;
-          line-height: 32px;
-        }
-      }
       &#catering-one {
         .image-content img {
           width: auto;
@@ -194,37 +220,7 @@
           top: 115px;
         }
       }
-      .slide-logo {
-        .slick-slide {
-          width: 130px !important;
-        }
-        img {
-          width: auto;
-          height: auto;
-          margin: 0 auto;
-        }
-        button {
-          position: absolute;
-          top: 5px;
-          border: none;
-          display: inline-block;
-          height: 20px;
-          width: 20px;
-          background: url('img/icon-sprite.png') no-repeat;
-          &:active,
-          &:focus {
-            outline: none;
-          }
-        }
-        .slick-prev {
-          background-position: 0 -115px;
-          left: -15px;
-        }
-        .slick-next {
-          background-position: -20px -115px;
-          right: -15px;
-        }
-      }
+
     }
   }
 }
