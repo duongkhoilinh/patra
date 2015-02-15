@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: white; }
+  background-color: #ffffff; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: white;
+  color: #ffffff;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -314,7 +314,7 @@ select {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: white; }
+  background: #ffffff; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -398,7 +398,7 @@ select {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666666 \9;
+  background: #666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -618,7 +618,7 @@ select {
   display: none; }
 /* line 27, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: white;
+  background-color: #ffffff;
   color: #171a1c; }
   /* line 30, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -666,7 +666,7 @@ select {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: white;
+      color: #ffffff;
       text-align: center; }
       /* line 76, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -674,7 +674,7 @@ select {
         display: block; }
         /* line 79, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: white;
+          background: #ffffff;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -756,7 +756,7 @@ select {
         color: #343434; }
       /* line 165, ../../jade/scss/_layout.scss */
       .page .header .enquire .box-enquire .select-style {
-        background: url(img/btn-dropdown.png) no-repeat 94% white;
+        background: url(img/btn-dropdown.png) no-repeat 94% #fff;
         display: inline-block;
         overflow: hidden;
         vertical-align: middle;
@@ -821,7 +821,7 @@ select {
     /* line 233, ../../jade/scss/_layout.scss */
     .page .header .enquire .btn {
       border-radius: 0;
-      background: white;
+      background: #ffffff;
       width: 150px;
       display: block;
       margin-bottom: 18px;
@@ -840,7 +840,7 @@ select {
       /* line 251, ../../jade/scss/_layout.scss */
       .page .header .enquire .btn.btn-submit {
         background: #1ca5d7;
-        color: white;
+        color: #ffffff;
         font-family: "roboto_condensed_bold";
         font-size: 18px;
         letter-spacing: 1px;
@@ -860,7 +860,7 @@ select {
   background-color: black; }
   /* line 274, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: white;
+    background-color: #ffffff;
     vertical-align: middle;
     margin-right: 40px; }
   /* line 279, ../../jade/scss/_layout.scss */
@@ -1155,7 +1155,7 @@ select {
           width: 0px;
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
-          border-left: 10px solid white;
+          border-left: 10px solid #ffffff;
           right: -10px;
           top: 45%;
           z-index: 1; }
@@ -1275,7 +1275,7 @@ select {
 .services-page .services-list-content > .tab-pane.active {
   display: inline-block;
   color: #171a1c;
-  background: white;
+  background: #ffffff;
   padding: 40px 24px;
   width: 100%; }
   /* line 69, ../../jade/scss/_services.scss */
@@ -1286,7 +1286,7 @@ select {
   .services-page .services-list-content > .tab-pane.active ul li a {
     padding: 15px 0px;
     display: inline-block;
-    color: white;
+    color: #ffffff;
     background: #1ca5d7;
     text-transform: uppercase;
     font-size: 17.89px;
@@ -1336,7 +1336,7 @@ select {
         margin: 16px; }
         /* line 130, ../../jade/scss/_services.scss */
         .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
-          background: white; }
+          background: #ffffff; }
     /* line 135, ../../jade/scss/_services.scss */
     .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
       left: 0;
@@ -1345,7 +1345,7 @@ select {
       padding: 14px 0 24px 22px;
       text-align: left;
       font-size: 15.33px;
-      color: white;
+      color: #ffffff;
       font-family: "roboto_condensed_bold";
       background-color: rgba(0, 0, 0, 0.6); }
       /* line 145, ../../jade/scss/_services.scss */
@@ -1364,17 +1364,18 @@ select {
       opacity: 0; }
   /* line 165, ../../jade/scss/_services.scss */
   .services-page .services-list-content #catering-equipment .tab-pane.active .text-content li:last-child {
-    margin-top: 32px; }
-    /* line 167, ../../jade/scss/_services.scss */
+    margin-top: 32px;
+    margin-bottom: 6px; }
+    /* line 168, ../../jade/scss/_services.scss */
     .services-page .services-list-content #catering-equipment .tab-pane.active .text-content li:last-child .dot {
       opacity: 0; }
-    /* line 170, ../../jade/scss/_services.scss */
+    /* line 171, ../../jade/scss/_services.scss */
     .services-page .services-list-content #catering-equipment .tab-pane.active .text-content li:last-child p {
       font-family: "proxima_nova_light";
       font-size: 14.06px;
       color: #9c9c9c;
       font-style: italic; }
-/* line 178, ../../jade/scss/_services.scss */
+/* line 179, ../../jade/scss/_services.scss */
 .services-page .services-list-content #catering-equipment .tab-pane.active .text-content h2.title {
   font-family: "roboto_condensed_bold";
   font-size: 25.56px;
@@ -1384,39 +1385,39 @@ select {
   width: 90%;
   letter-spacing: 0.5px;
   line-height: 32px; }
-/* line 190, ../../jade/scss/_services.scss */
+/* line 191, ../../jade/scss/_services.scss */
 .services-page .services-list-content #catering-equipment .tab-pane.active#catering-one .image-content img {
   width: auto;
   position: relative;
   top: 115px; }
-
-/* line 199, ../../jade/scss/_services.scss */
-.carousel-inner .active.left {
-  left: -33%; }
-
-/* line 200, ../../jade/scss/_services.scss */
-.carousel-inner .active.right {
-  left: 33%; }
-
+/* line 198, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo .slick-slide {
+  width: 130px !important; }
 /* line 201, ../../jade/scss/_services.scss */
-.carousel-inner .next {
-  left: 33%; }
-
-/* line 202, ../../jade/scss/_services.scss */
-.carousel-inner .prev {
-  left: -33%; }
-
-/* line 203, ../../jade/scss/_services.scss */
-.carousel-control.left {
-  background-image: none; }
-
-/* line 204, ../../jade/scss/_services.scss */
-.carousel-control.right {
-  background-image: none; }
-
-/* line 205, ../../jade/scss/_services.scss */
-.carousel-inner .item {
-  background: white; }
+.services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo img {
+  width: auto;
+  height: auto;
+  margin: 0 auto; }
+/* line 206, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo button {
+  position: absolute;
+  top: 5px;
+  border: none;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("img/icon-sprite.png") no-repeat; }
+  /* line 214, ../../jade/scss/_services.scss */
+  .services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo button:active, .services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo button:focus {
+    outline: none; }
+/* line 219, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo .slick-prev {
+  background-position: 0 -115px;
+  left: -15px; }
+/* line 223, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .slide-logo .slick-next {
+  background-position: -20px -115px;
+  right: -15px; }
 
 @media only screen and (max-width: 1217px) {
   /* line 2, ../../jade/scss/_responsive.scss */
@@ -1438,14 +1439,14 @@ select {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: white;
+    background-color: #ffffff;
     padding: 5px 0; }
     /* line 22, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 25, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: white;
+      background-color: #ffffff;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -1504,7 +1505,7 @@ select {
       /* line 83, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: white; }
+        color: #ffffff; }
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -1761,3 +1762,5 @@ select {
     /* line 354, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
       bottom: -20px; } }
+
+/*# sourceMappingURL=style.css.map */

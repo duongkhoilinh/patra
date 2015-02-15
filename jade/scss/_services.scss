@@ -164,6 +164,7 @@
           }
           &:last-child {
             margin-top: 32px;
+            margin-bottom: 6px;
             .dot {
               opacity: 0;
             }
@@ -193,13 +194,37 @@
           top: 115px;
         }
       }
+      .slide-logo {
+        .slick-slide {
+          width: 130px !important;
+        }
+        img {
+          width: auto;
+          height: auto;
+          margin: 0 auto;
+        }
+        button {
+          position: absolute;
+          top: 5px;
+          border: none;
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          background: url('img/icon-sprite.png') no-repeat;
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+        .slick-prev {
+          background-position: 0 -115px;
+          left: -15px;
+        }
+        .slick-next {
+          background-position: -20px -115px;
+          right: -15px;
+        }
+      }
     }
   }
 }
-.carousel-inner .active.left  { left: -33%;             }
-.carousel-inner .active.right { left: 33%;              }
-.carousel-inner .next         { left: 33%               }
-.carousel-inner .prev         { left: -33%              }
-.carousel-control.left        { background-image: none; }
-.carousel-control.right       { background-image: none; }
-.carousel-inner .item         { background: white;      }
