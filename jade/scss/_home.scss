@@ -105,6 +105,9 @@
             display: block;
             width: 100%;
             font-family: $proxima_nova_light;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             &:before {
               content: '';
