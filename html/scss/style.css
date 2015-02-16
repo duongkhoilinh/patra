@@ -707,29 +707,175 @@ select {
     padding: 0 38px;
     background-color: #232426; }
 
-/* line 17, ../../jade/scss/_layout.scss */
+/* line 16, ../../jade/scss/_layout.scss */
+.box-enquire {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 117px;
+  left: 0;
+  background-image: url("img/bg-gray.png");
+  padding: 54px 0 0 0;
+  z-index: 10; }
+  /* line 25, ../../jade/scss/_layout.scss */
+  .box-enquire .bg-contac-form {
+    position: absolute;
+    width: 100%; }
+  /* line 29, ../../jade/scss/_layout.scss */
+  .box-enquire .title {
+    font-size: 32.52px;
+    font-family: "proxima_nova_extrabold";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #1ca5d7; }
+  /* line 37, ../../jade/scss/_layout.scss */
+  .box-enquire .content {
+    color: #000;
+    font-size: 20px;
+    line-height: 30.49px;
+    margin-top: 20px;
+    font-family: "roboto_condensed_regular"; }
+  /* line 44, ../../jade/scss/_layout.scss */
+  .box-enquire .btn {
+    border-radius: 0;
+    background: white;
+    width: 150px;
+    display: block;
+    margin-bottom: 18px;
+    height: 40px;
+    -webkit-box-shadow: 0px 1px 4px 0px #8f8d8f;
+    -moz-box-shadow: 0px 1px 4px 0px #8f8d8f;
+    box-shadow: 0px 1px 4px 0px #8f8d8f;
+    border: 0.5px solid #dcdcdc;
+    text-transform: uppercase;
+    color: #343434;
+    font-family: "roboto_condensed_regular";
+    font-size: 16px; }
+    /* line 59, ../../jade/scss/_layout.scss */
+    .box-enquire .btn:focus {
+      outline: none; }
+    /* line 62, ../../jade/scss/_layout.scss */
+    .box-enquire .btn.btn-submit {
+      background: #1ca5d7;
+      color: white;
+      font-family: "roboto_condensed_bold";
+      font-size: 18px;
+      letter-spacing: 1px;
+      position: relative; }
+      /* line 69, ../../jade/scss/_layout.scss */
+      .box-enquire .btn.btn-submit:after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        border-right: 75px solid transparent;
+        border-left: 75px solid transparent;
+        border-top: 12px solid #1ca5d7;
+        left: 0;
+        bottom: -12px; }
+  /* line 81, ../../jade/scss/_layout.scss */
+  .box-enquire .box-left {
+    width: 26%; }
+  /* line 84, ../../jade/scss/_layout.scss */
+  .box-enquire .box-center {
+    margin: 0 2%;
+    width: 44%; }
+  /* line 88, ../../jade/scss/_layout.scss */
+  .box-enquire .form-control {
+    border-radius: 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-family: "proxima_nova_regular";
+    color: #343434; }
+  /* line 95, ../../jade/scss/_layout.scss */
+  .box-enquire .select-style {
+    background: url(img/btn-dropdown.png) no-repeat 94% white;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 0; }
+    /* line 104, ../../jade/scss/_layout.scss */
+    .box-enquire .select-style:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+    /* line 110, ../../jade/scss/_layout.scss */
+    .box-enquire .select-style select {
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      border-radius: 0;
+      background: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 5px 14px;
+      font-size: 16px;
+      font-family: "proxima_nova_regular";
+      color: #343434;
+      -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+      -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+      box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+  /* line 127, ../../jade/scss/_layout.scss */
+  .box-enquire input {
+    height: 30px;
+    -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+    -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+    box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+  /* line 133, ../../jade/scss/_layout.scss */
+  .box-enquire textarea {
+    height: 108px;
+    -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+    -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
+    box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
+  /* line 139, ../../jade/scss/_layout.scss */
+  .box-enquire ::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: "proxima_nova_regular";
+    color: #343434; }
+  /* line 145, ../../jade/scss/_layout.scss */
+  .box-enquire :-moz-placeholder {
+    font-size: 16px;
+    font-family: "proxima_nova_regular";
+    color: #343434; }
+  /* line 151, ../../jade/scss/_layout.scss */
+  .box-enquire ::-moz-placeholder {
+    font-size: 16px;
+    font-family: "proxima_nova_regular";
+    color: #343434; }
+  /* line 157, ../../jade/scss/_layout.scss */
+  .box-enquire :-ms-input-placeholder {
+    font-size: 16px;
+    font-family: "proxima_nova_regular";
+    color: #343434; }
+
+/* line 165, ../../jade/scss/_layout.scss */
 .page .bx-wrapper .bx-pager.bx-default-pager a {
   width: 16px;
   height: 16px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px; }
-/* line 24, ../../jade/scss/_layout.scss */
+/* line 172, ../../jade/scss/_layout.scss */
 .page #header-mobile {
   display: none; }
-/* line 27, ../../jade/scss/_layout.scss */
+/* line 175, ../../jade/scss/_layout.scss */
 .page .header {
   background-color: white;
   color: #171a1c; }
-  /* line 30, ../../jade/scss/_layout.scss */
+  /* line 178, ../../jade/scss/_layout.scss */
   .page .header .logo {
     background-image: url("img/bg-blue.png");
     padding: 20px 14px 14px 14px;
     width: 188px;
     display: inline-block;
     vertical-align: middle;
-    position: relative; }
-    /* line 37, ../../jade/scss/_layout.scss */
+    position: relative;
+    z-index: 20; }
+    /* line 186, ../../jade/scss/_layout.scss */
     .page .header .logo .logo-traingle {
       position: absolute;
       background-image: url("../images/traingle.png");
@@ -740,23 +886,23 @@ select {
       z-index: 9;
       background-size: 100%;
       left: 0; }
-  /* line 49, ../../jade/scss/_layout.scss */
+  /* line 198, ../../jade/scss/_layout.scss */
   .page .header .menu {
     margin-top: 15px;
     font-family: "proxima_nova_extrabold";
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: -2px; }
-    /* line 55, ../../jade/scss/_layout.scss */
+    /* line 204, ../../jade/scss/_layout.scss */
     .page .header .menu li {
       display: inline-block;
       padding: 0 38px 20px 38px;
       position: relative;
       cursor: pointer; }
-      /* line 60, ../../jade/scss/_layout.scss */
+      /* line 209, ../../jade/scss/_layout.scss */
       .page .header .menu li a:hover {
         color: #1ca5d7; }
-    /* line 64, ../../jade/scss/_layout.scss */
+    /* line 213, ../../jade/scss/_layout.scss */
     .page .header .menu .sub-menu {
       display: none;
       position: absolute;
@@ -769,232 +915,93 @@ select {
       background: #1ca5d7;
       color: white;
       text-align: center; }
-      /* line 76, ../../jade/scss/_layout.scss */
+      /* line 225, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
         padding: 18px 0;
         display: block; }
-        /* line 79, ../../jade/scss/_layout.scss */
+        /* line 228, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
           background: white;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
-        /* line 85, ../../jade/scss/_layout.scss */
+        /* line 234, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover a {
           color: #171a1c; }
-        /* line 88, ../../jade/scss/_layout.scss */
+        /* line 237, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:nth-child(1) {
           padding-top: 34px; }
-    /* line 93, ../../jade/scss/_layout.scss */
+    /* line 242, ../../jade/scss/_layout.scss */
     .page .header .menu .service-hover:hover .sub-menu {
       display: block;
       visibility: visible;
       opacity: 1; }
-  /* line 99, ../../jade/scss/_layout.scss */
+  /* line 248, ../../jade/scss/_layout.scss */
   .page .header .navbar {
     display: inline-block;
     width: 70%;
     vertical-align: middle;
     padding-top: 16px;
     margin: 0; }
-    /* line 105, ../../jade/scss/_layout.scss */
+    /* line 254, ../../jade/scss/_layout.scss */
     .page .header .navbar .info {
       font-family: "roboto_condensed_light";
       font-size: 15px; }
-      /* line 109, ../../jade/scss/_layout.scss */
+      /* line 258, ../../jade/scss/_layout.scss */
       .page .header .navbar .info span:first-child {
         padding-left: 38px; }
-      /* line 112, ../../jade/scss/_layout.scss */
+      /* line 261, ../../jade/scss/_layout.scss */
       .page .header .navbar .info span:nth-child(2) {
         padding-left: 58px; }
-      /* line 115, ../../jade/scss/_layout.scss */
+      /* line 264, ../../jade/scss/_layout.scss */
       .page .header .navbar .info span:last-child {
         padding-left: 22px; }
-  /* line 122, ../../jade/scss/_layout.scss */
+  /* line 271, ../../jade/scss/_layout.scss */
   .page .header .enquire {
     display: inline-block;
     color: #1ca5d7;
     vertical-align: top;
     text-align: center; }
-    /* line 127, ../../jade/scss/_layout.scss */
+    /* line 276, ../../jade/scss/_layout.scss */
     .page .header .enquire .btn-enquire {
       cursor: pointer;
       margin-top: 11px; }
-      /* line 130, ../../jade/scss/_layout.scss */
+      /* line 279, ../../jade/scss/_layout.scss */
       .page .header .enquire .btn-enquire span {
         display: block;
         text-transform: uppercase;
         font-family: "proxima_nova_extrabold"; }
-    /* line 136, ../../jade/scss/_layout.scss */
-    .page .header .enquire .box-enquire {
-      display: none;
-      position: absolute;
-      width: 100%;
-      top: 100%;
-      left: 7px;
-      background-image: url("img/bg-gray.png");
-      padding: 54px 118px; }
-      /* line 144, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire .title {
-        font-size: 32.52px;
-        font-family: "proxima_nova_extrabold";
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        word-spacing: 1px; }
-      /* line 151, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire .box-left {
-        width: 26%; }
-      /* line 154, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire .box-center {
-        margin: 0 2%;
-        width: 44%; }
-      /* line 158, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire .form-control {
-        border-radius: 0;
-        padding: 5px 20px;
-        font-size: 16px;
-        font-family: "proxima_nova_regular";
-        color: #343434; }
-      /* line 165, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire .select-style {
-        background: url(img/btn-dropdown.png) no-repeat 94% white;
-        display: inline-block;
-        overflow: hidden;
-        vertical-align: middle;
-        height: 30px;
-        width: 100%;
-        border: 1px solid #ccc;
-        outline: 0; }
-        /* line 174, ../../jade/scss/_layout.scss */
-        .page .header .enquire .box-enquire .select-style:focus {
-          border-color: #66afe9;
-          outline: 0;
-          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-        /* line 180, ../../jade/scss/_layout.scss */
-        .page .header .enquire .box-enquire .select-style select {
-          height: 100%;
-          width: 100%;
-          background: transparent;
-          border-radius: 0;
-          background: transparent;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          padding: 5px 14px;
-          font-size: 16px;
-          font-family: "proxima_nova_regular";
-          color: #343434;
-          -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-          -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-          box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
-      /* line 197, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire input {
-        height: 30px;
-        -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-        -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-        box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
-      /* line 203, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire textarea {
-        height: 108px;
-        -webkit-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-        -moz-box-shadow: inset 0px 2px 5px -2px #a8a5a8;
-        box-shadow: inset 0px 2px 5px -2px #a8a5a8; }
-      /* line 209, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire ::-webkit-input-placeholder {
-        font-size: 16px;
-        font-family: "proxima_nova_regular";
-        color: #343434; }
-      /* line 215, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire :-moz-placeholder {
-        font-size: 16px;
-        font-family: "proxima_nova_regular";
-        color: #343434; }
-      /* line 221, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire ::-moz-placeholder {
-        font-size: 16px;
-        font-family: "proxima_nova_regular";
-        color: #343434; }
-      /* line 227, ../../jade/scss/_layout.scss */
-      .page .header .enquire .box-enquire :-ms-input-placeholder {
-        font-size: 16px;
-        font-family: "proxima_nova_regular";
-        color: #343434; }
-    /* line 233, ../../jade/scss/_layout.scss */
-    .page .header .enquire .btn {
-      border-radius: 0;
-      background: white;
-      width: 150px;
-      display: block;
-      margin-bottom: 18px;
-      height: 40px;
-      -webkit-box-shadow: 0px 1px 4px 0px #8f8d8f;
-      -moz-box-shadow: 0px 1px 4px 0px #8f8d8f;
-      box-shadow: 0px 1px 4px 0px #8f8d8f;
-      border: 0.5px solid #dcdcdc;
-      text-transform: uppercase;
-      color: #343434;
-      font-family: "roboto_condensed_regular";
-      font-size: 16px; }
-      /* line 248, ../../jade/scss/_layout.scss */
-      .page .header .enquire .btn:focus {
-        outline: none; }
-      /* line 251, ../../jade/scss/_layout.scss */
-      .page .header .enquire .btn.btn-submit {
-        background: #1ca5d7;
-        color: white;
-        font-family: "roboto_condensed_bold";
-        font-size: 18px;
-        letter-spacing: 1px;
-        position: relative; }
-        /* line 258, ../../jade/scss/_layout.scss */
-        .page .header .enquire .btn.btn-submit:after {
-          position: absolute;
-          content: "";
-          width: 0px;
-          border-right: 75px solid transparent;
-          border-left: 75px solid transparent;
-          border-top: 12px solid #1ca5d7;
-          left: 0;
-          bottom: -12px; }
-/* line 272, ../../jade/scss/_layout.scss */
+/* line 288, ../../jade/scss/_layout.scss */
 .page .footer {
   background-color: black; }
-  /* line 274, ../../jade/scss/_layout.scss */
+  /* line 290, ../../jade/scss/_layout.scss */
   .page .footer i {
     background-color: white;
     vertical-align: middle;
     margin-right: 40px; }
-  /* line 279, ../../jade/scss/_layout.scss */
+  /* line 295, ../../jade/scss/_layout.scss */
   .page .footer ul {
     position: relative;
     font-family: "roboto_condensed_bold";
     font-size: 16.26px; }
-    /* line 283, ../../jade/scss/_layout.scss */
+    /* line 299, ../../jade/scss/_layout.scss */
     .page .footer ul li {
       text-align: center;
       padding: 24px 0 36px 0;
       vertical-align: top; }
-      /* line 287, ../../jade/scss/_layout.scss */
+      /* line 303, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(1) {
         position: absolute;
         left: 0;
         top: -9px; }
-      /* line 292, ../../jade/scss/_layout.scss */
+      /* line 308, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(3) {
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 298, ../../jade/scss/_layout.scss */
+      /* line 314, ../../jade/scss/_layout.scss */
       .page .footer ul li:nth-child(2) span:last-child {
         margin-left: 6px; }
-/* line 305, ../../jade/scss/_layout.scss */
-.page h1.title {
-  text-transform: uppercase;
-  font-family: "proxima_nova_extrabold";
-  text-align: center;
-  letter-spacing: 1px;
-  text-shadow: 1px 0 4px rgba(0, 0, 0, 0.4);
-  line-height: 64px; }
 
 /* line 1, ../../jade/scss/_home.scss */
 .home-page {
@@ -1004,7 +1011,7 @@ select {
     z-index: 1;
     position: fixed;
     width: 100%;
-    z-index: 10; }
+    z-index: 20; }
   /* line 10, ../../jade/scss/_home.scss */
   .home-page .slider li {
     position: relative; }

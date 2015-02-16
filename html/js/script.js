@@ -55,7 +55,10 @@ $(document).ready(function () {
       $(".contact-mobile ul").hide();
     }
   });
+
+
   tab($('.tab-click-service'), $('.tab-pane-service'));
+  openEnquire();
 });
 
 var tab = function (menuTab, contentTab) {
@@ -68,3 +71,10 @@ var tab = function (menuTab, contentTab) {
     $(href).show().addClass('active');
   });
 };
+
+var openEnquire = function () {
+  var btn = $('.enquire');
+  btn.click (function (){
+    $('.box-enquire').slideToggle();
+  });
+}

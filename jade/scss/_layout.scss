@@ -2,7 +2,7 @@
   display: none;
 }
 
-.slicknav_nav{
+.slicknav_nav {
   margin-top: 15px;
   font-family: $proxima_nova_extrabold;
   font-size: 17px;
@@ -10,6 +10,154 @@
   li {
     padding: 0 38px;
     background-color: #232426;
+  }
+}
+
+.box-enquire {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 117px;
+  left: 0;
+  background-image: url("img/bg-gray.png");
+  padding: 54px 0 0 0;
+  z-index: 10;
+  .bg-contac-form {
+    position: absolute;
+    width: 100%;
+  }
+  .title {
+    font-size: 32.52px;
+    font-family: $proxima_nova_extrabold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #1ca5d7;
+  }
+  .content {
+    color: #000;
+    font-size: 20px;
+    line-height: 30.49px;
+    margin-top: 20px;
+    font-family: $roboto_condensed_regular;
+  }
+  .btn {
+    border-radius: 0;
+    background: $white;
+    width: 150px;
+    display: block;
+    margin-bottom: 18px;
+    height: 40px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(143, 141, 143, 1);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(143, 141, 143, 1);
+    box-shadow: 0px 1px 4px 0px rgba(143, 141, 143, 1);
+    border: 0.5px solid #dcdcdc;
+    text-transform: uppercase;
+    color: #343434;
+    font-family: $roboto_condensed_regular;
+    font-size: 16px;
+    &:focus {
+      outline: none;
+    }
+    &.btn-submit {
+      background: $blue;
+      color: $white;
+      font-family: $roboto_condensed_bold;
+      font-size: 18px;
+      letter-spacing: 1px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        border-right: 75px solid transparent;
+        border-left: 75px solid transparent;
+        border-top: 12px solid $blue;
+        left: 0;
+        bottom: -12px;
+      }
+    }
+  }
+  .box-left {
+    width: 26%;
+  }
+  .box-center {
+    margin: 0 2%;
+    width: 44%;
+  }
+  .form-control {
+    border-radius: 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-family: $proxima_nova_regular;
+    color: #343434;
+  }
+  .select-style {
+    background: url(img/btn-dropdown.png) no-repeat 94% #fff;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 0;
+    &:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+    select {
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      border-radius: 0;
+      background: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 5px 14px;
+      font-size: 16px;
+      font-family: $proxima_nova_regular;
+      color: #343434;
+      -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+      -moz-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+      box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+    }
+  }
+  input {
+    height: 30px;
+    -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+    -moz-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+    box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+  }
+  textarea {
+    height: 108px;
+    -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+    -moz-box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+    box-shadow: inset 0px 2px 5px -2px rgba(168, 165, 168, 1);
+  }
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: $proxima_nova_regular;
+    color: #343434;
+  }
+
+  :-moz-placeholder {
+    font-size: 16px;
+    font-family: $proxima_nova_regular;
+    color: #343434;
+  }
+
+  ::-moz-placeholder {
+    font-size: 16px;
+    font-family: $proxima_nova_regular;
+    color: #343434;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 16px;
+    font-family: $proxima_nova_regular;
+    color: #343434;
   }
 }
 
@@ -34,6 +182,7 @@
       display: inline-block;
       vertical-align: middle;
       position: relative;
+      z-index: 20;
       .logo-traingle {
         position: absolute;
         background-image: url("../images/traingle.png");
@@ -78,9 +227,9 @@
           display: block;
           &:hover {
             background: $white;
-            -webkit-box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
-            -moz-box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
-            box-shadow: inset 0px 1px 3px 0px rgba(105,105,105,1);
+            -webkit-box-shadow: inset 0px 1px 3px 0px rgba(105, 105, 105, 1);
+            -moz-box-shadow: inset 0px 1px 3px 0px rgba(105, 105, 105, 1);
+            box-shadow: inset 0px 1px 3px 0px rgba(105, 105, 105, 1);
           }
           &:hover a {
             color: $black;
@@ -90,7 +239,7 @@
           }
         }
       }
-      .service-hover:hover   .sub-menu {
+      .service-hover:hover .sub-menu {
         display: block;
         visibility: visible;
         opacity: 1;
@@ -106,14 +255,14 @@
         font-family: $roboto_condensed_light;
         font-size: 15px;
         span {
-          &:first-child{
-            padding-left:38px ;
+          &:first-child {
+            padding-left: 38px;
           }
-          &:nth-child(2){
-            padding-left:58px ;
+          &:nth-child(2) {
+            padding-left: 58px;
           }
-          &:last-child{
-            padding-left:22px ;
+          &:last-child {
+            padding-left: 22px;
           }
         }
 
@@ -133,140 +282,7 @@
           font-family: $proxima_nova_extrabold;
         }
       }
-      .box-enquire {
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        left: 7px;
-        background-image: url("img/bg-gray.png");
-        padding: 54px 118px;
-        .title {
-          font-size: 32.52px;
-          font-family: $proxima_nova_extrabold;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          word-spacing: 1px;
-        }
-        .box-left {
-          width: 26%;
-        }
-        .box-center {
-          margin: 0 2%;
-          width: 44%;
-        }
-        .form-control {
-          border-radius: 0;
-          padding: 5px 20px;
-          font-size: 16px;
-          font-family: $proxima_nova_regular;
-          color: #343434;
-        }
-        .select-style {
-          background: url(img/btn-dropdown.png) no-repeat 94% #fff;
-          display: inline-block;
-          overflow: hidden;
-          vertical-align: middle;
-          height: 30px;
-          width: 100%;
-          border: 1px solid #ccc;
-          outline: 0;
-          &:focus {
-            border-color: #66afe9;
-            outline: 0;
-            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-          }
-          select {
-            height: 100%;
-            width: 100%;
-            background: transparent;
-            border-radius: 0;
-            background: transparent;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            padding: 5px 14px;
-            font-size: 16px;
-            font-family: $proxima_nova_regular;
-            color: #343434;
-            -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-            -moz-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-            box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-          }
-        }
-        input {
-          height: 30px;
-          -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-          -moz-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-          box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-        }
-        textarea {
-          height: 108px;
-          -webkit-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-          -moz-box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-          box-shadow: inset 0px 2px 5px -2px rgba(168,165,168,1);
-        }
-        ::-webkit-input-placeholder {
-          font-size: 16px;
-          font-family: $proxima_nova_regular;
-          color: #343434;
-        }
 
-        :-moz-placeholder {
-          font-size: 16px;
-          font-family: $proxima_nova_regular;
-          color: #343434;
-        }
-
-        ::-moz-placeholder {
-          font-size: 16px;
-          font-family: $proxima_nova_regular;
-          color: #343434;
-        }
-
-        :-ms-input-placeholder {
-          font-size: 16px;
-          font-family: $proxima_nova_regular;
-          color: #343434;
-        }
-      }
-      .btn {
-        border-radius: 0;
-        background: $white;
-        width: 150px;
-        display: block;
-        margin-bottom: 18px;
-        height: 40px;
-        -webkit-box-shadow: 0px 1px 4px 0px rgba(143,141,143,1);
-        -moz-box-shadow: 0px 1px 4px 0px rgba(143,141,143,1);
-        box-shadow: 0px 1px 4px 0px rgba(143,141,143,1);
-        border: 0.5px solid #dcdcdc;
-        text-transform: uppercase;
-        color: #343434;
-        font-family: $roboto_condensed_regular;
-        font-size: 16px;
-        &:focus {
-          outline: none;
-        }
-        &.btn-submit {
-          background: $blue;
-          color: $white;
-          font-family: $roboto_condensed_bold;
-          font-size: 18px;
-          letter-spacing: 1px;
-          position: relative;
-          &:after {
-            position: absolute;
-            content: "";
-            width: 0px;
-            border-right: 75px solid transparent;
-            border-left: 75px solid transparent;
-            border-top: 12px solid $blue;
-            left: 0;
-            bottom: -12px;
-          }
-        }
-      }
     }
   }
   .footer {
@@ -287,12 +303,12 @@
         &:nth-child(1) {
           position: absolute;
           left: 0;
-          top:-9px;
+          top: -9px;
         }
         &:nth-child(3) {
           position: absolute;
           right: 0;
-          top:0;
+          top: 0;
         }
         &:nth-child(2) {
           span:last-child {
@@ -302,12 +318,5 @@
       }
     }
   }
-  h1.title {
-    text-transform: uppercase;
-    font-family: $proxima_nova_extrabold;
-    text-align: center;
-    letter-spacing: 1px;
-    text-shadow: 1px 0 4px rgba(0,0,0,0.4);
-    line-height: 64px;
-  }
+
 }
