@@ -179,7 +179,7 @@
         text-align: center;
       }
       .bx-wrapper {
-        height: 500px;
+        min-height: 500px;
         .bx-pager.bx-default-pager a {
           width: 15px;
           height: 15px;
@@ -188,13 +188,13 @@
           border-radius: 10px;
         }
         .bx-viewport {
-          height: 500px !important;
+          height: 800px !important;
         }
         .main-bxslider {
           li {
             background-repeat: no-repeat;
             background-size: cover;
-            height: 500px;
+            min-height: 500px;
 //            background-size: 800px;
             background-position-x: 65%;
             img {
@@ -357,3 +357,10 @@
     }
   }
 }
+
+@media  screen and (max-width: 400px) {
+  ul.services-list {
+    width: inherit;
+  }
+}
+

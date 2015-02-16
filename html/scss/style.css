@@ -1315,11 +1315,6 @@ select {
     .home-page .testimonials .bx-pager-item {
       margin: 0 10px; }
 
-/* line 327, ../../jade/scss/_home.scss */
-.wrapper-main-bxslider {
-  width: 1218px;
-  margin: 0 auto; }
-
 /* line 3, ../../jade/scss/_services.scss */
 .services-page h1.title {
   margin: 55px 0 57px 0; }
@@ -1726,7 +1721,7 @@ select {
     text-align: center; }
   /* line 181, ../../jade/scss/_responsive.scss */
   .home-page .slider .bx-wrapper {
-    height: 500px; }
+    min-height: 500px; }
     /* line 183, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .bx-pager.bx-default-pager a {
       width: 15px;
@@ -1736,12 +1731,12 @@ select {
       border-radius: 10px; }
     /* line 190, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .bx-viewport {
-      height: 500px !important; }
+      height: 800px !important; }
     /* line 194, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .main-bxslider li {
       background-repeat: no-repeat;
       background-size: cover;
-      height: 500px;
+      min-height: 500px;
       background-position-x: 65%; }
       /* line 200, ../../jade/scss/_responsive.scss */
       .home-page .slider .bx-wrapper .main-bxslider li img {
@@ -1891,3 +1886,7 @@ select {
     /* line 354, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
       bottom: -20px; } }
+@media screen and (max-width: 400px) {
+  /* line 362, ../../jade/scss/_responsive.scss */
+  ul.services-list {
+    width: inherit; } }
