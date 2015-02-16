@@ -1731,7 +1731,7 @@ select {
       border-radius: 10px; }
     /* line 190, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .bx-viewport {
-      height: 800px !important; }
+      height: 500px !important; }
     /* line 194, ../../jade/scss/_responsive.scss */
     .home-page .slider .bx-wrapper .main-bxslider li {
       background-repeat: no-repeat;
