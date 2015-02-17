@@ -11,6 +11,7 @@
   .other-page {
     padding: 54px 0 107px;
   }
+
   ul.services-list {
     width: 300px;
     margin: 0 auto;
@@ -361,7 +362,7 @@
   }
   .services-page {
     h1.title {
-      margin: 6px 0 48px 0;
+      margin: 50px 0;
     }
     .desktop-version {
       display: none;
@@ -376,6 +377,7 @@
         .panel.panel-default {
           border: none;
           background: none;
+          margin-bottom: 11px;
         }
         .panel-heading {
           padding: 0;
@@ -481,13 +483,18 @@
                   height: 16px;
                   background: $blue;
                   margin: 16px;
+                  z-index: 10;
                   &.active {
                     background: $white;
                   }
+
                 }
                 .carousel-indicators {
                   bottom: 2px !important;
-                  left: 77%;
+                  left: initial;
+                  right: 0;
+                  width: 100%;
+                  text-align: right;
                 }
                 .carousel-caption {
                   left: 0;
@@ -509,34 +516,35 @@
             }
           }
         }
-        .other-page {
-          padding: 54px 0 107px;
-        }
-        .contact-page {
-          .why-choose {
-            margin-top: 0;
-            h1.title {
-              margin-top: 0;
-            }
-            ul li {
-              padding-bottom: 20px;
-            }
-          }
-        }
-        .map-contact {
-          height: 520px;
-        }
-        .wrapper-contact .why-choose {
-          margin: 0 0 60px 0;
-          ul li {
-            span.content {
-              margin-bottom: 2px;
-            }
-            span.content-title {
-              margin-bottom: 0;
-            }
-          }
-        }
+
+      }
+    }
+  }
+  .other-page {
+    padding: 54px 0 107px;
+  }
+  .contact-page {
+    .why-choose {
+      margin-top: 0;
+      h1.title {
+        margin-top: 0;
+      }
+      ul li {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .map-contact {
+    height: 520px;
+  }
+  .wrapper-contact .why-choose {
+    margin: 0 0 60px 0;
+    ul li {
+      span.content {
+        margin-bottom: 2px;
+      }
+      span.content-title {
+        margin-bottom: 0;
       }
     }
   }
