@@ -1,0 +1,46 @@
+.map-contact a {
+  line-height: 0;
+  display: block;
+}
+.map-contact {
+  height: 580px;
+  background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+}
+.wrapper-contact h1.title {
+  margin: 60px 0;
+}
+.wrapper-contact .why-choose {
+  margin: 0 0 200px 0;
+}
+.contact-page.other-page {
+  padding-bottom: 0;
+}
+.wrapper-contact .why-choose ul li {
+  min-height: 255px;
+  text-align: center;
+  padding: 30px 40px 8px;
+  h3.sub-title{
+    margin-bottom: 8px;
+  }
+}
+.wrapper-contact .why-choose ul li span{
+  display:block;
+}
+.wrapper-contact .why-choose ul li span.content-title{
+  text-transform: uppercase;
+  font-family: $roboto_condensed_regular;
+  margin-bottom: 5px;
+}
+.wrapper-contact .why-choose ul li span.content{
+  line-height: 22px;
+
+  margin-bottom: 11px;
+}
+.wrapper-contact .why-choose ul li:nth-child(3) .content {
+  margin-bottom:34px;
+}
+.contact-page.other-page {
+  padding-bottom: 0;
+}

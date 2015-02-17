@@ -60,7 +60,7 @@ button {
   }
 }
 .bg-blue {
-  background: $blue;
+  background: url('img/bg-blue.png');
 }
 
 ::-webkit-input-placeholder,
@@ -70,5 +70,5 @@ button {
   color: #757575;
 }
 .other-page {
-  padding: 100px 0 107px;
+  padding: 85px 0 107px;
 }

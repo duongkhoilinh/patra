@@ -4,6 +4,7 @@ Theme Name: Fari Advice Theme
 Version:0.1
  */
 @import "_reset";
+//@import '_bootstrap';
 @import "_variables";
 @import "_common";
 @import "_slick";
@@ -15,4 +16,5 @@ Version:0.1
 @import "_home";
 @import "_services";
 @import "_portfolio";
+@import "_contact";
 @import "_responsive";
