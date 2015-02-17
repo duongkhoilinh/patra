@@ -1735,50 +1735,53 @@ h1.title {
   .about-page .why-choose {
     margin-top: 0;
     padding-bottom: 197px; }
-    /* line 10, ../../jade/scss/_about-us.scss */
+    /* line 11, ../../jade/scss/_about-us.scss */
+    .about-page .why-choose li p {
+      text-align: left; }
+    /* line 15, ../../jade/scss/_about-us.scss */
     .about-page .why-choose .background-before {
       transform: rotateY(180deg); }
-    /* line 13, ../../jade/scss/_about-us.scss */
+    /* line 18, ../../jade/scss/_about-us.scss */
     .about-page .why-choose .background-after {
       transform: rotateY(180deg); }
-    /* line 16, ../../jade/scss/_about-us.scss */
+    /* line 21, ../../jade/scss/_about-us.scss */
     .about-page .why-choose h1.title {
       margin: 80px 0 62px 0; }
-  /* line 20, ../../jade/scss/_about-us.scss */
+  /* line 25, ../../jade/scss/_about-us.scss */
   .about-page .our-process {
     background: #ffffff;
     margin-top: 143px;
     position: relative; }
-    /* line 25, ../../jade/scss/_about-us.scss */
+    /* line 30, ../../jade/scss/_about-us.scss */
     .about-page .our-process .content-post p {
       padding: 60px 118px;
       color: #000000;
       line-height: 25.56px; }
-    /* line 31, ../../jade/scss/_about-us.scss */
+    /* line 36, ../../jade/scss/_about-us.scss */
     .about-page .our-process .background-after {
       z-index: 9;
       position: absolute;
       bottom: -184px;
       left: 0;
       width: 100%; }
-    /* line 38, ../../jade/scss/_about-us.scss */
+    /* line 43, ../../jade/scss/_about-us.scss */
     .about-page .our-process h1.title {
       color: black;
       margin-top: 43px; }
-    /* line 42, ../../jade/scss/_about-us.scss */
+    /* line 47, ../../jade/scss/_about-us.scss */
     .about-page .our-process .process-list {
       margin: 20px 0 90px 0; }
-      /* line 44, ../../jade/scss/_about-us.scss */
+      /* line 49, ../../jade/scss/_about-us.scss */
       .about-page .our-process .process-list li {
         display: inline-block;
         width: 23%;
         margin-right: 20px;
         text-align: center;
         background-image: url("img/bg-blue.png"); }
-        /* line 50, ../../jade/scss/_about-us.scss */
+        /* line 55, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li:last-child {
           margin-right: 0; }
-        /* line 53, ../../jade/scss/_about-us.scss */
+        /* line 58, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .sub-title {
           text-align: center;
           text-transform: uppercase;
@@ -1787,17 +1790,17 @@ h1.title {
           display: table;
           width: 100%;
           position: relative; }
-          /* line 61, ../../jade/scss/_about-us.scss */
+          /* line 66, ../../jade/scss/_about-us.scss */
           .about-page .our-process .process-list li .sub-title span {
             display: table-cell;
             vertical-align: middle; }
-        /* line 66, ../../jade/scss/_about-us.scss */
+        /* line 71, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li p {
           padding: 35px 0 25px 0;
           text-align: center;
           background-color: #ffffff;
           display: block; }
-        /* line 72, ../../jade/scss/_about-us.scss */
+        /* line 77, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .traingle {
           position: absolute;
           background-image: url("../images/traingle.png");
@@ -1808,13 +1811,13 @@ h1.title {
           z-index: 9;
           background-size: 100%;
           left: 0; }
-        /* line 83, ../../jade/scss/_about-us.scss */
+        /* line 88, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .content {
           padding: 58px 27px;
           line-height: 25.56px;
           text-align: initial;
           position: relative; }
-          /* line 88, ../../jade/scss/_about-us.scss */
+          /* line 93, ../../jade/scss/_about-us.scss */
           .about-page .our-process .process-list li .content:before {
             position: absolute;
             content: "";
@@ -1824,30 +1827,30 @@ h1.title {
             border-left: 11px solid #1ca5d7;
             right: -11px;
             top: 50%; }
-  /* line 102, ../../jade/scss/_about-us.scss */
+  /* line 107, ../../jade/scss/_about-us.scss */
   .about-page .our-history {
     background: #171a1c;
     position: relative;
     padding: 268px 0 0 0; }
-    /* line 106, ../../jade/scss/_about-us.scss */
+    /* line 111, ../../jade/scss/_about-us.scss */
     .about-page .our-history .background-after {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 143px; }
-    /* line 113, ../../jade/scss/_about-us.scss */
+    /* line 118, ../../jade/scss/_about-us.scss */
     .about-page .our-history h1.title {
       margin-bottom: 60px; }
-    /* line 117, ../../jade/scss/_about-us.scss */
+    /* line 122, ../../jade/scss/_about-us.scss */
     .about-page .our-history .image-history li {
       margin-right: 32px;
       width: 48%;
       display: inline-block; }
-      /* line 121, ../../jade/scss/_about-us.scss */
+      /* line 126, ../../jade/scss/_about-us.scss */
       .about-page .our-history .image-history li:last-child {
         margin-right: 0; }
-    /* line 126, ../../jade/scss/_about-us.scss */
+    /* line 131, ../../jade/scss/_about-us.scss */
     .about-page .our-history p {
       padding: 60px 118px;
       background: #ffffff;
@@ -2368,9 +2371,90 @@ h1.title {
         margin-bottom: 2px; }
       /* line 532, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .wrapper-contact .why-choose ul li span.content-title {
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+
+  /* line 540, ../../jade/scss/_responsive.scss */
+  .about-page {
+    padding: 0;
+    margin-top: -100px; }
+    /* line 543, ../../jade/scss/_responsive.scss */
+    .about-page .background-image {
+      display: none; }
+    /* line 546, ../../jade/scss/_responsive.scss */
+    .about-page .background-before {
+      display: none; }
+    /* line 549, ../../jade/scss/_responsive.scss */
+    .about-page .why-choose {
+      padding-bottom: 50px; }
+      /* line 551, ../../jade/scss/_responsive.scss */
+      .about-page .why-choose h1.title {
+        margin: 120px 0 54px 0; }
+    /* line 555, ../../jade/scss/_responsive.scss */
+    .about-page .our-process {
+      margin-top: 72px; }
+      /* line 557, ../../jade/scss/_responsive.scss */
+      .about-page .our-process h1.title {
+        margin-bottom: 46px; }
+      /* line 560, ../../jade/scss/_responsive.scss */
+      .about-page .our-process .content-post {
+        display: none; }
+      /* line 563, ../../jade/scss/_responsive.scss */
+      .about-page .our-process .process-list {
+        margin: 20px 0 10px 0; }
+        /* line 565, ../../jade/scss/_responsive.scss */
+        .about-page .our-process .process-list li {
+          width: 300px;
+          display: block;
+          margin: 0 auto; }
+          /* line 569, ../../jade/scss/_responsive.scss */
+          .about-page .our-process .process-list li .sub-title {
+            height: 48px; }
+            /* line 571, ../../jade/scss/_responsive.scss */
+            .about-page .our-process .process-list li .sub-title .traingle {
+              height: 26px;
+              bottom: -26px; }
+          /* line 576, ../../jade/scss/_responsive.scss */
+          .about-page .our-process .process-list li i {
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            zoom: 0.8; }
+            /* line 582, ../../jade/scss/_responsive.scss */
+            .about-page .our-process .process-list li i.iconsp-receive {
+              background-position: -399px 8px; }
+            /* line 585, ../../jade/scss/_responsive.scss */
+            .about-page .our-process .process-list li i.iconsp-planning {
+              background-position: -556px 6px; }
+            /* line 588, ../../jade/scss/_responsive.scss */
+            .about-page .our-process .process-list li i.iconsp-construction {
+              background-position: -638px 8px; }
+          /* line 592, ../../jade/scss/_responsive.scss */
+          .about-page .our-process .process-list li .content {
+            display: none; }
+          /* line 595, ../../jade/scss/_responsive.scss */
+          .about-page .our-process .process-list li:last-child {
+            margin-right: auto; }
+      /* line 600, ../../jade/scss/_responsive.scss */
+      .about-page .our-process .background-after {
+        bottom: -54px;
+        height: 54px; }
+    /* line 605, ../../jade/scss/_responsive.scss */
+    .about-page .our-history {
+      padding: 110px 0 0 0; }
+      /* line 607, ../../jade/scss/_responsive.scss */
+      .about-page .our-history h1.title {
+        margin-bottom: 50px; }
+      /* line 610, ../../jade/scss/_responsive.scss */
+      .about-page .our-history .image-history li {
+        margin-right: 0;
+        width: 100%;
+        display: block; }
+      /* line 615, ../../jade/scss/_responsive.scss */
+      .about-page .our-history p {
+        padding: 60px 22px; } }
 @media screen and (max-width: 400px) {
-  /* line 543, ../../jade/scss/_responsive.scss */
+  /* line 623, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
 

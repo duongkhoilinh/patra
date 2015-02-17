@@ -537,6 +537,86 @@
       }
     }
   }
+  .about-page {
+    padding: 0;
+    margin-top: -100px;
+    .background-image {
+      display: none;
+    }
+    .background-before {
+      display: none;
+    }
+    .why-choose {
+      padding-bottom: 50px;
+      h1.title {
+        margin: 120px 0 54px 0;
+      }
+    }
+    .our-process {
+      margin-top: 72px;
+      h1.title {
+        margin-bottom: 46px;
+      }
+      .content-post {
+        display: none;
+      }
+      .process-list {
+        margin: 20px 0 10px 0;
+        li {
+          width: 300px;
+          display: block;
+          margin: 0 auto;
+          .sub-title {
+            height: 48px;
+            .traingle {
+              height: 26px;
+              bottom: -26px;
+            }
+          }
+          i {
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            zoom: 0.8;
+            &.iconsp-receive {
+              background-position: -399px 8px;
+            }
+            &.iconsp-planning {
+              background-position: -556px 6px;
+            }
+            &.iconsp-construction {
+              background-position: -638px 8px;
+            }
+          }
+          .content {
+            display: none;
+          }
+          &:last-child {
+            margin-right: auto;
+          }
+        }
+      }
+      .background-after {
+        bottom: -54px;
+        height: 54px;
+      }
+    }
+    .our-history {
+      padding: 110px 0 0 0;
+      h1.title {
+        margin-bottom: 50px;
+      }
+      .image-history li {
+        margin-right: 0;
+        width: 100%;
+        display: block;
+      }
+      p {
+        padding: 60px 22px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
