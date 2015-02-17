@@ -356,6 +356,159 @@
       }
     }
   }
+  .services-page {
+    h1.title {
+      margin: 6px 0 48px 0;
+    }
+    .desktop-version {
+      display: none;
+    }
+    .mobile-version {
+      display: block;
+      color: #000000;
+      ul, li {
+        list-style: inherit;
+      }
+      .services-list {
+        .panel.panel-default {
+          border: none;
+          background: none;
+        }
+        .panel-heading {
+          padding: 0;
+          color: $white;
+          a {
+            border-radius: 0;
+            display: table-cell;
+            padding: 20px;
+            background: $blue;
+            font-size: 20.32px;
+            font-family: $roboto_condensed_bold;
+            padding: 0 30px;
+            vertical-align: middle;
+            &:hover,
+            &:active {
+              background-image: url(img/bg-gray.png);
+              color: #1ca5d7;
+            }
+          }
+        }
+        .panel-body {
+          margin: 45px 10px 35px 10px;
+          padding: 0;
+          .text-content {
+            background: #ffffff;
+            font-size: 20.44px;
+            line-height: 25.26px;
+            padding: 58px 22px;
+            ul, li {
+              list-style: none;
+            }
+            li {
+              width: auto;
+              background: none;
+              list-style: inherit;
+              margin: 0 0 35px 0;
+              &:last-child {
+                margin: 0;
+              }
+            }
+          }
+          .nav-stacked {
+            text-align: center;
+            margin-top: 42px;
+            > li {
+              width: 80%;
+              margin: 0 0 24px 0;
+              button {
+                &.btn-primary {
+                  border: none;
+                  border-radius: 0;
+                  width: 100%;
+                  background: $blue;
+                  text-transform: uppercase;
+                  font-size: 17.89px;
+                  font-family: $roboto_condensed_bold;
+                }
+              }
+            }
+            .modal-backdrop.in {
+              opacity: 1;
+              height: 1200px !important;
+            }
+            .modal-content {
+              border-radius: 0;
+              border: none;
+              .modal-header {
+                padding: 15px 0 0 0;
+                border: none;
+              }
+              button.close {
+                width: auto;
+                float: left;
+                background: none;
+                opacity: 1;
+                font-size: 30px;
+                padding-left: 30px;
+              }
+              .title {
+                font-family: $roboto_condensed_bold;
+                font-size: 23px;
+                text-transform: uppercase;
+                color: $white;
+                margin: 30px 0 36px 0;
+                color: $blue;
+                letter-spacing: 1px;
+              }
+              ul {
+                padding: 0 30px 40px 30px;
+                li {
+                  background: none;
+                  width: 100%;
+                  text-align: initial;
+                  line-height: 30.67px;
+                  margin-bottom: 24px;
+                  margin-right: 0;
+                }
+              }
+              .image-content {
+                padding: 0;
+                ol li {
+                  width: 16px;
+                  height: 16px;
+                  background: $blue;
+                  margin: 16px;
+                  &.active {
+                    background: $white;
+                  }
+                }
+                .carousel-indicators {
+                  bottom: 2px !important;
+                  left: 77%;
+                }
+                .carousel-caption {
+                  left: 0;
+                  width: 100%;
+                  bottom: 0;
+                  padding: 26px 0 17px 10px;
+                  text-align: left;
+                  font-size: 15.33px;
+                  color: #ffffff;
+                  font-family: "roboto_condensed_bold";
+                  background-color: rgba(0, 0, 0, 0.6);
+                  span {
+                    display: block;
+                    font-family: "roboto_condensed_light";
+                    margin-top: 2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media  screen and (max-width: 400px) {

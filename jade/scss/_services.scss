@@ -1,5 +1,8 @@
 
 .services-page {
+  .mobile-version {
+    display: none;
+  }
   h1.title {
     margin: 55px 0 57px 0;
   }
@@ -109,7 +112,7 @@
         margin-right: 0;
       }
     }
-    h4.sub-title {
+    .sub-title {
       text-align: center;
       text-transform: uppercase;
       font-family: "roboto_condensed_bold";
@@ -213,6 +216,33 @@
   }
   .services-list-content #catering-equipment {
     .tab-pane.active {
+        .image-content {
+          width: 41.66666667%;
+        }
+        .text-content {
+          li {
+            margin-bottom: 0;
+            color: #000000;
+            &:first-child {
+              list-style: none;
+              margin-bottom: 25px;
+            }
+            &:last-child {
+              list-style: none;
+              margin-top: 37px;
+              margin-bottom: 10px;
+              font-style: italic;
+              font-size: 14.06px;
+            }
+          }
+          h2.title {
+            list-style: none;
+            text-transform: uppercase;
+            color: black;
+            font-size: 25.56px;
+            font-family: $roboto_condensed_bold;
+          }
+        }
       &#catering-one {
         .image-content img {
           width: auto;

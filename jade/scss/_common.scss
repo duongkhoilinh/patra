@@ -53,7 +53,12 @@ select {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+button {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
 .bg-blue {
   background: $blue;
 }

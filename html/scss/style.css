@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: white; }
+  background-color: #ffffff; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: white;
+  color: #ffffff;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -112,17 +112,21 @@ select {
   box-sizing: border-box; }
 
 /* line 57, ../../jade/scss/_common.scss */
+button:active, button:focus {
+  outline: none; }
+
+/* line 62, ../../jade/scss/_common.scss */
 .bg-blue {
   background: #1ca5d7; }
 
-/* line 61, ../../jade/scss/_common.scss */
+/* line 66, ../../jade/scss/_common.scss */
 ::-webkit-input-placeholder,
 :-moz-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder {
   color: #757575; }
 
-/* line 67, ../../jade/scss/_common.scss */
+/* line 72, ../../jade/scss/_common.scss */
 .other-page {
   padding: 100px 0 107px; }
 
@@ -415,7 +419,7 @@ select {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: white; }
+  background: #ffffff; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -499,7 +503,7 @@ select {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666666 \9;
+  background: #666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -739,7 +743,7 @@ select {
   /* line 44, ../../jade/scss/_layout.scss */
   .box-enquire .btn {
     border-radius: 0;
-    background: white;
+    background: #ffffff;
     width: 150px;
     display: block;
     margin-bottom: 18px;
@@ -758,7 +762,7 @@ select {
     /* line 62, ../../jade/scss/_layout.scss */
     .box-enquire .btn.btn-submit {
       background: #1ca5d7;
-      color: white;
+      color: #ffffff;
       font-family: "roboto_condensed_bold";
       font-size: 18px;
       letter-spacing: 1px;
@@ -789,7 +793,7 @@ select {
     color: #343434; }
   /* line 95, ../../jade/scss/_layout.scss */
   .box-enquire .select-style {
-    background: url(img/btn-dropdown.png) no-repeat 94% white;
+    background: url(img/btn-dropdown.png) no-repeat 94% #fff;
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
@@ -864,7 +868,7 @@ select {
   display: none; }
 /* line 175, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: white;
+  background-color: #ffffff;
   color: #171a1c; }
   /* line 178, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -913,7 +917,7 @@ select {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: white;
+      color: #ffffff;
       text-align: center; }
       /* line 225, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -921,7 +925,7 @@ select {
         display: block; }
         /* line 228, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: white;
+          background: #ffffff;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -976,7 +980,7 @@ select {
   background-color: black; }
   /* line 290, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: white;
+    background-color: #ffffff;
     vertical-align: middle;
     margin-right: 40px; }
   /* line 295, ../../jade/scss/_layout.scss */
@@ -1333,7 +1337,7 @@ h1.title {
           width: 0px;
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
-          border-left: 10px solid white;
+          border-left: 10px solid #ffffff;
           right: -10px;
           top: 45%;
           z-index: 1; }
@@ -1390,28 +1394,31 @@ h1.title {
       margin: 0 10px; }
 
 /* line 3, ../../jade/scss/_services.scss */
+.services-page .mobile-version {
+  display: none; }
+/* line 6, ../../jade/scss/_services.scss */
 .services-page h1.title {
   margin: 55px 0 57px 0; }
-/* line 6, ../../jade/scss/_services.scss */
+/* line 9, ../../jade/scss/_services.scss */
 .services-page .content-pane {
   font-size: 17.89px;
   line-height: 25.26px; }
-  /* line 9, ../../jade/scss/_services.scss */
+  /* line 12, ../../jade/scss/_services.scss */
   .services-page .content-pane h1 {
     font-size: 25.26px;
     text-transform: uppercase;
     margin-bottom: 25px;
     font-family: "roboto_condensed_bold";
     line-height: 30px; }
-  /* line 17, ../../jade/scss/_services.scss */
+  /* line 20, ../../jade/scss/_services.scss */
   .services-page .content-pane .slide-logo .slick-slide {
     width: 130px !important; }
-  /* line 20, ../../jade/scss/_services.scss */
+  /* line 23, ../../jade/scss/_services.scss */
   .services-page .content-pane .slide-logo img {
     width: auto;
     height: 40px;
     margin: 0 auto; }
-  /* line 25, ../../jade/scss/_services.scss */
+  /* line 28, ../../jade/scss/_services.scss */
   .services-page .content-pane .slide-logo button {
     position: absolute;
     top: 5px;
@@ -1420,44 +1427,44 @@ h1.title {
     height: 20px;
     width: 20px;
     background: url("img/icon-sprite.png") no-repeat; }
-    /* line 33, ../../jade/scss/_services.scss */
+    /* line 36, ../../jade/scss/_services.scss */
     .services-page .content-pane .slide-logo button:active, .services-page .content-pane .slide-logo button:focus {
       outline: none; }
-  /* line 38, ../../jade/scss/_services.scss */
+  /* line 41, ../../jade/scss/_services.scss */
   .services-page .content-pane .slide-logo .slick-prev {
     background-position: 0 -115px;
     left: -15px; }
-  /* line 42, ../../jade/scss/_services.scss */
+  /* line 45, ../../jade/scss/_services.scss */
   .services-page .content-pane .slide-logo .slick-next {
     background-position: -20px -115px;
     right: -15px; }
-  /* line 47, ../../jade/scss/_services.scss */
+  /* line 50, ../../jade/scss/_services.scss */
   .services-page .content-pane .img_thumnail {
     width: 370px;
     float: right;
     margin-left: 35px; }
-  /* line 53, ../../jade/scss/_services.scss */
+  /* line 56, ../../jade/scss/_services.scss */
   .services-page .content-pane ul {
     list-style: inherit; }
-    /* line 55, ../../jade/scss/_services.scss */
+    /* line 58, ../../jade/scss/_services.scss */
     .services-page .content-pane ul li {
       margin-bottom: 25px; }
-  /* line 59, ../../jade/scss/_services.scss */
+  /* line 62, ../../jade/scss/_services.scss */
   .services-page .content-pane .image-content {
     list-style: none;
     float: right;
     width: 371px;
     margin-left: 35px; }
-  /* line 65, ../../jade/scss/_services.scss */
+  /* line 68, ../../jade/scss/_services.scss */
   .services-page .content-pane .title-brand-product {
     font-size: 14.06px;
     color: #9c9c9c;
     margin: 44px 0 21px 0;
     font-style: italic; }
-/* line 72, ../../jade/scss/_services.scss */
+/* line 75, ../../jade/scss/_services.scss */
 .services-page .services-list {
   margin-bottom: 60px; }
-  /* line 74, ../../jade/scss/_services.scss */
+  /* line 77, ../../jade/scss/_services.scss */
   .services-page .services-list li {
     background: #1ca5d7;
     display: inline-block;
@@ -1467,7 +1474,7 @@ h1.title {
     border: 0;
     margin-left: 0;
     position: relative; }
-    /* line 84, ../../jade/scss/_services.scss */
+    /* line 87, ../../jade/scss/_services.scss */
     .services-page .services-list li.active .traingle {
       position: absolute;
       background-image: url("../images/traingle-gray.png");
@@ -1478,23 +1485,23 @@ h1.title {
       z-index: 9;
       background-size: 100%;
       left: 0; }
-    /* line 95, ../../jade/scss/_services.scss */
+    /* line 98, ../../jade/scss/_services.scss */
     .services-page .services-list li.active a {
       background-image: url(img/bg-gray.png);
       color: #1ca5d7; }
-    /* line 100, ../../jade/scss/_services.scss */
+    /* line 103, ../../jade/scss/_services.scss */
     .services-page .services-list li a {
       padding: 0;
       border-radius: 0; }
-      /* line 103, ../../jade/scss/_services.scss */
+      /* line 106, ../../jade/scss/_services.scss */
       .services-page .services-list li a:hover {
         background-image: url(img/bg-gray.png);
         color: #1ca5d7; }
-    /* line 108, ../../jade/scss/_services.scss */
+    /* line 111, ../../jade/scss/_services.scss */
     .services-page .services-list li:last-child {
       margin-right: 0; }
-  /* line 112, ../../jade/scss/_services.scss */
-  .services-page .services-list h4.sub-title {
+  /* line 115, ../../jade/scss/_services.scss */
+  .services-page .services-list .sub-title {
     text-align: center;
     text-transform: uppercase;
     font-family: "roboto_condensed_bold";
@@ -1502,26 +1509,26 @@ h1.title {
     display: table;
     width: 100%;
     position: relative; }
-    /* line 120, ../../jade/scss/_services.scss */
-    .services-page .services-list h4.sub-title span {
+    /* line 123, ../../jade/scss/_services.scss */
+    .services-page .services-list .sub-title span {
       display: table-cell;
       vertical-align: middle; }
-/* line 126, ../../jade/scss/_services.scss */
+/* line 129, ../../jade/scss/_services.scss */
 .services-page .services-list-content > .tab-pane.active {
   display: inline-block;
   color: #171a1c;
-  background: white;
+  background: #ffffff;
   padding: 40px 40px 40px 24px;
   width: 100%; }
-  /* line 135, ../../jade/scss/_services.scss */
+  /* line 138, ../../jade/scss/_services.scss */
   .services-page .services-list-content > .tab-pane.active ul li.active a {
     background-image: url("img/bg-gray.png");
     color: #1ca5d7; }
-  /* line 140, ../../jade/scss/_services.scss */
+  /* line 143, ../../jade/scss/_services.scss */
   .services-page .services-list-content > .tab-pane.active ul li a {
     padding: 15px 0px;
     display: inline-block;
-    color: white;
+    color: #ffffff;
     background: #1ca5d7;
     text-transform: uppercase;
     font-size: 17.89px;
@@ -1532,7 +1539,7 @@ h1.title {
     margin-bottom: 10px;
     width: 172px;
     text-align: center; }
-  /* line 158, ../../jade/scss/_services.scss */
+  /* line 161, ../../jade/scss/_services.scss */
   .services-page .services-list-content > .tab-pane.active .tab-content .dot {
     display: inline-block;
     font-size: 80px;
@@ -1542,7 +1549,7 @@ h1.title {
     margin-top: -12px;
     margin-right: 10px;
     vertical-align: top; }
-  /* line 168, ../../jade/scss/_services.scss */
+  /* line 171, ../../jade/scss/_services.scss */
   .services-page .services-list-content > .tab-pane.active .tab-content p {
     display: inline-block;
     width: 85%;
@@ -1551,14 +1558,14 @@ h1.title {
     line-height: 25.56px;
     letter-spacing: 0;
     color: black; }
-  /* line 178, ../../jade/scss/_services.scss */
+  /* line 181, ../../jade/scss/_services.scss */
   .services-page .services-list-content > .tab-pane.active .tab-content .image-content {
     text-align: center; }
-    /* line 180, ../../jade/scss/_services.scss */
+    /* line 183, ../../jade/scss/_services.scss */
     .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators {
       bottom: 2px !important;
       left: 77%; }
-      /* line 183, ../../jade/scss/_services.scss */
+      /* line 186, ../../jade/scss/_services.scss */
       .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li {
         height: 16px;
         width: 16px;
@@ -1566,10 +1573,10 @@ h1.title {
         background: #1ca5d7;
         border: none;
         margin: 16px; }
-        /* line 190, ../../jade/scss/_services.scss */
+        /* line 193, ../../jade/scss/_services.scss */
         .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
-          background: white; }
-    /* line 195, ../../jade/scss/_services.scss */
+          background: #ffffff; }
+    /* line 198, ../../jade/scss/_services.scss */
     .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
       left: 0;
       width: 100%;
@@ -1577,15 +1584,40 @@ h1.title {
       padding: 14px 0 24px 22px;
       text-align: left;
       font-size: 15.33px;
-      color: white;
+      color: #ffffff;
       font-family: "roboto_condensed_bold";
       background-color: rgba(0, 0, 0, 0.6); }
-      /* line 205, ../../jade/scss/_services.scss */
+      /* line 208, ../../jade/scss/_services.scss */
       .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption span {
         display: block;
         font-family: "roboto_condensed_light";
         margin-top: 2px; }
-/* line 217, ../../jade/scss/_services.scss */
+/* line 219, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .image-content {
+  width: 41.66666667%; }
+/* line 223, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .text-content li {
+  margin-bottom: 0;
+  color: #000000; }
+  /* line 226, ../../jade/scss/_services.scss */
+  .services-page .services-list-content #catering-equipment .tab-pane.active .text-content li:first-child {
+    list-style: none;
+    margin-bottom: 25px; }
+  /* line 230, ../../jade/scss/_services.scss */
+  .services-page .services-list-content #catering-equipment .tab-pane.active .text-content li:last-child {
+    list-style: none;
+    margin-top: 37px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 14.06px; }
+/* line 238, ../../jade/scss/_services.scss */
+.services-page .services-list-content #catering-equipment .tab-pane.active .text-content h2.title {
+  list-style: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 25.56px;
+  font-family: "roboto_condensed_bold"; }
+/* line 247, ../../jade/scss/_services.scss */
 .services-page .services-list-content #catering-equipment .tab-pane.active#catering-one .image-content img {
   width: auto;
   position: relative;
@@ -1637,14 +1669,14 @@ h1.title {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: white;
+    background-color: #ffffff;
     padding: 5px 0; }
     /* line 22, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 25, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: white;
+      background-color: #ffffff;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -1703,7 +1735,7 @@ h1.title {
       /* line 83, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: white; }
+        color: #ffffff; }
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -1959,8 +1991,157 @@ h1.title {
       border-radius: 8px; }
     /* line 354, ../../jade/scss/_responsive.scss */
     .home-page .testimonials .bx-pager {
-      bottom: -20px; } }
+      bottom: -20px; }
+
+  /* line 360, ../../jade/scss/_responsive.scss */
+  .services-page h1.title {
+    margin: 6px 0 48px 0; }
+  /* line 363, ../../jade/scss/_responsive.scss */
+  .services-page .desktop-version {
+    display: none; }
+  /* line 366, ../../jade/scss/_responsive.scss */
+  .services-page .mobile-version {
+    display: block;
+    color: #000000; }
+    /* line 369, ../../jade/scss/_responsive.scss */
+    .services-page .mobile-version ul, .services-page .mobile-version li {
+      list-style: inherit; }
+    /* line 373, ../../jade/scss/_responsive.scss */
+    .services-page .mobile-version .services-list .panel.panel-default {
+      border: none;
+      background: none; }
+    /* line 377, ../../jade/scss/_responsive.scss */
+    .services-page .mobile-version .services-list .panel-heading {
+      padding: 0;
+      color: #ffffff; }
+      /* line 380, ../../jade/scss/_responsive.scss */
+      .services-page .mobile-version .services-list .panel-heading a {
+        border-radius: 0;
+        display: table-cell;
+        padding: 20px;
+        background: #1ca5d7;
+        font-size: 20.32px;
+        font-family: "roboto_condensed_bold";
+        padding: 0 30px;
+        vertical-align: middle; }
+        /* line 389, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-heading a:hover, .services-page .mobile-version .services-list .panel-heading a:active {
+          background-image: url(img/bg-gray.png);
+          color: #1ca5d7; }
+    /* line 396, ../../jade/scss/_responsive.scss */
+    .services-page .mobile-version .services-list .panel-body {
+      margin: 45px 10px 35px 10px;
+      padding: 0; }
+      /* line 399, ../../jade/scss/_responsive.scss */
+      .services-page .mobile-version .services-list .panel-body .text-content {
+        background: #ffffff;
+        font-size: 20.44px;
+        line-height: 25.26px;
+        padding: 58px 22px; }
+        /* line 404, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-body .text-content ul, .services-page .mobile-version .services-list .panel-body .text-content li {
+          list-style: none; }
+        /* line 407, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-body .text-content li {
+          width: auto;
+          background: none;
+          list-style: inherit;
+          margin: 0 0 35px 0; }
+          /* line 412, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .text-content li:last-child {
+            margin: 0; }
+      /* line 417, ../../jade/scss/_responsive.scss */
+      .services-page .mobile-version .services-list .panel-body .nav-stacked {
+        text-align: center;
+        margin-top: 42px; }
+        /* line 420, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-body .nav-stacked > li {
+          width: 80%;
+          margin: 0 0 24px 0; }
+          /* line 424, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked > li button.btn-primary {
+            border: none;
+            border-radius: 0;
+            width: 100%;
+            background: #1ca5d7;
+            text-transform: uppercase;
+            font-size: 17.89px;
+            font-family: "roboto_condensed_bold"; }
+        /* line 435, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-backdrop.in {
+          opacity: 1;
+          height: 1200px !important; }
+        /* line 439, ../../jade/scss/_responsive.scss */
+        .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content {
+          border-radius: 0;
+          border: none; }
+          /* line 442, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .modal-header {
+            padding: 15px 0 0 0;
+            border: none; }
+          /* line 446, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content button.close {
+            width: auto;
+            float: left;
+            background: none;
+            opacity: 1;
+            font-size: 30px;
+            padding-left: 30px; }
+          /* line 454, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .title {
+            font-family: "roboto_condensed_bold";
+            font-size: 23px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin: 30px 0 36px 0;
+            color: #1ca5d7;
+            letter-spacing: 1px; }
+          /* line 463, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content ul {
+            padding: 0 30px 40px 30px; }
+            /* line 465, ../../jade/scss/_responsive.scss */
+            .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content ul li {
+              background: none;
+              width: 100%;
+              text-align: initial;
+              line-height: 30.67px;
+              margin-bottom: 24px;
+              margin-right: 0; }
+          /* line 474, ../../jade/scss/_responsive.scss */
+          .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content {
+            padding: 0; }
+            /* line 476, ../../jade/scss/_responsive.scss */
+            .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li {
+              width: 16px;
+              height: 16px;
+              background: #1ca5d7;
+              margin: 16px; }
+              /* line 481, ../../jade/scss/_responsive.scss */
+              .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li.active {
+                background: #ffffff; }
+            /* line 485, ../../jade/scss/_responsive.scss */
+            .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-indicators {
+              bottom: 2px !important;
+              left: 77%; }
+            /* line 489, ../../jade/scss/_responsive.scss */
+            .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-caption {
+              left: 0;
+              width: 100%;
+              bottom: 0;
+              padding: 26px 0 17px 10px;
+              text-align: left;
+              font-size: 15.33px;
+              color: #ffffff;
+              font-family: "roboto_condensed_bold";
+              background-color: rgba(0, 0, 0, 0.6); }
+              /* line 499, ../../jade/scss/_responsive.scss */
+              .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-caption span {
+                display: block;
+                font-family: "roboto_condensed_light";
+                margin-top: 2px; } }
 @media screen and (max-width: 400px) {
-  /* line 362, ../../jade/scss/_responsive.scss */
+  /* line 515, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
+
+/*# sourceMappingURL=style.css.map */
