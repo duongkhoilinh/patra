@@ -1,38 +1,79 @@
 extends layout
 block main
-  .about-page.other-page
-    .why-choose
-      .container
-        h1.title why choose patra group
-        ul.row
-          li.col-md-4
-            h3.sub-title MODERN
-            p
-              | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-          li.col-md-4
-            h3.sub-title QUALITY
-            p
-              | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-          li.col-md-4
-            h3.sub-title EXPERIENCE
-            p
-              | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-    .our-process
-      .container
-        h1.title Our Process
-        .content-post
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    .our-history
-      .container
-        h1.title our history
-        .content-post
-          ul.image-history
-            li
-              a(href='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-fabrication-landing.jpg')
-                img.alignnone.size-medium.wp-image-73(src='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-fabrication-landing-272x300.jpg', alt='stainless-steel-fabrication-landing', width='272', height='300')
-            li
-              a(href='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-subservice1.png')
-                img.alignnone.size-medium.wp-image-72(src='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-subservice1-272x300.png', alt='stainless-steel-subservice1', width='272', height='300')
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .about-page.other-page
+        .background-image
+            img(src="images/about-background.png")
+        .why-choose
+            .background-before
+                img(src="images/before-why-choose.png" height="280")
+            .container
+                h1.title about patra group
+                ul.row
+                    li.col-md-4
+                        h3.sub-title MODERN
+                        p
+                            | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    li.col-md-4
+                        h3.sub-title QUALITY
+                        p
+                            | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    li.col-md-4
+                        h3.sub-title EXPERIENCE
+                        p
+                            | Benefit 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            .background-after
+                img(src="images/after-why-choose.png" height="143")
+        .our-process
+            .container
+                h1.title Our Process
+                .content-post
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                ul.process-list
+                    li
+                        .sub-title
+                            span receive a quote
+                            .traingle
+                        p
+                            i.iconsp-receive
+                        .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    li
+                        .sub-title
+                            span consilation
+                            .traingle
+                        p
+                            i.iconsp-consulation
+                        .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    li
+                        .sub-title
+                            span planning & design
+                            .traingle
+                        p
+                            i.iconsp-planning
+                        .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    li
+                        .sub-title
+                            span construction
+                            .traingle
+                        p
+                            i.iconsp-construction
+                        .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            .background-after
+                img(src="images/after-background-process.png" heigh="170")
+        .our-history
+            .container
+                h1.title our history
+                .content-post
+                    ul.image-history
+                        li
+                            a(href='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-fabrication-landing.jpg')
+                                img.alignnone.size-medium.wp-image-73(src='images/about-history-1.jpg', alt='stainless-steel-fabrication-landing', width='272', height='300')
+                        li
+                            a(href='http://openseed.com.au/~patragroup/wp-content/uploads/2015/02/stainless-steel-subservice1.png')
+                                img.alignnone.size-medium.wp-image-72(src='images/about-history-2.jpg', alt='stainless-steel-subservice1', width='272', height='300')
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

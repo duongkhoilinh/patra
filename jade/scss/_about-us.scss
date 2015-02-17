@@ -1,0 +1,134 @@
+.about-page {
+  background: $white;
+  .background-image {
+    position: relative;
+    z-index: 1;
+  }
+  .why-choose {
+    margin-top: 0;
+    padding-bottom: 197px;
+    .background-before {
+      transform: rotateY(180deg);
+    }
+    .background-after {
+      transform: rotateY(180deg);
+    }
+    h1.title {
+      margin: 80px 0 62px 0;
+    }
+  }
+  .our-process {
+    background: $white;
+    margin-top: 143px;
+    position: relative;
+    .content-post {
+      p {
+        padding: 60px 118px;
+        color: #000000;
+        line-height: 25.56px;
+      }
+    }
+    .background-after {
+      z-index: 9;
+      position: absolute;
+      bottom: -184px;
+      left: 0;
+      width: 100%;
+    }
+    h1.title {
+      color: black;
+      margin-top: 43px;
+    }
+    .process-list {
+      margin: 20px 0 90px 0;
+      li {
+        display: inline-block;
+        width: 23%;
+        margin-right: 20px;
+        text-align: center;
+        background-image: url("img/bg-blue.png");
+        &:last-child {
+          margin-right: 0;
+        }
+        .sub-title {
+          text-align: center;
+          text-transform: uppercase;
+          font-family: $roboto_condensed_bold;
+          height: 68px;
+          display: table;
+          width: 100%;
+          position: relative;
+          span {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+        p {
+          padding: 35px 0 25px 0;
+          text-align: center;
+          background-color: $white;
+          display: block;
+        }
+        .traingle {
+          position: absolute;
+          background-image: url("../images/traingle.png");
+          background-repeat: no-repeat;
+          height: 16px;
+          width: 100%;
+          bottom: -16px;
+          z-index: 9;
+          background-size: 100%;
+          left: 0;
+        }
+        .content {
+          padding: 58px 27px;
+          line-height: 25.56px;
+          text-align: initial;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 0px;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-left: 11px solid #1ca5d7;
+            right: -11px;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+  .our-history {
+    background: $black;
+    position: relative;
+    padding: 268px 0 0 0;
+    .background-after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 143px;
+    }
+    h1.title {
+      margin-bottom: 60px;
+    }
+    .image-history {
+      li {
+        margin-right: 32px;
+        width: 48%;
+        display: inline-block;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    p {
+      padding: 60px 118px;
+      background: $white;
+      color: #000000;
+      margin: 34px 0 132px 0;
+      line-height: 25.56px;
+    }
+  }
+}
