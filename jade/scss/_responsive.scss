@@ -376,6 +376,7 @@
         .panel.panel-default {
           border: none;
           background: none;
+          margin-bottom: 11px;
         }
         .panel-heading {
           padding: 0;
@@ -481,13 +482,18 @@
                   height: 16px;
                   background: $blue;
                   margin: 16px;
+                  z-index: 10;
                   &.active {
                     background: $white;
                   }
+
                 }
                 .carousel-indicators {
                   bottom: 2px !important;
-                  left: 77%;
+                  left: initial;
+                  right: 0;
+                  width: 100%;
+                  text-align: right;
                 }
                 .carousel-caption {
                   left: 0;

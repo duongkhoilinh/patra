@@ -160,7 +160,7 @@ block main
                   each val, key in [1,2,3,4,5]
                     li
                       button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-one-#{val}" type="button") service #{val}
-                      .modal.fade(id='#service-one-#{val}' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+                      .modal.fade(id='service-one-#{val}' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
                         .modal-dialog
                           .modal-content
                             .modal-header
@@ -172,9 +172,9 @@ block main
                                 li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                                 li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                               ul.image-content
-                                #service-one-slider-mobile.carousel.slide(data-ride='carousel' data-interval='false')
+                                .carousel.slide(id='service-one-slider-mobile-#{val}' data-ride='carousel' data-interval='false')
                                   ol.carousel-indicators
-                                    li.active(data-target='#service-one-slider-mobile', data-slide-to='0')
+                                    li.active(data-target='#service-one-slider-mobile-#{val}', data-slide-to='0')
                                     li(data-target='#service-one-slider-mobile', data-slide-to='1')
                                     li(data-target='#service-one-slider-mobile', data-slide-to='2')
                                   .carousel-inner

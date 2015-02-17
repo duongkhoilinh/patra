@@ -2072,12 +2072,13 @@ h1.title {
     /* line 376, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .panel.panel-default {
       border: none;
-      background: none; }
-    /* line 380, ../../jade/scss/_responsive.scss */
+      background: none;
+      margin-bottom: 11px; }
+    /* line 381, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .panel-heading {
       padding: 0;
       color: white; }
-      /* line 383, ../../jade/scss/_responsive.scss */
+      /* line 384, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .panel-heading a {
         border-radius: 0;
         display: table-cell;
@@ -2087,41 +2088,41 @@ h1.title {
         font-family: "roboto_condensed_bold";
         padding: 0 30px;
         vertical-align: middle; }
-        /* line 392, ../../jade/scss/_responsive.scss */
+        /* line 393, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-heading a:hover, .services-page .mobile-version .services-list .panel-heading a:active {
           background-image: url(img/bg-gray.png);
           color: #1ca5d7; }
-    /* line 399, ../../jade/scss/_responsive.scss */
+    /* line 400, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .panel-body {
       margin: 45px 10px 35px 10px;
       padding: 0; }
-      /* line 402, ../../jade/scss/_responsive.scss */
+      /* line 403, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .panel-body .text-content {
         background: #ffffff;
         font-size: 20.44px;
         line-height: 25.26px;
         padding: 58px 22px; }
-        /* line 407, ../../jade/scss/_responsive.scss */
+        /* line 408, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-body .text-content ul, .services-page .mobile-version .services-list .panel-body .text-content li {
           list-style: none; }
-        /* line 410, ../../jade/scss/_responsive.scss */
+        /* line 411, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-body .text-content li {
           width: auto;
           background: none;
           list-style: inherit;
           margin: 0 0 35px 0; }
-          /* line 415, ../../jade/scss/_responsive.scss */
+          /* line 416, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .text-content li:last-child {
             margin: 0; }
-      /* line 420, ../../jade/scss/_responsive.scss */
+      /* line 421, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .panel-body .nav-stacked {
         text-align: center;
         margin-top: 42px; }
-        /* line 423, ../../jade/scss/_responsive.scss */
+        /* line 424, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-body .nav-stacked > li {
           width: 80%;
           margin: 0 0 24px 0; }
-          /* line 427, ../../jade/scss/_responsive.scss */
+          /* line 428, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked > li button.btn-primary {
             border: none;
             border-radius: 0;
@@ -2130,19 +2131,19 @@ h1.title {
             text-transform: uppercase;
             font-size: 17.89px;
             font-family: "roboto_condensed_bold"; }
-        /* line 438, ../../jade/scss/_responsive.scss */
+        /* line 439, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-backdrop.in {
           opacity: 1;
           height: 1200px !important; }
-        /* line 442, ../../jade/scss/_responsive.scss */
+        /* line 443, ../../jade/scss/_responsive.scss */
         .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content {
           border-radius: 0;
           border: none; }
-          /* line 445, ../../jade/scss/_responsive.scss */
+          /* line 446, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .modal-header {
             padding: 15px 0 0 0;
             border: none; }
-          /* line 449, ../../jade/scss/_responsive.scss */
+          /* line 450, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content button.close {
             width: auto;
             float: left;
@@ -2150,7 +2151,7 @@ h1.title {
             opacity: 1;
             font-size: 30px;
             padding-left: 30px; }
-          /* line 457, ../../jade/scss/_responsive.scss */
+          /* line 458, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .title {
             font-family: "roboto_condensed_bold";
             font-size: 23px;
@@ -2159,10 +2160,10 @@ h1.title {
             margin: 30px 0 36px 0;
             color: #1ca5d7;
             letter-spacing: 1px; }
-          /* line 466, ../../jade/scss/_responsive.scss */
+          /* line 467, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content ul {
             padding: 0 30px 40px 30px; }
-            /* line 468, ../../jade/scss/_responsive.scss */
+            /* line 469, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content ul li {
               background: none;
               width: 100%;
@@ -2170,23 +2171,27 @@ h1.title {
               line-height: 30.67px;
               margin-bottom: 24px;
               margin-right: 0; }
-          /* line 477, ../../jade/scss/_responsive.scss */
+          /* line 478, ../../jade/scss/_responsive.scss */
           .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content {
             padding: 0; }
-            /* line 479, ../../jade/scss/_responsive.scss */
+            /* line 480, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li {
               width: 16px;
               height: 16px;
               background: #1ca5d7;
-              margin: 16px; }
-              /* line 484, ../../jade/scss/_responsive.scss */
+              margin: 16px;
+              z-index: 10; }
+              /* line 486, ../../jade/scss/_responsive.scss */
               .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li.active {
                 background: white; }
-            /* line 488, ../../jade/scss/_responsive.scss */
+            /* line 491, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-indicators {
               bottom: 2px !important;
-              left: 77%; }
-            /* line 492, ../../jade/scss/_responsive.scss */
+              left: initial;
+              right: 0;
+              width: 100%;
+              text-align: right; }
+            /* line 498, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-caption {
               left: 0;
               width: 100%;
@@ -2197,36 +2202,36 @@ h1.title {
               color: #ffffff;
               font-family: "roboto_condensed_bold";
               background-color: rgba(0, 0, 0, 0.6); }
-              /* line 502, ../../jade/scss/_responsive.scss */
+              /* line 508, ../../jade/scss/_responsive.scss */
               .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-caption span {
                 display: block;
                 font-family: "roboto_condensed_light";
                 margin-top: 2px; }
-    /* line 512, ../../jade/scss/_responsive.scss */
+    /* line 518, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .other-page {
       padding: 54px 0 107px; }
-    /* line 516, ../../jade/scss/_responsive.scss */
+    /* line 522, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .contact-page .why-choose {
       margin-top: 0; }
-      /* line 518, ../../jade/scss/_responsive.scss */
+      /* line 524, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .contact-page .why-choose h1.title {
         margin-top: 0; }
-      /* line 521, ../../jade/scss/_responsive.scss */
+      /* line 527, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .contact-page .why-choose ul li {
         padding-bottom: 20px; }
-    /* line 526, ../../jade/scss/_responsive.scss */
+    /* line 532, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .map-contact {
       height: 520px; }
-    /* line 529, ../../jade/scss/_responsive.scss */
+    /* line 535, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .wrapper-contact .why-choose {
       margin: 0 0 60px 0; }
-      /* line 532, ../../jade/scss/_responsive.scss */
+      /* line 538, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .wrapper-contact .why-choose ul li span.content {
         margin-bottom: 2px; }
-      /* line 535, ../../jade/scss/_responsive.scss */
+      /* line 541, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .wrapper-contact .why-choose ul li span.content-title {
         margin-bottom: 0; } }
 @media screen and (max-width: 400px) {
-  /* line 546, ../../jade/scss/_responsive.scss */
+  /* line 552, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
