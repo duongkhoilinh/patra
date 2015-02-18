@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
   jQuery('.slick-next').empty();
 
 //Reset tab-landing
-  jQuery('desktop-version .sub-title').click(function () {
+  jQuery('.desktop-version .sub-title').click(function () {
     jQuery('.desktop-version .tab-content .tab-content .tab-pane.active').removeClass("active");
     jQuery('.desktop-version .tab-content .tab-content .tab-landing').addClass("active");
     jQuery('.desktop-version .nav-stacked li').removeClass("active");

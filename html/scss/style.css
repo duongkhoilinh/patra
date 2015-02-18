@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: #ffffff; }
+  background-color: white; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: #ffffff;
+  color: white;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -435,7 +435,7 @@ button:active, button:focus {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #ffffff; }
+  background: white; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -519,7 +519,7 @@ button:active, button:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666 \9;
+  background: #666666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -759,7 +759,7 @@ button:active, button:focus {
   /* line 44, ../../jade/scss/_layout.scss */
   .box-enquire .btn {
     border-radius: 0;
-    background: #ffffff;
+    background: white;
     width: 150px;
     display: block;
     margin-bottom: 18px;
@@ -778,7 +778,7 @@ button:active, button:focus {
     /* line 62, ../../jade/scss/_layout.scss */
     .box-enquire .btn.btn-submit {
       background: #1ca5d7;
-      color: #ffffff;
+      color: white;
       font-family: "roboto_condensed_bold";
       font-size: 18px;
       letter-spacing: 1px;
@@ -809,7 +809,7 @@ button:active, button:focus {
     color: #343434; }
   /* line 95, ../../jade/scss/_layout.scss */
   .box-enquire .select-style {
-    background: url(img/btn-dropdown.png) no-repeat 94% #fff;
+    background: url(img/btn-dropdown.png) no-repeat 94% white;
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
@@ -884,7 +884,7 @@ button:active, button:focus {
   display: none; }
 /* line 175, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: #ffffff;
+  background-color: white;
   color: #171a1c; }
   /* line 178, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -933,7 +933,7 @@ button:active, button:focus {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: #ffffff;
+      color: white;
       text-align: center; }
       /* line 225, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -941,7 +941,7 @@ button:active, button:focus {
         display: block; }
         /* line 228, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: #ffffff;
+          background: white;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -996,7 +996,7 @@ button:active, button:focus {
   background-color: black; }
   /* line 290, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: #ffffff;
+    background-color: white;
     vertical-align: middle;
     margin-right: 40px; }
   /* line 295, ../../jade/scss/_layout.scss */
@@ -1356,7 +1356,7 @@ h1.title {
         width: 0px;
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
-        border-left: 10px solid #ffffff;
+        border-left: 10px solid white;
         right: -10px;
         top: 45%;
         z-index: 1; }
@@ -1536,7 +1536,7 @@ h1.title {
 .services-page .services-list-content > .tab-pane.active {
   display: inline-block;
   color: #171a1c;
-  background: #ffffff;
+  background: white;
   padding: 40px 40px 40px 24px;
   width: 100%; }
   /* line 138, ../../jade/scss/_services.scss */
@@ -1547,7 +1547,7 @@ h1.title {
   .services-page .services-list-content > .tab-pane.active ul li a {
     padding: 15px 0px;
     display: inline-block;
-    color: #ffffff;
+    color: white;
     background: #1ca5d7;
     text-transform: uppercase;
     font-size: 17.89px;
@@ -1594,7 +1594,7 @@ h1.title {
         margin: 16px; }
         /* line 193, ../../jade/scss/_services.scss */
         .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
-          background: #ffffff; }
+          background: white; }
     /* line 198, ../../jade/scss/_services.scss */
     .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
       left: 0;
@@ -1603,7 +1603,7 @@ h1.title {
       padding: 14px 0 24px 22px;
       text-align: left;
       font-size: 15.33px;
-      color: #ffffff;
+      color: white;
       font-family: "roboto_condensed_bold";
       background-color: rgba(0, 0, 0, 0.6); }
       /* line 208, ../../jade/scss/_services.scss */
@@ -1686,7 +1686,7 @@ h1.title {
       margin-bottom: 55px; }
     /* line 41, ../../jade/scss/_portfolio.scss */
     .portfolio-page .tab-content .tab-pane.active {
-      background: #ffffff;
+      background: white;
       padding: 37px 52px 42px 0;
       color: black; }
       /* line 45, ../../jade/scss/_portfolio.scss */
@@ -1760,7 +1760,7 @@ h1.title {
       margin: 0 16px; }
       /* line 116, ../../jade/scss/_portfolio.scss */
       .portfolio-page .carousel-indicators li.active {
-        background: #ffffff; }
+        background: white; }
   /* line 121, ../../jade/scss/_portfolio.scss */
   .portfolio-page .bx-pager.bx-default-pager {
     top: 184px;
@@ -1834,62 +1834,63 @@ h1.title {
 
 /* line 1, ../../jade/scss/_about-us.scss */
 .about-page {
-  background: #ffffff; }
-  /* line 3, ../../jade/scss/_about-us.scss */
+  background: white;
+  padding-bottom: 0; }
+  /* line 4, ../../jade/scss/_about-us.scss */
   .about-page .background-image {
     position: relative;
     z-index: 1; }
-  /* line 7, ../../jade/scss/_about-us.scss */
+  /* line 8, ../../jade/scss/_about-us.scss */
   .about-page .why-choose {
     margin-top: 0;
     padding-bottom: 197px; }
-    /* line 11, ../../jade/scss/_about-us.scss */
+    /* line 12, ../../jade/scss/_about-us.scss */
     .about-page .why-choose li p {
       text-align: left; }
-    /* line 15, ../../jade/scss/_about-us.scss */
+    /* line 16, ../../jade/scss/_about-us.scss */
     .about-page .why-choose .background-before {
       transform: rotateY(180deg); }
-    /* line 18, ../../jade/scss/_about-us.scss */
+    /* line 19, ../../jade/scss/_about-us.scss */
     .about-page .why-choose .background-after {
       transform: rotateY(180deg); }
-    /* line 21, ../../jade/scss/_about-us.scss */
+    /* line 22, ../../jade/scss/_about-us.scss */
     .about-page .why-choose h1.title {
-      margin: 80px 0 62px 0; }
-  /* line 25, ../../jade/scss/_about-us.scss */
+      margin: 80px 0 62px 0;
+      padding: 0; }
+  /* line 27, ../../jade/scss/_about-us.scss */
   .about-page .our-process {
-    background: #ffffff;
+    background: white;
     margin-top: 143px;
     position: relative; }
-    /* line 30, ../../jade/scss/_about-us.scss */
+    /* line 32, ../../jade/scss/_about-us.scss */
     .about-page .our-process .content-post p {
       padding: 60px 118px;
       color: #000000;
       line-height: 25.56px; }
-    /* line 36, ../../jade/scss/_about-us.scss */
+    /* line 38, ../../jade/scss/_about-us.scss */
     .about-page .our-process .background-after {
       z-index: 9;
       position: absolute;
-      bottom: -184px;
       left: 0;
       width: 100%; }
-    /* line 43, ../../jade/scss/_about-us.scss */
+    /* line 44, ../../jade/scss/_about-us.scss */
     .about-page .our-process h1.title {
       color: black;
       margin-top: 43px; }
-    /* line 47, ../../jade/scss/_about-us.scss */
+    /* line 48, ../../jade/scss/_about-us.scss */
     .about-page .our-process .process-list {
       margin: 20px 0 90px 0; }
-      /* line 49, ../../jade/scss/_about-us.scss */
+      /* line 50, ../../jade/scss/_about-us.scss */
       .about-page .our-process .process-list li {
         display: inline-block;
         width: 23%;
         margin-right: 20px;
         text-align: center;
         background-image: url("img/bg-blue.png"); }
-        /* line 55, ../../jade/scss/_about-us.scss */
+        /* line 56, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li:last-child {
           margin-right: 0; }
-        /* line 58, ../../jade/scss/_about-us.scss */
+        /* line 59, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .sub-title {
           text-align: center;
           text-transform: uppercase;
@@ -1898,17 +1899,17 @@ h1.title {
           display: table;
           width: 100%;
           position: relative; }
-          /* line 66, ../../jade/scss/_about-us.scss */
+          /* line 67, ../../jade/scss/_about-us.scss */
           .about-page .our-process .process-list li .sub-title span {
             display: table-cell;
             vertical-align: middle; }
-        /* line 71, ../../jade/scss/_about-us.scss */
+        /* line 72, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li p {
           padding: 35px 0 25px 0;
           text-align: center;
-          background-color: #ffffff;
+          background-color: white;
           display: block; }
-        /* line 77, ../../jade/scss/_about-us.scss */
+        /* line 78, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .traingle {
           position: absolute;
           background-image: url("../images/traingle.png");
@@ -1919,13 +1920,13 @@ h1.title {
           z-index: 9;
           background-size: 100%;
           left: 0; }
-        /* line 88, ../../jade/scss/_about-us.scss */
+        /* line 89, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .content {
           padding: 58px 27px;
           line-height: 25.56px;
           text-align: initial;
           position: relative; }
-          /* line 93, ../../jade/scss/_about-us.scss */
+          /* line 94, ../../jade/scss/_about-us.scss */
           .about-page .our-process .process-list li .content:before {
             position: absolute;
             content: "";
@@ -1934,34 +1935,34 @@ h1.title {
             border-bottom: 11px solid transparent;
             border-left: 11px solid #1ca5d7;
             right: -11px;
-            top: 50%; }
-  /* line 107, ../../jade/scss/_about-us.scss */
+            top: 48%; }
+  /* line 108, ../../jade/scss/_about-us.scss */
   .about-page .our-history {
     background: #171a1c;
     position: relative;
     padding: 268px 0 0 0; }
-    /* line 111, ../../jade/scss/_about-us.scss */
+    /* line 112, ../../jade/scss/_about-us.scss */
     .about-page .our-history .background-after {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 143px; }
-    /* line 118, ../../jade/scss/_about-us.scss */
+    /* line 119, ../../jade/scss/_about-us.scss */
     .about-page .our-history h1.title {
       margin-bottom: 60px; }
-    /* line 122, ../../jade/scss/_about-us.scss */
+    /* line 123, ../../jade/scss/_about-us.scss */
     .about-page .our-history .image-history li {
       margin-right: 32px;
       width: 48%;
       display: inline-block; }
-      /* line 126, ../../jade/scss/_about-us.scss */
+      /* line 127, ../../jade/scss/_about-us.scss */
       .about-page .our-history .image-history li:last-child {
         margin-right: 0; }
-    /* line 131, ../../jade/scss/_about-us.scss */
+    /* line 132, ../../jade/scss/_about-us.scss */
     .about-page .our-history p {
       padding: 60px 118px;
-      background: #ffffff;
+      background: white;
       color: #000000;
       margin: 34px 0 132px 0;
       line-height: 25.56px; }
@@ -1990,14 +1991,14 @@ h1.title {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: #ffffff;
+    background-color: white;
     padding: 5px 0; }
     /* line 26, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 29, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: #ffffff;
+      background-color: white;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -2056,7 +2057,7 @@ h1.title {
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: #ffffff; }
+        color: white; }
       /* line 91, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -2335,7 +2336,7 @@ h1.title {
     /* line 382, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .panel-heading {
       padding: 0;
-      color: #ffffff; }
+      color: white; }
       /* line 385, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .panel-heading a {
         border-radius: 0;
@@ -2414,7 +2415,7 @@ h1.title {
             font-family: "roboto_condensed_bold";
             font-size: 23px;
             text-transform: uppercase;
-            color: #ffffff;
+            color: white;
             margin: 30px 0 36px 0;
             color: #1ca5d7;
             letter-spacing: 1px; }
@@ -2441,7 +2442,7 @@ h1.title {
               z-index: 10; }
               /* line 487, ../../jade/scss/_responsive.scss */
               .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li.active {
-                background: #ffffff; }
+                background: white; }
             /* line 492, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-indicators {
               bottom: 2px !important;
@@ -2510,73 +2511,77 @@ h1.title {
       /* line 562, ../../jade/scss/_responsive.scss */
       .about-page .why-choose h1.title {
         margin: 120px 0 54px 0; }
-    /* line 566, ../../jade/scss/_responsive.scss */
+    /* line 567, ../../jade/scss/_responsive.scss */
     .about-page .our-process {
       margin-top: 72px; }
-      /* line 568, ../../jade/scss/_responsive.scss */
+      /* line 569, ../../jade/scss/_responsive.scss */
       .about-page .our-process h1.title {
-        margin-bottom: 46px; }
-      /* line 571, ../../jade/scss/_responsive.scss */
+        margin: 25px 0 60px; }
+      /* line 572, ../../jade/scss/_responsive.scss */
       .about-page .our-process .content-post {
         display: none; }
-      /* line 574, ../../jade/scss/_responsive.scss */
+      /* line 575, ../../jade/scss/_responsive.scss */
       .about-page .our-process .process-list {
         margin: 20px 0 10px 0; }
-        /* line 576, ../../jade/scss/_responsive.scss */
+        /* line 577, ../../jade/scss/_responsive.scss */
         .about-page .our-process .process-list li {
           width: 300px;
           display: block;
           margin: 0 auto; }
-          /* line 580, ../../jade/scss/_responsive.scss */
+          /* line 581, ../../jade/scss/_responsive.scss */
           .about-page .our-process .process-list li .sub-title {
             height: 48px; }
-            /* line 582, ../../jade/scss/_responsive.scss */
+            /* line 583, ../../jade/scss/_responsive.scss */
             .about-page .our-process .process-list li .sub-title .traingle {
               height: 22px;
               bottom: -22px; }
-          /* line 587, ../../jade/scss/_responsive.scss */
+          /* line 588, ../../jade/scss/_responsive.scss */
           .about-page .our-process .process-list li i {
             border: 1px solid #000;
             border-radius: 50%;
             width: 100px;
             height: 100px;
             zoom: 0.8; }
-            /* line 593, ../../jade/scss/_responsive.scss */
+            /* line 594, ../../jade/scss/_responsive.scss */
             .about-page .our-process .process-list li i.iconsp-receive {
               background-position: -399px 8px; }
-            /* line 596, ../../jade/scss/_responsive.scss */
+            /* line 597, ../../jade/scss/_responsive.scss */
             .about-page .our-process .process-list li i.iconsp-planning {
               background-position: -556px 6px; }
-            /* line 599, ../../jade/scss/_responsive.scss */
+            /* line 600, ../../jade/scss/_responsive.scss */
             .about-page .our-process .process-list li i.iconsp-construction {
               background-position: -638px 8px; }
-          /* line 603, ../../jade/scss/_responsive.scss */
+          /* line 604, ../../jade/scss/_responsive.scss */
           .about-page .our-process .process-list li .content {
             display: none; }
-          /* line 606, ../../jade/scss/_responsive.scss */
+          /* line 607, ../../jade/scss/_responsive.scss */
           .about-page .our-process .process-list li:last-child {
             margin-right: auto; }
-      /* line 611, ../../jade/scss/_responsive.scss */
+          /* line 610, ../../jade/scss/_responsive.scss */
+          .about-page .our-process .process-list li p {
+            padding: 46px 0 21px 0; }
+      /* line 615, ../../jade/scss/_responsive.scss */
       .about-page .our-process .background-after {
         bottom: -54px;
         height: 54px; }
-    /* line 616, ../../jade/scss/_responsive.scss */
+    /* line 621, ../../jade/scss/_responsive.scss */
     .about-page .our-history {
       padding: 110px 0 0 0; }
-      /* line 618, ../../jade/scss/_responsive.scss */
+      /* line 623, ../../jade/scss/_responsive.scss */
       .about-page .our-history h1.title {
         margin-bottom: 50px; }
-      /* line 621, ../../jade/scss/_responsive.scss */
+      /* line 626, ../../jade/scss/_responsive.scss */
       .about-page .our-history .image-history li {
         margin-right: 0;
         width: 100%;
         display: block; }
-      /* line 626, ../../jade/scss/_responsive.scss */
+      /* line 631, ../../jade/scss/_responsive.scss */
       .about-page .our-history p {
-        padding: 60px 22px; } }
+        padding: 60px 22px;
+        font-size: 22px;
+        margin-bottom: 65px;
+        line-height: 30.67px; } }
 @media screen and (max-width: 400px) {
-  /* line 634, ../../jade/scss/_responsive.scss */
+  /* line 642, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
-
-/*# sourceMappingURL=style.css.map */
