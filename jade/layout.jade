@@ -75,7 +75,14 @@ html(lang='en')
                   textarea.form-control(type="text" id="usr" placeholder="Enquiry")
               .box-right.col-md-3
                 button.btn.btn-cancel(type="button") cancel
-                button.btn.btn-upload(type="button") upload files
+                button.btn-upload.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#upload-files" type="button") upload files
+                #upload-files.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                    span(aria-hidden="true")&times;
+                                .title service one
                 button.btn.btn-submit(type="button") submit
           .bg-contac-form: img(src = 'images/bottom-bg-form.png')
 

@@ -8,6 +8,7 @@ jQuery(document).ready(function () {
 //  Remove html slick-prev, slick-next
   jQuery('.slick-prev').empty();
   jQuery('.slick-next').empty();
+
 //Reset tab-landing
   jQuery('.sub-title').click(function () {
     jQuery('.tab-content .tab-content .tab-pane.active').removeClass("active");
@@ -16,6 +17,7 @@ jQuery(document).ready(function () {
   })
   var count = 0;
   jQuery('.main-bxslider').bxSlider();
+  jQuery('.portfolio-bxslider').bxSlider();
 
   jQuery('.testimonials-bxSlider').bxSlider();
 

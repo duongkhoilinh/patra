@@ -1,46 +1,119 @@
 extends layout
 block main
-  .portfolio-page.other-page
-    .container
-      h1.title portfolio
-      ul.portfolio-slider
-        li
-          img.attachment-post-thumbnail.wp-post-image(width='162', height='162', src='http://portfolio.actiontwo.com/patra/wp-content/uploads/sites/5/2015/02/testimonials-logo-2.jpg', alt='testimonials-logo-2')
-        li
-          img.attachment-post-thumbnail.wp-post-image(width='132', height='93', src='http://portfolio.actiontwo.com/patra/wp-content/uploads/sites/5/2015/02/testimonials-logo-1.jpg', alt='testimonials-logo-1')
-      .portfolio-content
-        .portfolio-content-detail
-          ul.portfolio-content-detail-slider
-            li
-              img(src='http://portfolio.actiontwo.com/patra/wp-content/uploads/sites/5/2015/02/stainless-steel-subservice1-272x300.png')
-          .portfolio-content-desc
-            .title-content-desc
-              | Subway
-            h4 September 2014
-            h3 Scope
-            ul
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            h3 Solutions
-            ul
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        .portfolio-content-detail
-          ul.portfolio-content-detail-slider
-            li
-              img(src='http://portfolio.actiontwo.com/patra/wp-content/uploads/sites/5/2015/02/stainless-steel-fabrication-landing-272x300.jpg')
-            li
-              img(src='http://portfolio.actiontwo.com/patra/wp-content/uploads/sites/5/2015/02/stainless-steel-subservice1-272x300.png')
-          .portfolio-content-desc
-            .title-content-desc
-              | Parisi’s
-            h4 September 2014
-            h3 Scope
-            ul
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            h3 Solutions
-            ul
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .portfolio-page.other-page
+        .container
+            h1.title portfolio
+            ul.portfolio-bxslider
+                li
+                    ul.image-list.nav.nav-pills.nav-justified.services-list
+                        li.active: a(href="#portfolio-1", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+                        li: a(href="#portfolio-2", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+                        li: a(href="#portfolio-3", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+                        li: a(href="#portfolio-4", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+                        li: a(href="#portfolio-5", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+                    .tab-content
+                        .tab-pane.active#portfolio-1
+                            .content-pane
+                                ul.image-content
+                                    #slider-portfolio-1.carousel.slide(data-ride='carousel' data-interval='false')
+                                        ol.carousel-indicators
+                                            li.active(data-target='#slider-portfolio-1', data-slide-to='0')
+                                            li(data-target='#slider-portfolio-1', data-slide-to='1')
+                                            li(data-target='#slider-portfolio-1', data-slide-to='2')
+                                        .carousel-inner
+                                            .item.active
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                .company-info
+                                    .company-name
+                                        h3 parisi's
+                                        span Eastwood
+                                    span.time September 2014
+
+                                    ul.scope
+                                        h3.title scope
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    ul.solutions
+                                        h3.title solutions
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        .tab-pane#portfolio-2
+                            .content-pane
+                                ul.image-content
+                                    #slider-portfolio-2.carousel.slide(data-ride='carousel' data-interval='false')
+                                        ol.carousel-indicators
+                                            li.active(data-target='#slider-portfolio-2', data-slide-to='0')
+                                            li(data-target='#slider-portfolio-2', data-slide-to='1')
+                                            li(data-target='#slider-portfolio-2', data-slide-to='2')
+                                        .carousel-inner
+                                            .item.active
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                            .item
+                                                img(src='images/stainless-steel-subservice1.png', alt='...')
+                                                .carousel-caption
+                                .company-info
+                                    .company-name
+                                        h3 parisi's
+                                        span Eastwood
+                                    span.time September 2014
+
+                                    ul.scope
+                                        h3.title scope
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    ul.solutions
+                                        h3.title solutions
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                li
+                    ul.image-list
+                        li: img(src="images/testimonials-logo-1.jpg")
+                        li: img(src="images/testimonials-logo-1.jpg")
+                        li: img(src="images/testimonials-logo-1.jpg")
+                        li: img(src="images/testimonials-logo-1.jpg")
+                        li: img(src="images/testimonials-logo-1.jpg")
+               //.portfolio-content
+               // .portfolio-content-detail
+               //     ul.portfolio-content-detail-slider
+               //         li
+               //             img(src='')
+               //     .portfolio-content-desc
+               //         .title-content-desc
+               //             | Subway
+               //         h4 September 2014
+               //         h3 Scope
+               //         ul
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //         h3 Solutions
+               //         ul
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               // .portfolio-content-detail
+               //     ul.portfolio-content-detail-slider
+               //         li
+               //         li
+               //     .portfolio-content-desc
+               //         .title-content-desc
+               //             | Parisi’s
+               //         h4 September 2014
+               //         h3 Scope
+               //         ul
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //         h3 Solutions
+               //         ul
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               //             li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
