@@ -1,6 +1,12 @@
 .portfolio-page {
   padding-bottom: 0;
-  margin-bottom: -122px;
+  margin-bottom: 100px;
+  .mobile-version {
+    display: none;
+  }
+  .bx-viewport {
+    height: 894px !important;
+  }
   h1.title {
     margin: 48px 0 57px 0;
   }

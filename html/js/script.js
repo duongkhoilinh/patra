@@ -18,6 +18,7 @@ jQuery(document).ready(function () {
   var count = 0;
   jQuery('.main-bxslider').bxSlider();
   jQuery('.portfolio-bxslider').bxSlider();
+  jQuery('.portfolio-bxslider-mobi').bxSlider();
 
   jQuery('.testimonials-bxSlider').bxSlider();
 

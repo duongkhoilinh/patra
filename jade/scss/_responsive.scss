@@ -628,6 +628,60 @@
       }
     }
   }
+  .portfolio-page {
+    .desktop-version {
+      display: none;
+    }
+    .mobile-version {
+      display: block;
+      margin-bottom: 300px;
+      .bx-pager.bx-default-pager {
+        bottom: -68px;
+        top: inherit;
+      }
+      .image-list {
+        text-align: center;
+        li {
+          width: 47%;
+          height: auto;
+          margin: 0 12px 12px 0;
+          &:nth-child(3),
+          &:nth-child(5){
+            margin-right: 0;
+          }
+          a {
+            margin: 0;
+          }
+          &:before {
+            display: none;
+          }
+          &:last-child {
+            float: left;
+          }
+        }
+      }
+    }
+    .modal-content {
+      border-radius: 0;
+      border: none;
+    }
+    .modal-backdrop.fade.in {
+      opacity: 1;
+    }
+    button.close {
+      width: auto;
+      float: left;
+      background: none;
+      opacity: 1;
+      font-size: 30px;
+      padding: 14px;
+      line-height: 15px;
+    }
+    .modal-header {
+      padding: 0;
+    }
+  }
+
 }
 
 @media screen and (max-width: 400px) {

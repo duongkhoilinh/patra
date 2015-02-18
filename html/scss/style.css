@@ -1645,11 +1645,17 @@ h1.title {
 /* line 1, ../../jade/scss/_portfolio.scss */
 .portfolio-page {
   padding-bottom: 0;
-  margin-bottom: -122px; }
+  margin-bottom: 100px; }
   /* line 4, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version {
+    display: none; }
+  /* line 7, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .bx-viewport {
+    height: 894px !important; }
+  /* line 10, ../../jade/scss/_portfolio.scss */
   .portfolio-page h1.title {
     margin: 48px 0 57px 0; }
-  /* line 7, ../../jade/scss/_portfolio.scss */
+  /* line 13, ../../jade/scss/_portfolio.scss */
   .portfolio-page .image-list li {
     width: 170px;
     height: 170px;
@@ -1658,11 +1664,11 @@ h1.title {
     margin-left: 0;
     background: #000000;
     opacity: 0.8; }
-    /* line 15, ../../jade/scss/_portfolio.scss */
+    /* line 21, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li.active {
       opacity: 1;
       position: relative; }
-      /* line 18, ../../jade/scss/_portfolio.scss */
+      /* line 24, ../../jade/scss/_portfolio.scss */
       .portfolio-page .image-list li.active:before {
         position: absolute;
         content: "";
@@ -1672,29 +1678,29 @@ h1.title {
         border-bottom: 11px solid #ffffff;
         right: 41%;
         bottom: -88px; }
-    /* line 29, ../../jade/scss/_portfolio.scss */
+    /* line 35, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li a {
       padding: 0; }
-    /* line 32, ../../jade/scss/_portfolio.scss */
+    /* line 38, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li:last-child {
       margin-right: 0; }
-  /* line 36, ../../jade/scss/_portfolio.scss */
+  /* line 42, ../../jade/scss/_portfolio.scss */
   .portfolio-page .tab-content {
     margin-top: 85px; }
-    /* line 38, ../../jade/scss/_portfolio.scss */
+    /* line 44, ../../jade/scss/_portfolio.scss */
     .portfolio-page .tab-content .content-pane {
       margin-bottom: 55px; }
-    /* line 41, ../../jade/scss/_portfolio.scss */
+    /* line 47, ../../jade/scss/_portfolio.scss */
     .portfolio-page .tab-content .tab-pane.active {
       background: #ffffff;
       padding: 37px 52px 42px 0;
       color: black; }
-      /* line 45, ../../jade/scss/_portfolio.scss */
+      /* line 51, ../../jade/scss/_portfolio.scss */
       .portfolio-page .tab-content .tab-pane.active .image-content {
         float: right;
         width: 480px;
         margin-left: 82px; }
-      /* line 51, ../../jade/scss/_portfolio.scss */
+      /* line 57, ../../jade/scss/_portfolio.scss */
       .portfolio-page .tab-content .tab-pane.active .company-info .company-name {
         background: #1ca5d7;
         display: inline-block;
@@ -1702,7 +1708,7 @@ h1.title {
         padding: 34px 0 34px 68px;
         color: white;
         position: relative; }
-        /* line 58, ../../jade/scss/_portfolio.scss */
+        /* line 64, ../../jade/scss/_portfolio.scss */
         .portfolio-page .tab-content .tab-pane.active .company-info .company-name:before {
           position: absolute;
           content: "";
@@ -1712,24 +1718,24 @@ h1.title {
           border-left: 22px solid #1ca5d7;
           right: -22px;
           top: 0px; }
-        /* line 68, ../../jade/scss/_portfolio.scss */
+        /* line 74, ../../jade/scss/_portfolio.scss */
         .portfolio-page .tab-content .tab-pane.active .company-info .company-name h3 {
           font-size: 23.56px;
           text-transform: uppercase;
           font-family: "proxima_nova_bold"; }
-        /* line 73, ../../jade/scss/_portfolio.scss */
+        /* line 79, ../../jade/scss/_portfolio.scss */
         .portfolio-page .tab-content .tab-pane.active .company-info .company-name span {
           font-family: "roboto_condensed_light";
           font-size: 17.89px; }
-      /* line 78, ../../jade/scss/_portfolio.scss */
+      /* line 84, ../../jade/scss/_portfolio.scss */
       .portfolio-page .tab-content .tab-pane.active .company-info span.time {
         display: block;
         padding-left: 68px;
         margin-top: 20px; }
-      /* line 83, ../../jade/scss/_portfolio.scss */
+      /* line 89, ../../jade/scss/_portfolio.scss */
       .portfolio-page .tab-content .tab-pane.active .company-info ul {
         padding-left: 68px; }
-        /* line 85, ../../jade/scss/_portfolio.scss */
+        /* line 91, ../../jade/scss/_portfolio.scss */
         .portfolio-page .tab-content .tab-pane.active .company-info ul h3.title {
           font-family: "proxima_nova_bold";
           font-size: 17.89px;
@@ -1737,41 +1743,41 @@ h1.title {
           text-transform: uppercase;
           letter-spacing: 1px;
           margin: 20px 0; }
-        /* line 93, ../../jade/scss/_portfolio.scss */
+        /* line 99, ../../jade/scss/_portfolio.scss */
         .portfolio-page .tab-content .tab-pane.active .company-info ul li {
           line-height: 25.56px; }
-  /* line 100, ../../jade/scss/_portfolio.scss */
+  /* line 106, ../../jade/scss/_portfolio.scss */
   .portfolio-page .carousel-caption {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     left: 0;
     height: 48px; }
-  /* line 107, ../../jade/scss/_portfolio.scss */
+  /* line 113, ../../jade/scss/_portfolio.scss */
   .portfolio-page .carousel-indicators {
     bottom: 15px;
     left: 90px; }
-    /* line 110, ../../jade/scss/_portfolio.scss */
+    /* line 116, ../../jade/scss/_portfolio.scss */
     .portfolio-page .carousel-indicators li {
       width: 16px;
       height: 16px;
       background-color: #1ca5d7;
       border: none;
       margin: 0 16px; }
-      /* line 116, ../../jade/scss/_portfolio.scss */
+      /* line 122, ../../jade/scss/_portfolio.scss */
       .portfolio-page .carousel-indicators li.active {
         background: #ffffff; }
-  /* line 121, ../../jade/scss/_portfolio.scss */
+  /* line 127, ../../jade/scss/_portfolio.scss */
   .portfolio-page .bx-pager.bx-default-pager {
     top: 184px;
     max-height: 0; }
-  /* line 125, ../../jade/scss/_portfolio.scss */
+  /* line 131, ../../jade/scss/_portfolio.scss */
   .portfolio-page .portfolio-content {
     background: #fff; }
-  /* line 129, ../../jade/scss/_portfolio.scss */
+  /* line 135, ../../jade/scss/_portfolio.scss */
   .portfolio-page ul.portfolio-content-detail-slider {
     width: 370px; }
-  /* line 133, ../../jade/scss/_portfolio.scss */
+  /* line 139, ../../jade/scss/_portfolio.scss */
   .portfolio-page .portfolio-content-detail {
     margin: 40px 50px 50px 0;
     color: #000000; }
@@ -2573,9 +2579,60 @@ h1.title {
         display: block; }
       /* line 626, ../../jade/scss/_responsive.scss */
       .about-page .our-history p {
-        padding: 60px 22px; } }
+        padding: 60px 22px; }
+
+  /* line 632, ../../jade/scss/_responsive.scss */
+  .portfolio-page .desktop-version {
+    display: none; }
+  /* line 635, ../../jade/scss/_responsive.scss */
+  .portfolio-page .mobile-version {
+    display: block;
+    margin-bottom: 300px; }
+    /* line 638, ../../jade/scss/_responsive.scss */
+    .portfolio-page .mobile-version .bx-pager.bx-default-pager {
+      bottom: -68px;
+      top: inherit; }
+    /* line 642, ../../jade/scss/_responsive.scss */
+    .portfolio-page .mobile-version .image-list {
+      text-align: center; }
+      /* line 644, ../../jade/scss/_responsive.scss */
+      .portfolio-page .mobile-version .image-list li {
+        width: 47%;
+        height: auto;
+        margin: 0 12px 12px 0; }
+        /* line 648, ../../jade/scss/_responsive.scss */
+        .portfolio-page .mobile-version .image-list li:nth-child(3), .portfolio-page .mobile-version .image-list li:nth-child(5) {
+          margin-right: 0; }
+        /* line 652, ../../jade/scss/_responsive.scss */
+        .portfolio-page .mobile-version .image-list li a {
+          margin: 0; }
+        /* line 655, ../../jade/scss/_responsive.scss */
+        .portfolio-page .mobile-version .image-list li:before {
+          display: none; }
+        /* line 658, ../../jade/scss/_responsive.scss */
+        .portfolio-page .mobile-version .image-list li:last-child {
+          float: left; }
+  /* line 664, ../../jade/scss/_responsive.scss */
+  .portfolio-page .modal-content {
+    border-radius: 0;
+    border: none; }
+  /* line 668, ../../jade/scss/_responsive.scss */
+  .portfolio-page .modal-backdrop.fade.in {
+    opacity: 1; }
+  /* line 671, ../../jade/scss/_responsive.scss */
+  .portfolio-page button.close {
+    width: auto;
+    float: left;
+    background: none;
+    opacity: 1;
+    font-size: 30px;
+    padding: 14px;
+    line-height: 15px; }
+  /* line 680, ../../jade/scss/_responsive.scss */
+  .portfolio-page .modal-header {
+    padding: 0; } }
 @media screen and (max-width: 400px) {
-  /* line 634, ../../jade/scss/_responsive.scss */
+  /* line 688, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
 
