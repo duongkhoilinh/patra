@@ -1,248 +1,220 @@
 extends layout
 block main
-    .services-page.other-page
-        .container
-            h1.title services
-            .desktop-version
-                ul.nav.nav-pills.nav-justified.services-list
-                    each val,index in {'stainless-steel-fabrication':'stainless steel fabrication','refrigeration':'refrigeration','shopfitting':'shopfitting','catering-equipment':'catering equipment','design-consilation':'design & consilation'}
-                        li
-                            a(href='##{index}', data-toggle='pill')
-                                h4.sub-title
-                                    span=val
-                            .traingle
+  .services-page.other-page
+    .container
+      h1.title services
+      .desktop-version
+        ul.nav.nav-pills.nav-justified.services-list
+          each val,index in {'stainless-steel-fabrication':'stainless steel fabrication','refrigeration':'refrigeration','shopfitting':'shopfitting','catering-equipment':'catering equipment','design-consilation':'design & consilation'}
+            li
+              a(href='##{index}', data-toggle='pill')
+                h4.sub-title
+                  span=val
+              .traingle
 
-                .tab-content.services-list-content
-                    .tab-pane.active#stainless-steel-fabrication
-                        ul.nav.nav-pills.nav-stacked.col-md-3
-                            li
-                                a(href='#service-one', data-toggle='pill') service one
-                            li
-                                a(href='#service-two', data-toggle='pill') service one
-                            li
-                                a(href='#service-three', data-toggle='pill') service one
-                            li
-                                a(href='#service-four', data-toggle='pill') service one
-                            li
-                                a(href='#service-five', data-toggle='pill') service one
-                            li
-                                a(href='#service-six', data-toggle='pill') service one
-                            li
-                                a(href='#service-seven', data-toggle='pill') service one
-                        .tab-content.col-md-9
-                            .tab-pane.active.tab-landing
-                                .content-pane
-                                    .img_thumnail: img(src="images/stainless-steel-fabrication-landing.jpg")
-                                    | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            .tab-pane#service-one
-                                .content-pane
-                                    ul.image-content
-                                        #service-one-slider.carousel.slide(data-ride='carousel' data-interval='false')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#service-one-slider', data-slide-to='0')
-                                                li(data-target='#service-one-slider', data-slide-to='1')
-                                                li(data-target='#service-one-slider', data-slide-to='2')
-                                            .carousel-inner
-                                                .item.active
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                    ul
-                                        li Sed ut perspiciatis unde omnis iste natus error sit
-                                        li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                        li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            .tab-pane#service-two
-                                .content-pane
-                                    ul.image-content
-                                        #service-two-slider.carousel.slide(data-ride='carousel' data-interval='false')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#service-two-slider', data-slide-to='0')
-                                                li(data-target='#service-two-slider', data-slide-to='1')
-                                                li(data-target='#service-two-slider', data-slide-to='2')
-                                            .carousel-inner
-                                                .item.active
-                                                    img(src='images/stainless-steel-subservice2.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                                .item
-                                                    img(src='images/stainless-steel-subservice2.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                                .item
-                                                    img(src='images/stainless-steel-subservice2.png', alt='...')
-                                                    .carousel-caption
-                                                        label Client Name
-                                                        span 2014
-                                    ul
-                                        li Sed ut perspiciatis unde omnis iste natus error sit
-                                        li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                        li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                    .tab-pane#catering-equipment
-                        ul.nav.nav-pills.nav-stacked.col-md-3
-                            li
-                                a(href='#catering-one', data-toggle='pill') deep fryers
-                            li
-                                a(href='#catering-two', data-toggle='pill') fridges
-                            li
-                                a(href='#catering-three', data-toggle='pill') cool rooms
-                            li
-                                a(href='#catering-four', data-toggle='pill') bain maries
-                            li
-                                a(href='#catering-five', data-toggle='pill') char grills
-                            li
-                                a(href='#catering-six', data-toggle='pill') chest freezerss
-                            li
-                                a(href='#catering-seven', data-toggle='pill') cake displays
-                        .tab-content.col-md-9
-                            .tab-pane.active.tab-landing
-                                .content-pane
-                                    .img_thumnail: img(src="images/catering-landing.jpg")
-                                    | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            .tab-pane#catering-one
-                                .content-pane
-                                    ul.image-content.col-md-5
-                                        img(src="images/catering-fryer.png")
-                                    ul.text-content.col-md-6
-                                        li
-                                            h2.title waldorf gas single pan deep fryer
-                                        li 600mm single pan gas fryer 31L oil capacity
-                                        li 31kg/hr production rate 90MJ multi−jet target burner
-                                        li Easy clean stainless steel open pan Available in Natural Gas & LPG
-                                        li Units supplied complete with gas type conversion kits
-                                        li Twin pan fryer flexibility Full single pan performance
-                                        li Patented infra−red burner sys
-                                        li Browse other brands for this product:
-                                    .slide-logo.col-md-12
-                                        div
-                                            img(src='images/slide-logo-1.jpg')
-                                        div
-                                            img(src='images/slide-logo-2.jpg')
-                                        div
-                                            img(src='images/slide-logo-3.jpg')
-                                        div
-                                            img(src='images/slide-logo-1.jpg')
-                                        div
-                                            img(src='images/slide-logo-2.jpg')
-                                        div
-                                            img(src='images/slide-logo-3.jpg')
-                                        div
-                                            img(src='images/slide-logo-1.jpg')
-                                        div
-                                            img(src='images/slide-logo-2.jpg')
-                                        div
-                                            img(src='images/slide-logo-3.jpg')
-            .mobile-version
-                #accordion.panel-group.services-list
-                    .panel.panel-default
-                        .panel-heading
-                            h4.panel-title.sub-title
-                                a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne") stainless steel fabrication
-                        #collapseOne.panel-collapse.collapse
-                            .panel-body
-                                ul.text-content
-                                    li Sed ut perspiciatis unde omnis iste natus error sit
-                                    li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                    li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                ul.nav.nav-pills.nav-stacked
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-one-mobile" type="button") service one
-                                        #service-one-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                            .modal-dialog
-                                                .modal-content
-                                                    .modal-header
-                                                        button.close(type="button" data-dismiss="modal" aria-label="Close")
-                                                            span(aria-hidden="true")&times;
-                                                        .title service one
-                                                        ul
-                                                            li Sed ut perspiciatis unde omnis iste natus error sit
-                                                            li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                                            li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                                        ul.image-content
-                                                            #service-one-slider-mobile.carousel.slide(data-ride='carousel' data-interval='false')
-                                                                ol.carousel-indicators
-                                                                    li.active(data-target='#service-one-slider-mobile', data-slide-to='0')
-                                                                    li(data-target='#service-one-slider-mobile', data-slide-to='1')
-                                                                    li(data-target='#service-one-slider-mobile', data-slide-to='2')
-                                                                .carousel-inner
-                                                                    .item.active
-                                                                        img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                        .carousel-caption
-                                                                            label Client Name
-                                                                            span 2014
-                                                                    .item
-                                                                        img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                        .carousel-caption
-                                                                            label Client Name
-                                                                            span 2014
-                                                                    .item
-                                                                        img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                        .carousel-caption
-                                                                            label Client Name
-                                                                            span 2014
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                                    li
-                                        button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-two-mobile" type="button") service one
-                                            #service-two-mobile.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                                .modal-dialog
-                                                    .modal-content
-                    .panel.panel-default
-                        .panel-heading
-                            h4.panel-title.sub-title
-                                a(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo") refrigeration
-                        #collapseTwo.panel-collapse.collapse
-                            .panel-body
-                    .panel.panel-default
-                        .panel-heading
-                            h4.panel-title.sub-title
-                                a(data-toggle="collapse" data-parent="#accordion" href="#collapseThree") shopfitting
-                        #collapseThree.panel-collapse.collapse
-                            .panel-body
-                    .panel.panel-default
-                        .panel-heading
-                            h4.panel-title.sub-title
-                                a(data-toggle="collapse" data-parent="#accordion" href="#collapseFour") catering equipment
-                        #collapseFour.panel-collapse.collapse
-                            .panel-body
-                    .panel.panel-default
-                        .panel-heading
-                            h4.panel-title.sub-title
-                                a(data-toggle="collapse" data-parent="#accordion" href="#collapseFive") design & consilation
-                        #collapseFive.panel-collapse.collapse
-                            .panel-body
+        .tab-content.services-list-content
+          .tab-pane.active#stainless-steel-fabrication
+            ul.nav.nav-pills.nav-stacked.col-md-3
+              li
+                a(href='#service-one', data-toggle='pill') service one
+              li
+                a(href='#service-two', data-toggle='pill') service one
+              li
+                a(href='#service-three', data-toggle='pill') service one
+              li
+                a(href='#service-four', data-toggle='pill') service one
+              li
+                a(href='#service-five', data-toggle='pill') service one
+              li
+                a(href='#service-six', data-toggle='pill') service one
+              li
+                a(href='#service-seven', data-toggle='pill') service one
+            .tab-content.col-md-9
+              .tab-pane.active.tab-landing
+                .content-pane
+                  .img_thumnail: img(src="images/stainless-steel-fabrication-landing.jpg")
+                  | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .tab-pane#service-one
+                .content-pane
+                  ul.image-content
+                    #service-one-slider.carousel.slide(data-ride='carousel' data-interval='false')
+                      ol.carousel-indicators
+                        li.active(data-target='#service-one-slider', data-slide-to='0')
+                        li(data-target='#service-one-slider', data-slide-to='1')
+                        li(data-target='#service-one-slider', data-slide-to='2')
+                      .carousel-inner
+                        .item.active
+                          img(src='images/stainless-steel-subservice1.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                        .item
+                          img(src='images/stainless-steel-subservice1.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                        .item
+                          img(src='images/stainless-steel-subservice1.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                  ul
+                    li Sed ut perspiciatis unde omnis iste natus error sit
+                    li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .tab-pane#service-two
+                .content-pane
+                  ul.image-content
+                    #service-two-slider.carousel.slide(data-ride='carousel' data-interval='false')
+                      ol.carousel-indicators
+                        li.active(data-target='#service-two-slider', data-slide-to='0')
+                        li(data-target='#service-two-slider', data-slide-to='1')
+                        li(data-target='#service-two-slider', data-slide-to='2')
+                      .carousel-inner
+                        .item.active
+                          img(src='images/stainless-steel-subservice2.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                        .item
+                          img(src='images/stainless-steel-subservice2.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                        .item
+                          img(src='images/stainless-steel-subservice2.png', alt='...')
+                          .carousel-caption
+                            label Client Name
+                            span 2014
+                  ul
+                    li Sed ut perspiciatis unde omnis iste natus error sit
+                    li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          .tab-pane#catering-equipment
+            ul.nav.nav-pills.nav-stacked.col-md-3
+              li
+                a(href='#catering-one', data-toggle='pill') deep fryers
+              li
+                a(href='#catering-two', data-toggle='pill') fridges
+              li
+                a(href='#catering-three', data-toggle='pill') cool rooms
+              li
+                a(href='#catering-four', data-toggle='pill') bain maries
+              li
+                a(href='#catering-five', data-toggle='pill') char grills
+              li
+                a(href='#catering-six', data-toggle='pill') chest freezerss
+              li
+                a(href='#catering-seven', data-toggle='pill') cake displays
+            .tab-content.col-md-9
+              .tab-pane.active.tab-landing
+                .content-pane
+                  .img_thumnail: img(src="images/catering-landing.jpg")
+                  | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              .tab-pane#catering-one
+                .content-pane
+                  ul.image-content.col-md-5
+                    img(src="images/catering-fryer.png")
+                  ul.text-content.col-md-6
+                    li
+                      h2.title waldorf gas single pan deep fryer
+                    li 600mm single pan gas fryer 31L oil capacity
+                    li 31kg/hr production rate 90MJ multi−jet target burner
+                    li Easy clean stainless steel open pan Available in Natural Gas & LPG
+                    li Units supplied complete with gas type conversion kits
+                    li Twin pan fryer flexibility Full single pan performance
+                    li Patented infra−red burner sys
+                    li Browse other brands for this product:
+                  .slide-logo.col-md-12
+                    div
+                      img(src='images/slide-logo-1.jpg')
+                    div
+                      img(src='images/slide-logo-2.jpg')
+                    div
+                      img(src='images/slide-logo-3.jpg')
+                    div
+                      img(src='images/slide-logo-1.jpg')
+                    div
+                      img(src='images/slide-logo-2.jpg')
+                    div
+                      img(src='images/slide-logo-3.jpg')
+                    div
+                      img(src='images/slide-logo-1.jpg')
+                    div
+                      img(src='images/slide-logo-2.jpg')
+                    div
+                      img(src='images/slide-logo-3.jpg')
+      .mobile-version
+        #accordion.panel-group.services-list
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title.sub-title
+                a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne") stainless steel fabrication
+            #collapseOne.panel-collapse.collapse
+              .panel-body
+                ul.text-content
+                  li Sed ut perspiciatis unde omnis iste natus error sit
+                  li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                  li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                ul.nav.nav-pills.nav-stacked
+                  each val, key in [1,2,3,4,5]
+                    li
+                      button.btn.btn-primary.btn-lg(data-toggle="modal" data-target="#service-one-#{val}" type="button") service #{val}
+                      .modal.fade(id='service-one-#{val}' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+                        .modal-dialog
+                          .modal-content
+                            .modal-header
+                              button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                span(aria-hidden="true")&times;
+                              .title service one
+                              ul
+                                li Sed ut perspiciatis unde omnis iste natus error sit
+                                li voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                li psa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                              ul.image-content
+                                .carousel.slide(id='service-one-slider-mobile-#{val}' data-ride='carousel' data-interval='false')
+                                  ol.carousel-indicators
+                                    li.active(data-target='#service-one-slider-mobile-#{val}', data-slide-to='0')
+                                    li(data-target='#service-one-slider-mobile', data-slide-to='1')
+                                    li(data-target='#service-one-slider-mobile', data-slide-to='2')
+                                  .carousel-inner
+                                    .item.active
+                                      img(src='images/stainless-steel-subservice1.png', alt='...')
+                                      .carousel-caption
+                                        label Client Name
+                                        span 2014
+                                    .item
+                                      img(src='images/stainless-steel-subservice1.png', alt='...')
+                                      .carousel-caption
+                                        label Client Name
+                                        span 2014
+                                    .item
+                                      img(src='images/stainless-steel-subservice1.png', alt='...')
+                                      .carousel-caption
+                                        label Client Name
+                                        span 2014
+
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title.sub-title
+                a(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo") refrigeration
+            #collapseTwo.panel-collapse.collapse
+              .panel-body
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title.sub-title
+                a(data-toggle="collapse" data-parent="#accordion" href="#collapseThree") shopfitting
+            #collapseThree.panel-collapse.collapse
+              .panel-body
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title.sub-title
+                a(data-toggle="collapse" data-parent="#accordion" href="#collapseFour") catering equipment
+            #collapseFour.panel-collapse.collapse
+              .panel-body
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title.sub-title
+                a(data-toggle="collapse" data-parent="#accordion" href="#collapseFive") design & consilation
+            #collapseFive.panel-collapse.collapse
+              .panel-body

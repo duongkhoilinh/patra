@@ -10,11 +10,11 @@ jQuery(document).ready(function () {
   jQuery('.slick-next').empty();
 
 //Reset tab-landing
-  jQuery('.sub-title').click(function () {
-    jQuery('.tab-content .tab-content .tab-pane.active').removeClass("active");
-    jQuery('.tab-content .tab-content .tab-landing').addClass("active");
-    jQuery('.nav-stacked li').removeClass("active");
-  })
+  jQuery('desktop-version .sub-title').click(function () {
+    jQuery('.desktop-version .tab-content .tab-content .tab-pane.active').removeClass("active");
+    jQuery('.desktop-version .tab-content .tab-content .tab-landing').addClass("active");
+    jQuery('.desktop-version .nav-stacked li').removeClass("active");
+  });
   var count = 0;
   jQuery('.main-bxslider').bxSlider();
   jQuery('.portfolio-bxslider').bxSlider();
@@ -26,6 +26,8 @@ jQuery(document).ready(function () {
   jQuery(window).resize(function () {
     if (jQuery(this).width() > 1199) {
       jQuery(".logo").css({"top": "0"});
+      jQuery("body").removeClass('modal-open');
+      jQuery('.modal').hide();
     } else {
       if (jQuery('.slicknav_btn').hasClass('activeMenu')) {
         jQuery(".logo").css({"top": "0"});
@@ -81,7 +83,7 @@ var openEnquire = function () {
   var cancel =  jQuery('.box-enquire .btn-cancel');
 
   btn.click(function () {
-    jQuery(window).scrollTop(0);
+    $(window).scrollTop(0);
     box.slideToggle();
   });
   cancel.click(function (){
