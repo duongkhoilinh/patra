@@ -1,5 +1,6 @@
 .about-page {
   background: $white;
+  padding-bottom: 0;
   .background-image {
     position: relative;
     z-index: 1;
@@ -20,6 +21,7 @@
     }
     h1.title {
       margin: 80px 0 62px 0;
+      padding: 0;
     }
   }
   .our-process {
@@ -36,7 +38,6 @@
     .background-after {
       z-index: 9;
       position: absolute;
-      bottom: -184px;
       left: 0;
       width: 100%;
     }
@@ -98,7 +99,7 @@
             border-bottom: 11px solid transparent;
             border-left: 11px solid #1ca5d7;
             right: -11px;
-            top: 50%;
+            top: 48%;
           }
         }
       }

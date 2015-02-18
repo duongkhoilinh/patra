@@ -563,10 +563,11 @@
         margin: 120px 0 54px 0;
       }
     }
+
     .our-process {
       margin-top: 72px;
       h1.title {
-        margin-bottom: 46px;
+        margin: 25px 0 60px;
       }
       .content-post {
         display: none;
@@ -606,6 +607,9 @@
           &:last-child {
             margin-right: auto;
           }
+          p {
+            padding: 46px 0 21px 0;
+          }
         }
       }
       .background-after {
@@ -613,6 +617,7 @@
         height: 54px;
       }
     }
+
     .our-history {
       padding: 110px 0 0 0;
       h1.title {
@@ -625,6 +630,9 @@
       }
       p {
         padding: 60px 22px;
+        font-size: 22px;
+        margin-bottom: 65px;
+        line-height: 30.67px;
       }
     }
   }
