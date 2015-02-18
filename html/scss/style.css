@@ -58,12 +58,12 @@ table {
 
 /* line 1, ../../jade/scss/_common.scss */
 html {
-  background-color: #ffffff; }
+  background-color: white; }
 
 /* line 4, ../../jade/scss/_common.scss */
 body {
   background-color: #171a1c;
-  color: #ffffff;
+  color: white;
   font-family: "proxima_nova_light";
   font-size: 16px;
   -webkit-text-size-adjust: 100%; }
@@ -435,7 +435,7 @@ button:active, button:focus {
 /* line 99, ../../jade/scss/_bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #ffffff; }
+  background: white; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 /* line 106, ../../jade/scss/_bxslider.scss */
@@ -519,7 +519,7 @@ button:active, button:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666 \9;
+  background: #666666 \9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%; }
 
@@ -759,7 +759,7 @@ button:active, button:focus {
   /* line 44, ../../jade/scss/_layout.scss */
   .box-enquire .btn {
     border-radius: 0;
-    background: #ffffff;
+    background: white;
     width: 150px;
     display: block;
     margin-bottom: 18px;
@@ -778,7 +778,7 @@ button:active, button:focus {
     /* line 62, ../../jade/scss/_layout.scss */
     .box-enquire .btn.btn-submit {
       background: #1ca5d7;
-      color: #ffffff;
+      color: white;
       font-family: "roboto_condensed_bold";
       font-size: 18px;
       letter-spacing: 1px;
@@ -809,7 +809,7 @@ button:active, button:focus {
     color: #343434; }
   /* line 95, ../../jade/scss/_layout.scss */
   .box-enquire .select-style {
-    background: url(img/btn-dropdown.png) no-repeat 94% #fff;
+    background: url(img/btn-dropdown.png) no-repeat 94% white;
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
@@ -884,7 +884,7 @@ button:active, button:focus {
   display: none; }
 /* line 175, ../../jade/scss/_layout.scss */
 .page .header {
-  background-color: #ffffff;
+  background-color: white;
   color: #171a1c; }
   /* line 178, ../../jade/scss/_layout.scss */
   .page .header .logo {
@@ -933,7 +933,7 @@ button:active, button:focus {
       left: -46px;
       top: 37px;
       background: #1ca5d7;
-      color: #ffffff;
+      color: white;
       text-align: center; }
       /* line 225, ../../jade/scss/_layout.scss */
       .page .header .menu .sub-menu li {
@@ -941,7 +941,7 @@ button:active, button:focus {
         display: block; }
         /* line 228, ../../jade/scss/_layout.scss */
         .page .header .menu .sub-menu li:hover {
-          background: #ffffff;
+          background: white;
           -webkit-box-shadow: inset 0px 1px 3px 0px dimgray;
           -moz-box-shadow: inset 0px 1px 3px 0px dimgray;
           box-shadow: inset 0px 1px 3px 0px dimgray; }
@@ -996,7 +996,7 @@ button:active, button:focus {
   background-color: black; }
   /* line 290, ../../jade/scss/_layout.scss */
   .page .footer i {
-    background-color: #ffffff;
+    background-color: white;
     vertical-align: middle;
     margin-right: 40px; }
   /* line 295, ../../jade/scss/_layout.scss */
@@ -1356,7 +1356,7 @@ h1.title {
         width: 0px;
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
-        border-left: 10px solid #ffffff;
+        border-left: 10px solid white;
         right: -10px;
         top: 45%;
         z-index: 1; }
@@ -1536,7 +1536,7 @@ h1.title {
 .services-page .services-list-content > .tab-pane.active {
   display: inline-block;
   color: #171a1c;
-  background: #ffffff;
+  background: white;
   padding: 40px 40px 40px 24px;
   width: 100%; }
   /* line 138, ../../jade/scss/_services.scss */
@@ -1547,7 +1547,7 @@ h1.title {
   .services-page .services-list-content > .tab-pane.active ul li a {
     padding: 15px 0px;
     display: inline-block;
-    color: #ffffff;
+    color: white;
     background: #1ca5d7;
     text-transform: uppercase;
     font-size: 17.89px;
@@ -1594,7 +1594,7 @@ h1.title {
         margin: 16px; }
         /* line 193, ../../jade/scss/_services.scss */
         .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-indicators li.active {
-          background: #ffffff; }
+          background: white; }
     /* line 198, ../../jade/scss/_services.scss */
     .services-page .services-list-content > .tab-pane.active .tab-content .image-content .carousel-caption {
       left: 0;
@@ -1603,7 +1603,7 @@ h1.title {
       padding: 14px 0 24px 22px;
       text-align: left;
       font-size: 15.33px;
-      color: #ffffff;
+      color: white;
       font-family: "roboto_condensed_bold";
       background-color: rgba(0, 0, 0, 0.6); }
       /* line 208, ../../jade/scss/_services.scss */
@@ -1645,17 +1645,21 @@ h1.title {
 /* line 1, ../../jade/scss/_portfolio.scss */
 .portfolio-page {
   padding-bottom: 0;
-  margin-bottom: 100px; }
+  margin-bottom: 60px; }
   /* line 4, ../../jade/scss/_portfolio.scss */
+  .portfolio-page ul.portfolio-bxslider img {
+    height: 178px;
+    width: 178px; }
+  /* line 8, ../../jade/scss/_portfolio.scss */
   .portfolio-page .mobile-version {
     display: none; }
-  /* line 7, ../../jade/scss/_portfolio.scss */
+  /* line 11, ../../jade/scss/_portfolio.scss */
   .portfolio-page .bx-viewport {
-    height: 894px !important; }
-  /* line 10, ../../jade/scss/_portfolio.scss */
+    height: 258px !important; }
+  /* line 14, ../../jade/scss/_portfolio.scss */
   .portfolio-page h1.title {
     margin: 48px 0 57px 0; }
-  /* line 13, ../../jade/scss/_portfolio.scss */
+  /* line 17, ../../jade/scss/_portfolio.scss */
   .portfolio-page .image-list li {
     width: 170px;
     height: 170px;
@@ -1664,11 +1668,11 @@ h1.title {
     margin-left: 0;
     background: #000000;
     opacity: 0.8; }
-    /* line 21, ../../jade/scss/_portfolio.scss */
+    /* line 25, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li.active {
       opacity: 1;
       position: relative; }
-      /* line 24, ../../jade/scss/_portfolio.scss */
+      /* line 28, ../../jade/scss/_portfolio.scss */
       .portfolio-page .image-list li.active:before {
         position: absolute;
         content: "";
@@ -1678,109 +1682,149 @@ h1.title {
         border-bottom: 11px solid #ffffff;
         right: 41%;
         bottom: -88px; }
-    /* line 35, ../../jade/scss/_portfolio.scss */
+    /* line 39, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li a {
       padding: 0; }
-    /* line 38, ../../jade/scss/_portfolio.scss */
+    /* line 42, ../../jade/scss/_portfolio.scss */
     .portfolio-page .image-list li:last-child {
       margin-right: 0; }
-  /* line 42, ../../jade/scss/_portfolio.scss */
-  .portfolio-page .tab-content {
-    margin-top: 85px; }
-    /* line 44, ../../jade/scss/_portfolio.scss */
-    .portfolio-page .tab-content .content-pane {
-      margin-bottom: 55px; }
-    /* line 47, ../../jade/scss/_portfolio.scss */
-    .portfolio-page .tab-content .tab-pane.active {
-      background: #ffffff;
-      padding: 37px 52px 42px 0;
-      color: black; }
-      /* line 51, ../../jade/scss/_portfolio.scss */
-      .portfolio-page .tab-content .tab-pane.active .image-content {
-        float: right;
-        width: 480px;
-        margin-left: 82px; }
-      /* line 57, ../../jade/scss/_portfolio.scss */
-      .portfolio-page .tab-content .tab-pane.active .company-info .company-name {
-        background: #1ca5d7;
-        display: inline-block;
-        width: 353px;
-        padding: 34px 0 34px 68px;
-        color: white;
-        position: relative; }
-        /* line 64, ../../jade/scss/_portfolio.scss */
-        .portfolio-page .tab-content .tab-pane.active .company-info .company-name:before {
-          position: absolute;
-          content: "";
-          width: 0px;
-          border-top: 60px solid transparent;
-          border-bottom: 60px solid transparent;
-          border-left: 22px solid #1ca5d7;
-          right: -22px;
-          top: 0px; }
-        /* line 74, ../../jade/scss/_portfolio.scss */
-        .portfolio-page .tab-content .tab-pane.active .company-info .company-name h3 {
-          font-size: 23.56px;
-          text-transform: uppercase;
-          font-family: "proxima_nova_bold"; }
-        /* line 79, ../../jade/scss/_portfolio.scss */
-        .portfolio-page .tab-content .tab-pane.active .company-info .company-name span {
-          font-family: "roboto_condensed_light";
-          font-size: 17.89px; }
-      /* line 84, ../../jade/scss/_portfolio.scss */
-      .portfolio-page .tab-content .tab-pane.active .company-info span.time {
-        display: block;
-        padding-left: 68px;
-        margin-top: 20px; }
-      /* line 89, ../../jade/scss/_portfolio.scss */
-      .portfolio-page .tab-content .tab-pane.active .company-info ul {
-        padding-left: 68px; }
-        /* line 91, ../../jade/scss/_portfolio.scss */
-        .portfolio-page .tab-content .tab-pane.active .company-info ul h3.title {
-          font-family: "proxima_nova_bold";
-          font-size: 17.89px;
-          color: #1ca5d7;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin: 20px 0; }
-        /* line 99, ../../jade/scss/_portfolio.scss */
-        .portfolio-page .tab-content .tab-pane.active .company-info ul li {
-          line-height: 25.56px; }
-  /* line 106, ../../jade/scss/_portfolio.scss */
+  /* line 47, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .tab-content .content-pane {
+    margin-bottom: 55px; }
+  /* line 50, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .tab-content .tab-pane.active {
+    background: white;
+    padding: 37px 52px 42px 0;
+    color: black; }
+  /* line 57, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .image-content {
+    float: right;
+    width: 500px;
+    margin-left: 39px; }
+  /* line 63, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .company-info .company-name {
+    background: #1ca5d7;
+    display: inline-block;
+    width: 370px;
+    padding: 34px 0 34px 68px;
+    color: white;
+    position: relative;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18);
+    -ms-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18); }
+    /* line 73, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-name:before {
+      position: absolute;
+      content: "";
+      width: 0px;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 22px solid #1ca5d7;
+      right: -22px;
+      top: 0px; }
+    /* line 83, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-name h3 {
+      font-size: 23.56px;
+      text-transform: uppercase;
+      font-family: "proxima_nova_bold"; }
+    /* line 88, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-name span {
+      font-family: "roboto_condensed_light";
+      font-size: 17.89px; }
+  /* line 93, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .company-info .company-detail {
+    padding-left: 68px; }
+    /* line 95, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-detail span.time {
+      display: block;
+      margin-top: 20px;
+      font-family: "roboto_condensed_light";
+      font-size: 17px;
+      letter-spacing: 1px; }
+    /* line 102, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-detail h3 {
+      font-family: "proxima_nova_bold";
+      font-size: 17.89px;
+      color: #1ca5d7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 20px 0 10px; }
+    /* line 110, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .company-info .company-detail ul {
+      padding-left: 20px; }
+      /* line 112, ../../jade/scss/_portfolio.scss */
+      .portfolio-page .company-info .company-detail ul li {
+        font-family: "proxima_nova_light";
+        font-size: 17.89px;
+        line-height: 25.56px;
+        margin-bottom: 10px;
+        list-style: initial; }
+  /* line 123, ../../jade/scss/_portfolio.scss */
   .portfolio-page .carousel-caption {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     left: 0;
     height: 48px; }
-  /* line 113, ../../jade/scss/_portfolio.scss */
+  /* line 130, ../../jade/scss/_portfolio.scss */
   .portfolio-page .carousel-indicators {
     bottom: 15px;
     left: 90px; }
-    /* line 116, ../../jade/scss/_portfolio.scss */
+    /* line 133, ../../jade/scss/_portfolio.scss */
     .portfolio-page .carousel-indicators li {
       width: 16px;
       height: 16px;
       background-color: #1ca5d7;
       border: none;
       margin: 0 16px; }
-      /* line 122, ../../jade/scss/_portfolio.scss */
+      /* line 139, ../../jade/scss/_portfolio.scss */
       .portfolio-page .carousel-indicators li.active {
-        background: #ffffff; }
-  /* line 127, ../../jade/scss/_portfolio.scss */
+        background: white; }
+  /* line 144, ../../jade/scss/_portfolio.scss */
   .portfolio-page .bx-pager.bx-default-pager {
     top: 184px;
     max-height: 0; }
-  /* line 131, ../../jade/scss/_portfolio.scss */
+  /* line 148, ../../jade/scss/_portfolio.scss */
   .portfolio-page .portfolio-content {
     background: #fff; }
-  /* line 135, ../../jade/scss/_portfolio.scss */
+  /* line 152, ../../jade/scss/_portfolio.scss */
   .portfolio-page ul.portfolio-content-detail-slider {
     width: 370px; }
-  /* line 139, ../../jade/scss/_portfolio.scss */
+  /* line 156, ../../jade/scss/_portfolio.scss */
   .portfolio-page .portfolio-content-detail {
     margin: 40px 50px 50px 0;
     color: #000000; }
+  /* line 162, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version .bx-viewport {
+    height: inherit !important; }
+  /* line 165, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version .portfolio-bxslider-mobis {
+    width: 300px;
+    margin: 0 auto; }
+    /* line 169, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .mobile-version .portfolio-bxslider-mobis ul a {
+      width: 135px;
+      display: inline-block;
+      margin: 0 7px 12px; }
+  /* line 177, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version .content-pane {
+    padding-top: 50px; }
+  /* line 180, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version .company-info {
+    color: #000; }
+    /* line 182, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .mobile-version .company-info .company-detail {
+      padding: 17px 40px 25px 17px; }
+    /* line 185, ../../jade/scss/_portfolio.scss */
+    .portfolio-page .mobile-version .company-info .company-name {
+      width: 85%;
+      display: block;
+      padding-left: 17px; }
+  /* line 191, ../../jade/scss/_portfolio.scss */
+  .portfolio-page .mobile-version .image-content {
+    float: none;
+    width: 100%;
+    margin-left: 0; }
 
 /* line 1, ../../jade/scss/_contact.scss */
 .map-contact a {
@@ -1840,7 +1884,7 @@ h1.title {
 
 /* line 1, ../../jade/scss/_about-us.scss */
 .about-page {
-  background: #ffffff;
+  background: white;
   padding-bottom: 0; }
   /* line 4, ../../jade/scss/_about-us.scss */
   .about-page .background-image {
@@ -1865,7 +1909,7 @@ h1.title {
       padding: 0; }
   /* line 27, ../../jade/scss/_about-us.scss */
   .about-page .our-process {
-    background: #ffffff;
+    background: white;
     margin-top: 143px;
     position: relative; }
     /* line 32, ../../jade/scss/_about-us.scss */
@@ -1913,7 +1957,7 @@ h1.title {
         .about-page .our-process .process-list li p {
           padding: 35px 0 25px 0;
           text-align: center;
-          background-color: #ffffff;
+          background-color: white;
           display: block; }
         /* line 78, ../../jade/scss/_about-us.scss */
         .about-page .our-process .process-list li .traingle {
@@ -1968,7 +2012,7 @@ h1.title {
     /* line 132, ../../jade/scss/_about-us.scss */
     .about-page .our-history p {
       padding: 60px 118px;
-      background: #ffffff;
+      background: white;
       color: #000000;
       margin: 34px 0 132px 0;
       line-height: 25.56px; }
@@ -1997,14 +2041,14 @@ h1.title {
     position: relative;
     z-index: 1;
     vertical-align: top;
-    background-color: #ffffff;
+    background-color: white;
     padding: 5px 0; }
     /* line 26, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_icon {
       margin: 0; }
     /* line 29, ../../jade/scss/_responsive.scss */
     .slicknav_menu .slicknav_btn {
-      background-color: #ffffff;
+      background-color: white;
       float: left;
       margin: 0;
       padding-left: 25px; }
@@ -2063,7 +2107,7 @@ h1.title {
       /* line 87, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a:hover {
         background: none;
-        color: #ffffff; }
+        color: white; }
       /* line 91, ../../jade/scss/_responsive.scss */
       .slicknav_menu .slicknav_nav a .slicknav_arrow {
         display: none; }
@@ -2342,7 +2386,7 @@ h1.title {
     /* line 382, ../../jade/scss/_responsive.scss */
     .services-page .mobile-version .services-list .panel-heading {
       padding: 0;
-      color: #ffffff; }
+      color: white; }
       /* line 385, ../../jade/scss/_responsive.scss */
       .services-page .mobile-version .services-list .panel-heading a {
         border-radius: 0;
@@ -2421,7 +2465,7 @@ h1.title {
             font-family: "roboto_condensed_bold";
             font-size: 23px;
             text-transform: uppercase;
-            color: #ffffff;
+            color: white;
             margin: 30px 0 36px 0;
             color: #1ca5d7;
             letter-spacing: 1px; }
@@ -2448,7 +2492,7 @@ h1.title {
               z-index: 10; }
               /* line 487, ../../jade/scss/_responsive.scss */
               .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content ol li.active {
-                background: #ffffff; }
+                background: white; }
             /* line 492, ../../jade/scss/_responsive.scss */
             .services-page .mobile-version .services-list .panel-body .nav-stacked .modal-content .image-content .carousel-indicators {
               bottom: 2px !important;
@@ -2594,7 +2638,7 @@ h1.title {
   /* line 643, ../../jade/scss/_responsive.scss */
   .portfolio-page .mobile-version {
     display: block;
-    margin-bottom: 300px; }
+    margin-bottom: 150px; }
     /* line 646, ../../jade/scss/_responsive.scss */
     .portfolio-page .mobile-version .bx-pager.bx-default-pager {
       bottom: -68px;
@@ -2637,10 +2681,13 @@ h1.title {
     line-height: 15px; }
   /* line 688, ../../jade/scss/_responsive.scss */
   .portfolio-page .modal-header {
-    padding: 0; } }
+    padding: 0; }
+
+  /* line 692, ../../jade/scss/_responsive.scss */
+  .portfolio-page {
+    margin-bottom: 0;
+    padding-bottom: 0; } }
 @media screen and (max-width: 400px) {
-  /* line 696, ../../jade/scss/_responsive.scss */
+  /* line 699, ../../jade/scss/_responsive.scss */
   ul.services-list {
     width: inherit; } }
-
-/*# sourceMappingURL=style.css.map */

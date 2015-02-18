@@ -1,174 +1,101 @@
 extends layout
 block main
-    .portfolio-page.other-page
-        .container
-            h1.title portfolio
-            .desktop-version
-                ul.portfolio-bxslider
-                    li
-                        ul.image-list.nav.nav-pills.nav-justified.services-list
-                            li.active: a(href="#portfolio-1", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-2", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-3", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-4", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-5", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                        .tab-content
-                            .tab-pane.active#portfolio-1
-                                .content-pane
-                                    ul.image-content
-                                        #slider-portfolio-1.carousel.slide(data-ride='carousel' data-interval='false')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#slider-portfolio-1', data-slide-to='0')
-                                                li(data-target='#slider-portfolio-1', data-slide-to='1')
-                                                li(data-target='#slider-portfolio-1', data-slide-to='2')
-                                            .carousel-inner
-                                                .item.active
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                    .company-info
-                                        .company-name
-                                            h3 parisi's
-                                            span Eastwood
-                                        span.time September 2014
+  .portfolio-page.other-page
+    .container
+      h1.title portfolio
+      .desktop-version
+        ul.portfolio-bxslider.image-list.services-list
+          each val in [1,2,3,4,5,6]
+            - if (val == 1)
+              li.active: a(href="#portfolio-#{val}", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
+            - else
+              li: a(href="#portfolio-#{val}", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
 
-                                        ul.scope
-                                            h3.title scope
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        ul.solutions
-                                            h3.title solutions
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            .tab-pane#portfolio-2
-                                .content-pane
-                                    ul.image-content
-                                        #slider-portfolio-2.carousel.slide(data-ride='carousel' data-interval='false')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#slider-portfolio-2', data-slide-to='0')
-                                                li(data-target='#slider-portfolio-2', data-slide-to='1')
-                                                li(data-target='#slider-portfolio-2', data-slide-to='2')
-                                            .carousel-inner
-                                                .item.active
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                    .company-info
-                                        .company-name
-                                            h3 parisi's
-                                            span Eastwood
-                                        span.time September 2014
+        .tab-content
+          each val in [1,2,3,4,5,6]
+            - active = ''
+            - if (val ==1 )
+              -active ='active'
+            .tab-pane(id='portfolio-#{val}' class='#{active}')
+              .content-pane
+                ul.image-content
+                  .carousel.slide(id='slider-portfolio-#{val}' data-ride='carousel' data-interval='false')
+                    ol.carousel-indicators
+                      li.active(data-target='#slider-portfolio-#{val}', data-slide-to='0')
+                      li(data-target='#slider-portfolio-#{val}', data-slide-to='1')
+                      li(data-target='#slider-portfolio-#{val}', data-slide-to='2')
+                    .carousel-inner
+                      .item.active
+                        img(src='images/stainless-steel-subservice1.png', alt='...')
+                        .carousel-caption
+                      .item
+                        img(src='images/stainless-steel-subservice1.png', alt='...')
+                        .carousel-caption
+                      .item
+                        img(src='images/stainless-steel-subservice1.png', alt='...')
+                        .carousel-caption
+                .company-info
+                  .company-name
+                    h3 parisi's-#{val}
+                    span Eastwood
+                  .company-detail
+                    span.time September 2014
+                    h3 scope
+                    ul
+                      li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h3 solutions
+                    ul
+                      li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .mobile-version
+        .portfolio-bxslider-mobis
+          ul
+            li
+              each val in [1,2,3,4,5,6]
+                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg")
+            li
+              each val in [7,8,9]
+                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg")
+        #modal-portfolio
+          each val in [1,2,3,4,5,6,7,8,9]
+            .modal.fade(id='mobi-portfolio-#{val}' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true")&times;
+                    .content-pane
+                      .company-info
+                        .company-name
+                          h3 parisi's
+                          span Eastwood
 
-                                        ul.scope
-                                            h3.title scope
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        ul.solutions
-                                            h3.title solutions
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    li
-                        ul.image-list.nav.nav-pills.nav-justified.services-list
-                            li.active: a(href="#portfolio-6", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-7", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-8", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-9", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-10", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                        .tab-content
-                            .tab-pane.active#portfolio-6
-                                .content-pane
-                                    ul.image-content
-                                        #slider-portfolio-6.carousel.slide(data-ride='carousel' data-interval='false')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#slider-portfolio-6', data-slide-to='0')
-                                                li(data-target='#slider-portfolio-6', data-slide-to='1')
-                                                li(data-target='#slider-portfolio-6', data-slide-to='2')
-                                            .carousel-inner
-                                                .item.active
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                                .item
-                                                    img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                    .carousel-caption
-                                    .company-info
-                                        .company-name
-                                            h3 parisi's
-                                            span Eastwood
-                                        span.time September 2014
-
-                                        ul.scope
-                                            h3.title scope
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        ul.solutions
-                                            h3.title solutions
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    li
-                        ul.image-list.nav.nav-pills.nav-justified.services-list
-                            li: a(href="#portfolio-11", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-12", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-13", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-14", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-                            li: a(href="#portfolio-15", data-toggle='pill'): img(src="images/testimonials-logo-2.jpg")
-            .mobile-version
-                ul.portfolio-bxslider-mobis
-                    li
-                        ul.services-list.image-list
-                            li(data-toggle="modal" data-target="#mobi-portfolio-1"): img(src="images/testimonials-logo-2.jpg")
-                            #mobi-portfolio-1.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
-                                .modal-dialog
-                                    .modal-content
-                                        .modal-header
-                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
-                                                span(aria-hidden="true")&times;
-                                            .content-pane
-                                                .company-info
-                                                    .company-name
-                                                        h3 parisi's
-                                                        span Eastwood
-                                                    span.time September 2014
-
-                                                    ul.scope
-                                                        h3.title scope
-                                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    ul.solutions
-                                                        h3.title solutions
-                                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                ul.image-content
-                                                    #slider-portfolio-1.carousel.slide(data-ride='carousel' data-interval='false')
-                                                        ol.carousel-indicators
-                                                            li.active(data-target='#slider-portfolio-1', data-slide-to='0')
-                                                            li(data-target='#slider-portfolio-1', data-slide-to='1')
-                                                            li(data-target='#slider-portfolio-1', data-slide-to='2')
-                                                        .carousel-inner
-                                                            .item.active
-                                                                img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                .carousel-caption
-                                                            .item
-                                                                img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                .carousel-caption
-                                                            .item
-                                                                img(src='images/stainless-steel-subservice1.png', alt='...')
-                                                                .carousel-caption
-                            li(data-toggle="modal" data-target="#mobi-portfolio-2"): img(src="images/testimonials-logo-2.jpg")
-                            li(data-toggle="modal" data-target="#mobi-portfolio-3"): img(src="images/testimonials-logo-2.jpg")
-                            li(data-toggle="modal" data-target="#mobi-portfolio-4"): img(src="images/testimonials-logo-2.jpg")
-                            li(data-toggle="modal" data-target="#mobi-portfolio-5"): img(src="images/testimonials-logo-2.jpg")
+                        .company-detail
+                          span.time September 2014
+                          h3.title scope
+                          ul
+                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          h3.title solutions
+                          ul
+                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      ul.image-content
+                        #slider-portfolio-1.carousel.slide(data-ride='carousel' data-interval='false')
+                          ol.carousel-indicators
+                            li.active(data-target='#slider-portfolio-1', data-slide-to='0')
+                            li(data-target='#slider-portfolio-1', data-slide-to='1')
+                            li(data-target='#slider-portfolio-1', data-slide-to='2')
+                          .carousel-inner
+                            .item.active
+                              img(src='images/stainless-steel-subservice1.png', alt='...')
+                              .carousel-caption
+                            .item
+                              img(src='images/stainless-steel-subservice1.png', alt='...')
+                              .carousel-caption
+                            .item
+                              img(src='images/stainless-steel-subservice1.png', alt='...')
+                              .carousel-caption
 
 

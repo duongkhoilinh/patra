@@ -17,8 +17,13 @@ jQuery(document).ready(function () {
   });
   var count = 0;
   jQuery('.main-bxslider').bxSlider();
-  jQuery('.portfolio-bxslider').bxSlider();
-  jQuery('.portfolio-bxslider-mobi').bxSlider();
+  jQuery('.portfolio-bxslider').bxSlider({
+    minSlides: 1,
+    maxSlides: 5,
+    slideWidth: 178,
+    slideMargin: 20
+  });
+  jQuery('.portfolio-bxslider-mobis ul').bxSlider();
 
   jQuery('.testimonials-bxSlider').bxSlider();
 
@@ -81,13 +86,13 @@ var openEnquire = function () {
 
   var btn = jQuery('.enquire');
   var box = jQuery('.box-enquire');
-  var cancel =  jQuery('.box-enquire .btn-cancel');
+  var cancel = jQuery('.box-enquire .btn-cancel');
 
   btn.click(function () {
     $(window).scrollTop(0);
     box.slideToggle();
   });
-  cancel.click(function (){
+  cancel.click(function () {
     box.slideUp(200);
   });
 };

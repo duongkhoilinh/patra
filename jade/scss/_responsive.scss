@@ -642,7 +642,7 @@
     }
     .mobile-version {
       display: block;
-      margin-bottom: 300px;
+      margin-bottom: 150px;
       .bx-pager.bx-default-pager {
         bottom: -68px;
         top: inherit;
@@ -689,7 +689,10 @@
       padding: 0;
     }
   }
-
+  .portfolio-page {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {

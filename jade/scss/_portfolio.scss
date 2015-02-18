@@ -1,11 +1,15 @@
 .portfolio-page {
   padding-bottom: 0;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  ul.portfolio-bxslider img {
+    height: 178px;
+    width: 178px;
+  }
   .mobile-version {
     display: none;
   }
   .bx-viewport {
-    height: 894px !important;
+    height: 258px !important;
   }
   h1.title {
     margin: 48px 0 57px 0;
@@ -40,7 +44,6 @@
     }
   }
   .tab-content {
-    margin-top: 85px;
     .content-pane {
       margin-bottom: 55px;
     }
@@ -48,60 +51,74 @@
       background: $white;
       padding: 37px 52px 42px 0;
       color: black;
-      .image-content {
-        float: right;
-        width: 480px;
-        margin-left: 82px;
+
+    }
+  }
+  .image-content {
+    float: right;
+    width: 500px;
+    margin-left: 39px;
+  }
+  .company-info {
+    .company-name {
+      background: $blue;
+      display: inline-block;
+      width: 370px;
+      padding: 34px 0 34px 68px;
+      color: white;
+      position: relative;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18);
+      -ms-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.18);
+      &:before {
+        position: absolute;
+        content: "";
+        width: 0px;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 22px solid #1ca5d7;
+        right: -22px;
+        top: 0px;
       }
-      .company-info {
-        .company-name {
-          background: $blue;
-          display: inline-block;
-          width: 353px;
-          padding: 34px 0 34px 68px;
-          color: white;
-          position: relative;
-          &:before {
-            position: absolute;
-            content: "";
-            width: 0px;
-            border-top: 60px solid transparent;
-            border-bottom: 60px solid transparent;
-            border-left: 22px solid #1ca5d7;
-            right: -22px;
-            top: 0px;
-          }
-          h3 {
-            font-size: 23.56px;
-            text-transform: uppercase;
-            font-family: $proxima_nova_bold;
-          }
-          span {
-            font-family: $roboto_condensed_light;
-            font-size: 17.89px;
-          }
-        }
-        span.time {
-          display: block;
-          padding-left: 68px;
-          margin-top: 20px;
-        }
-        ul {
-          padding-left: 68px;
-          h3.title {
-            font-family: $proxima_nova_bold;
-            font-size: 17.89px;
-            color: $blue;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 20px 0;
-          }
-          li {
-            line-height: 25.56px;
-          }
+      h3 {
+        font-size: 23.56px;
+        text-transform: uppercase;
+        font-family: $proxima_nova_bold;
+      }
+      span {
+        font-family: $roboto_condensed_light;
+        font-size: 17.89px;
+      }
+    }
+    .company-detail {
+      padding-left: 68px;
+      span.time {
+        display: block;
+        margin-top: 20px;
+        font-family: "roboto_condensed_light";
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+      h3 {
+        font-family: $proxima_nova_bold;
+        font-size: 17.89px;
+        color: $blue;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 20px 0 10px;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          font-family: $proxima_nova_light;
+          font-size: 17.89px;
+          line-height: 25.56px;
+          margin-bottom: 10px;
+          list-style: initial;
         }
       }
     }
+
   }
   .carousel-caption {
     width: 100%;
@@ -141,4 +158,41 @@
     color: #000000;
   }
 
+  .mobile-version {
+    .bx-viewport {
+      height: inherit !important;
+    }
+    .portfolio-bxslider-mobis {
+      width: 300px;
+      margin: 0 auto;
+      ul {
+        a {
+          width: 135px;
+          display: inline-block;
+          margin: 0 7px 12px;
+        }
+      }
+
+    }
+    .content-pane {
+      padding-top: 50px;
+    }
+    .company-info {
+      color: #000;
+      .company-detail {
+        padding: 17px 40px 25px 17px;
+      }
+      .company-name {
+        width: 85%;
+        display: block;
+        padding-left: 17px;
+      }
+    }
+    .image-content {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
 }
+
