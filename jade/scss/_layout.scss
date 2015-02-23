@@ -22,6 +22,104 @@
   background-image: url("img/bg-gray.png");
   padding: 54px 0 0 0;
   z-index: 10;
+  #upload-panel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: none;
+    .content-upload-panel {
+      width: 440px;
+      margin: 0 auto;
+      background: #1CA5D7;
+      position: relative;
+      padding-bottom: 10px;
+      .iconsp-25-delete-black {
+        margin: 10px 0 0 10px;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        border-top: 45px solid #1CA5D7;
+        border-right: 437px solid transparent;
+        position: absolute;
+        left: 0;
+        bottom: -45px;
+      }
+      .title {
+        color: #fff;
+        padding: 15px 0 25px;
+      }
+      .form-control {
+        display: inline-block;
+        width: 200px;
+      }
+      .form-group {
+        padding: 0px 30px 0 57px;
+        label {
+          margin-bottom: 22px;
+          * {
+            vertical-align: middle;
+          }
+        }
+        input[type='file'] {
+          display: none;
+        }
+        .btn-black {
+          margin: 0 15px 0 0;
+          background: #000;
+          color: #fff;
+          padding: 5px 13px;
+          width: auto;
+          display: inline-block;
+          height: auto;
+          font-size: 14px;
+          border: 0;
+        }
+        .btn-save {
+          font-size: 18px;
+          width: 118px;
+          position: relative;
+          padding-bottom: 0px;
+          &:after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 100%;
+            border-top: 7px solid #000;
+            border-left: 58px solid transparent;
+            border-right: 58px solid transparent;
+            bottom: -7px;
+            left: 0;
+          }
+        }
+
+        .iconsp-25-delete-white {
+          margin-left: 2px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .second-col {
+    padding: 0 50px 0 30px;
+  }
+  .last-col {
+    position: relative;
+    .btn-submit input {
+      background: none;
+      color: $white;
+      font-family: $roboto_condensed_bold;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
+      box-shadow: none;
+      border: 0;
+    }
+  }
   .bg-contac-form {
     position: absolute;
     width: 100%;
@@ -33,6 +131,7 @@
     letter-spacing: 1px;
     word-spacing: 1px;
     color: #1ca5d7;
+    white-space: nowrap;
   }
   .content {
     color: #000;
@@ -56,15 +155,19 @@
     color: #343434;
     font-family: $roboto_condensed_regular;
     font-size: 16px;
+    position: relative;
     &:focus {
       outline: none;
     }
+    .iconsp-25-check-black {
+      position: absolute;
+      right: -40px;
+      top: 6px;
+      display: none;
+    }
     &.btn-submit {
       background: $blue;
-      color: $white;
-      font-family: $roboto_condensed_bold;
-      font-size: 18px;
-      letter-spacing: 1px;
+
       position: relative;
       &:after {
         position: absolute;
@@ -78,13 +181,7 @@
       }
     }
   }
-  .box-left {
-    width: 26%;
-  }
-  .box-center {
-    margin: 0 2%;
-    width: 44%;
-  }
+
   .form-control {
     border-radius: 0;
     padding: 5px 20px;
@@ -196,18 +293,20 @@
       }
     }
     .menu {
-      margin-top: 15px;
+      margin-top: 12px;
       font-family: $proxima_nova_extrabold;
       font-size: 17px;
       text-transform: uppercase;
-      margin-bottom: -2px;
-      li {
+      margin-bottom: 0;
+      > li {
         display: inline-block;
-        padding: 0 38px 20px 38px;
         position: relative;
         cursor: pointer;
         a:hover {
           color: #1ca5d7;
+        }
+        > a{
+          padding: 0px 45px 13px 38px;
         }
       }
       .sub-menu {
@@ -217,8 +316,7 @@
         font-family: $roboto_condensed_regular;
         font-size: 15.24px;
         z-index: 1000;
-        left: -46px;
-        top: 37px;
+        top: 35px;
         background: $blue;
         color: $white;
         text-align: center;
@@ -249,7 +347,6 @@
       display: inline-block;
       width: 70%;
       vertical-align: middle;
-      padding-top: 16px;
       margin: 0;
       .info {
         font-family: $roboto_condensed_light;
@@ -259,10 +356,10 @@
             padding-left: 38px;
           }
           &:nth-child(2) {
-            padding-left: 58px;
+            padding-left: 65px;
           }
           &:last-child {
-            padding-left: 22px;
+            padding-left: 32px;
           }
         }
 
@@ -271,11 +368,11 @@
     .enquire {
       display: inline-block;
       color: $blue;
-      vertical-align: top;
+      position: absolute;
+      top:8px;
       text-align: center;
       .btn-enquire {
         cursor: pointer;
-        margin-top: 11px;
         span {
           display: block;
           text-transform: uppercase;
@@ -296,25 +393,15 @@
       position: relative;
       font-family: $roboto_condensed_bold;
       font-size: 16.26px;
-      li {
-        text-align: center;
-        padding: 24px 0 36px 0;
-        vertical-align: top;
-        &:nth-child(1) {
-          position: absolute;
-          left: 0;
-          top: -9px;
+      padding: 20px 0;
+      li{
+        &:first-child{
+          margin: 0;
         }
-        &:nth-child(3) {
-          position: absolute;
-          right: 0;
-          top: 0;
+        &:last-child span{
+          float: right;
         }
-        &:nth-child(2) {
-          span:last-child {
-            margin-left: 6px;
-          }
-        }
+        margin-top: 8px;
       }
     }
   }

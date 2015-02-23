@@ -14,7 +14,11 @@ img {
   width: 100%;
   height: 100%;
 }
-
+ul,ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -25,7 +29,9 @@ a {
     outline: none;
   }
 }
-
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
 h1 {
   font-size: 52.54px;
 }
@@ -70,5 +76,5 @@ button {
   color: #757575;
 }
 .other-page {
-  padding: 85px 0 107px;
+  padding: 82px 0 107px;
 }

@@ -16,7 +16,9 @@ jQuery(document).ready(function () {
     jQuery('.desktop-version .nav-stacked li').removeClass("active");
   });
   var count = 0;
-  jQuery('.main-bxslider').bxSlider();
+  jQuery('.main-bxslider').bxSlider({
+    auto: true
+  });
   jQuery('.portfolio-bxslider').bxSlider({
     minSlides: 1,
     maxSlides: 5,
@@ -25,7 +27,9 @@ jQuery(document).ready(function () {
   });
   jQuery('.portfolio-bxslider-mobis ul').bxSlider();
 
-  jQuery('.testimonials-bxSlider').bxSlider();
+  jQuery('.testimonials-bxSlider').bxSlider({
+    auto: true
+  });
 
   jQuery('#menu').slicknav({prependTo: '#main-menu'});
 
@@ -34,6 +38,8 @@ jQuery(document).ready(function () {
       jQuery(".logo").css({"top": "0"});
       jQuery("body").removeClass('modal-open');
       jQuery('.modal').hide();
+      jQuery('.process-list li .content').removeAttr('style');
+
     } else {
       if (jQuery('.slicknav_btn').hasClass('activeMenu')) {
         jQuery(".logo").css({"top": "0"});
@@ -66,9 +72,12 @@ jQuery(document).ready(function () {
     }
   });
 
-
   tab(jQuery('.tab-click-service'), jQuery('.tab-pane-service'));
   openEnquire();
+  uploadImg();
+  fileSelect();
+  ajdustDropdownMenu();
+  showInfoOurProcess();
 });
 
 var tab = function (menuTab, contentTab) {
@@ -85,14 +94,70 @@ var tab = function (menuTab, contentTab) {
 var openEnquire = function () {
 
   var btn = jQuery('.enquire');
+  var btnMobile = jQuery('.iconsp-35-enquire-mobile').parent();
   var box = jQuery('.box-enquire');
   var cancel = jQuery('.box-enquire .btn-cancel');
 
   btn.click(function () {
-    $(window).scrollTop(0);
+    jQuery(window).scrollTop(0);
+    box.slideToggle();
+  });
+
+  btnMobile.click(function () {
+    jQuery(window).scrollTop(0);
     box.slideToggle();
   });
   cancel.click(function () {
     box.slideUp(200);
+  });
+};
+
+var uploadImg = function () {
+  var btnUpload = jQuery('.btn-upload');
+  var uploadPanel = jQuery('#upload-panel');
+  var close = jQuery('.close-panel');
+  var save = uploadPanel.find('.btn-save');
+  var check = jQuery('.check-image');
+  btnUpload.click(function () {
+    uploadPanel.fadeIn(200);
+    jQuery(this).css({background: '#000', 'color': '#fff'});
+  });
+  close.click(function () {
+    uploadPanel.fadeOut(200).find('input').val('');
+    btnUpload.removeAttr('style');
+
+  });
+  save.click(function () {
+    uploadPanel.fadeOut(200);
+    btnUpload.removeAttr('style');
+    check.show();
+  })
+};
+var fileSelect = function () {
+  var file = jQuery(".fileImage");
+  file.change(function () {
+    var fileVal = jQuery(this).val();
+    jQuery(this).parents('label').find('input[type="text"]').val(fileVal);
+  });
+  jQuery('.delete-img-path').click(function () {
+    jQuery(this).parent().find('input').val('');
+  });
+};
+
+var ajdustDropdownMenu = function () {
+  var menu = jQuery('.service-hover');
+  menu.each(function () {
+    var submenu = jQuery(this).find('.sub-menu');
+    var widthMain = jQuery(this).width() / 2;
+    var widthSecond = submenu.width() / 2;
+    submenu.css({left: -Math.abs(widthSecond - widthMain) / 2});
+  });
+};
+var showInfoOurProcess = function () {
+  var process = jQuery('.process-list li');
+  process.click(function () {
+    if (jQuery(window).width() < 1199) {
+      jQuery(this).find('.content').slideToggle();
+    }
   });
 };
