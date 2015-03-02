@@ -17,7 +17,7 @@
   display: none;
   position: absolute;
   width: 100%;
-  top: 85px;
+  top: 82px;
   left: 0;
   background-image: url("img/bg-gray.png");
   padding: 54px 0 0 0;
@@ -305,7 +305,7 @@
         a:hover {
           color: #1ca5d7;
         }
-        > a{
+        > a {
           padding: 0px 45px 13px 38px;
         }
       }
@@ -316,13 +316,15 @@
         font-family: $roboto_condensed_regular;
         font-size: 15.24px;
         z-index: 1000;
-        top: 35px;
+        top: 36px;
         background: $blue;
         color: $white;
         text-align: center;
         li {
-          padding: 18px 0;
-          display: block;
+          a {
+            padding: 18px 0;
+            display: block;
+          }
           &:hover {
             background: $white;
             -webkit-box-shadow: inset 0px 1px 3px 0px rgba(105, 105, 105, 1);
@@ -332,7 +334,7 @@
           &:hover a {
             color: $black;
           }
-          &:nth-child(1) {
+          &:nth-child(1) a {
             padding-top: 34px;
           }
         }
@@ -356,10 +358,10 @@
             padding-left: 38px;
           }
           &:nth-child(2) {
-            padding-left: 65px;
+            padding-left: 63px;
           }
           &:last-child {
-            padding-left: 32px;
+            padding-left: 28px;
           }
         }
 
@@ -369,7 +371,7 @@
       display: inline-block;
       color: $blue;
       position: absolute;
-      top:8px;
+      top: 6px;
       text-align: center;
       .btn-enquire {
         cursor: pointer;
@@ -394,11 +396,11 @@
       font-family: $roboto_condensed_bold;
       font-size: 16.26px;
       padding: 20px 0;
-      li{
-        &:first-child{
+      li {
+        &:first-child {
           margin: 0;
         }
-        &:last-child span{
+        &:last-child span {
           float: right;
         }
         margin-top: 8px;
@@ -466,7 +468,7 @@ h1.title {
   height: 10px;
   width: 100%;
   left: 0;
-  top: 28px;
+  top: 34px;
   /* background: #000; */
   display: inline-block;
   border-top: 10px solid #000;

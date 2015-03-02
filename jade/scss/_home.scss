@@ -15,7 +15,7 @@
         right: 0;
         color: #ffffff;
         background-color: rgba(0, 0, 0, 0.6);
-        padding: 50px 145px 95px 42px;
+        padding: 50px 145px 85px 42px;
         width: 520px;
         &:after {
           position: absolute;
@@ -46,8 +46,8 @@
       top: -70px;
     }
     .bx-pager {
-      bottom: 15%;
-      right: 25.7%;
+      bottom: 13%;
+      right: 27.7%;
       text-align: right;
       .bx-pager-item {
         text-align: center;
@@ -146,7 +146,7 @@
           border-left: 11px solid transparent;
           border-bottom: 11px solid #1ca5d7;
           left: 44%;
-          top: -11px;
+          top: -21px;
         }
       }
       &:last-child {

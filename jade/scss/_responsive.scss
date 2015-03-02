@@ -7,7 +7,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 0px) {
+@media only screen and (max-width: 992px) and (min-width: 0px) {
   .box-enquire {
     top: 54px;
     padding: 45px 0 0 0;
@@ -181,22 +181,12 @@
       ul {
         font-size: 14.06px;
         text-align: center;
-        padding: 60px 50px 48px;
         li {
           padding: 10px 0;
           span {
             line-height: 23px;
           }
-          &:first-child {
-            i {
 
-              margin: 0 0 35px 0;
-
-            }
-            a {
-              display: block;
-            }
-          }
           &:last-child span {
             float: none;
           }
@@ -503,7 +493,7 @@
                   margin-right: 0;
                   padding-left: 20px;
                   position: relative;
-                  &:before{
+                  &:before {
                     content: '';
                     font-size: 35px;
                     display: inline-block;
@@ -541,7 +531,7 @@
                   left: 0;
                   width: 100%;
                   bottom: 0;
-                  padding:5px;
+                  padding: 5px;
                   text-align: left;
                   font-size: 15.33px;
                   color: #ffffff;
@@ -755,8 +745,27 @@
     }
   }
 }
+@media screen and (max-width: 778px) {
+  .page .footer {
 
+    ul {padding: 60px 40px}}
+}
 @media screen and (max-width: 400px) {
+  .footer {
+
+    ul {
+      li {
+        &:first-child {
+          i {
+            margin: 0 0 35px 0;
+          }
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+  }
   ul.services-list {
     width: inherit;
   }

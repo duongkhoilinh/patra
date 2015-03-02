@@ -9,7 +9,8 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options:{
-          lineNumbers:true
+          lineNumbers:true,
+          style:'compressed'
         },
         files: [
           {

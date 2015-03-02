@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
   jQuery('#menu').slicknav({prependTo: '#main-menu'});
 
   jQuery(window).resize(function () {
-    if (jQuery(this).width() > 1199) {
+    if (jQuery(this).width() > 940) {
       jQuery(".logo").css({"top": "0"});
       jQuery("body").removeClass('modal-open');
       jQuery('.modal').hide();
@@ -156,7 +156,7 @@ var ajdustDropdownMenu = function () {
 var showInfoOurProcess = function () {
   var process = jQuery('.process-list li');
   process.click(function () {
-    if (jQuery(window).width() < 1199) {
+    if (jQuery(window).width() < 940) {
       jQuery(this).find('.content').slideToggle();
     }
   });
