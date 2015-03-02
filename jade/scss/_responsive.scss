@@ -402,15 +402,34 @@
             border-radius: 0;
             display: table-cell;
             padding: 20px;
-            background: $blue;
             font-size: 20.32px;
             font-family: $roboto_condensed_bold;
             padding: 0 30px;
             vertical-align: middle;
+            background-image: url(img/bg-gray.png);
+            color: #1ca5d7;
             &:hover,
             &:active {
               background-image: url(img/bg-gray.png);
               color: #1ca5d7;
+            }
+            &.collapsed {
+              background: $blue;
+              color: white;
+              .traingle {
+                display: none;
+              }
+            }
+            .traingle {
+              position: absolute;
+              background-image: url("../images/service-traingle-gray.png");
+              background-repeat: no-repeat;
+              height: 20px;
+              width: 100%;
+              bottom: -20px;
+              z-index: 15;
+              background-size: 100%;
+              left: 0;
             }
           }
         }
