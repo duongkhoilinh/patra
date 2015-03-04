@@ -53,10 +53,10 @@ block main
           ul
             li
               each val in [1,2,3,4,5,6]
-                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg")
+                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg" width='162' height='162')
             li
               each val in [7,8,9]
-                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg")
+                a.modal-portfolio-btn(href='javascript:void(0)' data-toggle="modal" data-target="#mobi-portfolio-#{val}"): img(src="images/testimonials-logo-2.jpg" width='162' height='162')
         #modal-portfolio
           each val in [1,2,3,4,5,6,7,8,9]
             .modal.fade(id='mobi-portfolio-#{val}' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
